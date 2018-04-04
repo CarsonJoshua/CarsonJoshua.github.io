@@ -1,0 +1,3379 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GoatNest - bot_sandbox</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/254499779613032448/a6f8f85db25377aa35af7277441cd653.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">GoatNest</div>
+<div class="channel-name">bot_sandbox</div>
+<div class="misc">461 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 08:25 PM</span>
+<div class="msg-content">
+BowserToo -foo</div>
+<div class="msg-content">
+Bowsertoo -foo</div>
+<div class="msg-content">
+BowserToo -foo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 08:45 PM</span>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 08:46 PM</span>
+<div class="msg-content">
+bowsertoo -foo</div>
+<div class="msg-content">
+bowsertoo -foo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 08:47 PM</span>
+<div class="msg-content">
+BowderToo -foo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 08:47 PM</span>
+<div class="msg-content">
+bowsertoo -foo</div>
+<div class="msg-content">
+BowserToo -foo</div>
+<div class="msg-content">
+bowsertoo -foo</div>
+<div class="msg-content">
+bowsertoo -foo</div>
+<div class="msg-content">
+bowsertoo -foo</div>
+<div class="msg-content">
+bowsertoo -foo</div>
+<div class="msg-content">
+bowsertoo -foo</div>
+<div class="msg-content">
+-bowsertoo foo</div>
+<div class="msg-content">
+-bowsertoo foo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:00 PM</span>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo @Big Dick Cool Guy</div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:02 PM</span>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:02 PM</span>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span>-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo <span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+-meme foo -meme foo -meme foo</div>
+<div class="msg-content">
+-meme foo -meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 09:04 PM</span>
+<div class="msg-content">
+-meme foo <span class="mention" title="BowserToo#1576">@BowserToo</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:04 PM</span>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+test -meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+-meme foo</div>
+<div class="msg-content">
+*dice foo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:31 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Foo was executed! The value of testarg is: testarg isn&#39;t defined</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:33 PM</span>
+<div class="msg-content">
+-dicebot foo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Foo was executed! The value of testarg is: testarg isn&#39;t defined</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:44 PM</span>
+<div class="msg-content">
+*dice roll 10d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:44 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1020</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:44 PM</span>
+<div class="msg-content">
+*dice roll memed20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:44 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />meme20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:47 PM</span>
+<div class="msg-content">
+*dice roll 20d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:47 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />2020</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:48 PM</span>
+<div class="msg-content">
+*dice roll memed20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:48 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />meme20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:48 PM</span>
+<div class="msg-content">
+*dice roll 20d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:48 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />all good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:48 PM</span>
+<div class="msg-content">
+*dice roll memed20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:48 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Syntax Error, please try again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:56 PM</span>
+<div class="msg-content">
+*dice roll 20d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:56 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />0: 1<br />1: 18<br />2: 16<br />3: 17<br />4: 16<br />5: 12<br />6: 19<br />7: 16<br />8: 1<br />9: 1<br />10: 13<br />11: 14<br />12: 8<br />13: 14<br />14: 6<br />15: 15<br />16: 7<br />17: 18<br />18: 19<br />19: 20<br />Total: 251</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:57 PM</span>
+<div class="msg-content">
+*dice roll</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:57 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Error: not every required argument was fulfilled. Missing arguments:<br />dice<br /><br />Type *dice roll --help for help.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:57 PM</span>
+<div class="msg-content">
+*dice roll --help</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:57 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Usage:  *dice roll (dice)<br />rolls a dice<br /><br />Available arguments:<br /><br /><div class="pre"> dice              Rolls the Dice                                                                 No Dice Defined                            </div><br /><br />Arguments in (parenthesis) are required, arguments in [brackets] are optional</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:58 PM</span>
+<div class="msg-content">
+*dice roll</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:58 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Error: not every required argument was fulfilled. Missing arguments:<br />type<br /><br />Type *dice roll --help for help.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:58 PM</span>
+<div class="msg-content">
+*dice roll 20D20</div>
+<div class="msg-content">
+*dice roll 20D20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 09:59 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 18<br />2: 2<br />3: 19<br />4: 11<br />5: 11<br />6: 5<br />7: 20<br />8: 18<br />9: 5<br />10: 14<br />11: 1<br />12: 10<br />13: 12<br />14: 13<br />15: 3<br />16: 1<br />17: 1<br />18: 11<br />19: 12<br />20: 5<br />Total: 192</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:59 PM</span>
+<div class="msg-content">
+*dice roll 1000d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:00 PM</span>
+<div class="msg-content">
+*dice roll 40d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:00 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 13<br />2: 16<br />3: 5<br />4: 10<br />5: 3<br />6: 15<br />7: 18<br />8: 18<br />9: 17<br />10: 15<br />11: 4<br />12: 8<br />13: 13<br />14: 20<br />15: 12<br />16: 1<br />17: 2<br />18: 10<br />19: 11<br />20: 15<br />21: 13<br />22: 17<br />23: 5<br />24: 6<br />25: 4<br />26: 9<br />27: 1<br />28: 15<br />29: 19<br />30: 7<br />31: 16<br />32: 12<br />33: 14<br />34: 14<br />35: 2<br />36: 1<br />37: 11<br />38: 2<br />39: 15<br />40: 12<br />Total: 421</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:00 PM</span>
+<div class="msg-content">
+*dice roll 1d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:00 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 13<br />Total: 13</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:00 PM</span>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:00 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Syntax Error, please try again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:02 PM</span>
+<div class="msg-content">
+*dice roll d20</div>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:02 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 5<br />Total: 5</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:02 PM</span>
+<div class="msg-content">
+*dice roll -1d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:02 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Error: not every required argument was fulfilled. Missing arguments:<br />type<br /><br />Type *dice roll --help for help.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:02 PM</span>
+<div class="msg-content">
+*dice roll 1d-20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:02 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 0<br />Total: 0</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:06 PM</span>
+<div class="msg-content">
+*dice roll d20</div>
+<div class="msg-content">
+*dice roll d20</div>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:07 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 18<br />Total: 18</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:07 PM</span>
+<div class="msg-content">
+*dice roll 0d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:07 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Total: 0</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:07 PM</span>
+<div class="msg-content">
+*dice roll d-20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:07 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />Syntax Error, please try again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:07 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span></div>
+<div class="msg-content">
+*dice roll 20d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:08 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 13<br />2: 9<br />3: 16<br />4: 9<br />5: 13<br />6: 7<br />7: 17<br />8: 13<br />9: 11<br />10: 8<br />11: 13<br />12: 12<br />13: 4<br />14: 2<br />15: 13<br />16: 11<br />17: 20<br />18: 13<br />19: 7<br />20: 5<br />Total: 216</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:08 PM</span>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:08 PM</span>
+<div class="msg-content">
+wat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:08 PM</span>
+<div class="msg-content">
+it&#39;s a discord bot</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:08 PM</span>
+<div class="msg-content">
+ah nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/403a4344fca8ec541d7d9e5cf139bd82.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord Jewcifer#2411">Lord Jewcifer</span>
+<span class="msg-date">07-Dec-16 10:08 PM</span>
+<div class="msg-content">
+*dice roll 5d5</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:08 PM</span>
+<div class="msg-content">
+<span class="mention" title="Lord Jewcifer#2411">@Lord Jewcifer</span>, <br />1: 5<br />2: 5<br />3: 4<br />4: 3<br />5: 2<br />Total: 19</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:09 PM</span>
+<div class="msg-content">
+do *dice roll number of dice d size of dice</div>
+<div class="msg-content">
+*dice roll 50d50</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:09 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 50<br />2: 28<br />3: 45<br />4: 49<br />5: 34<br />6: 23<br />7: 40<br />8: 41<br />9: 37<br />10: 7<br />11: 37<br />12: 23<br />13: 12<br />14: 19<br />15: 26<br />16: 45<br />17: 31<br />18: 50<br />19: 16<br />20: 1<br />21: 28<br />22: 50<br />23: 19<br />24: 24<br />25: 33<br />26: 23<br />27: 39<br />28: 6<br />29: 35<br />30: 48<br />31: 43<br />32: 41<br />33: 11<br />34: 25<br />35: 37<br />36: 14<br />37: 10<br />38: 42<br />39: 10<br />40: 35<br />41: 34<br />42: 46<br />43: 36<br />44: 48<br />45: 21<br />46: 44<br />47: 43<br />48: 48<br />49: 7<br />50: 46<br />Total: 1560</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/403a4344fca8ec541d7d9e5cf139bd82.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord Jewcifer#2411">Lord Jewcifer</span>
+<span class="msg-date">07-Dec-16 10:09 PM</span>
+<div class="msg-content">
+*dice roll 50d1000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:09 PM</span>
+<div class="msg-content">
+<span class="mention" title="Lord Jewcifer#2411">@Lord Jewcifer</span>, <br />1: 762<br />2: 564<br />3: 589<br />4: 827<br />5: 76<br />6: 104<br />7: 575<br />8: 181<br />9: 483<br />10: 618<br />11: 474<br />12: 378<br />13: 250<br />14: 306<br />15: 661<br />16: 893<br />17: 100<br />18: 998<br />19: 209<br />20: 244<br />21: 38<br />22: 422<br />23: 80<br />24: 573<br />25: 260<br />26: 693<br />27: 72<br />28: 298<br />29: 205<br />30: 34<br />31: 534<br />32: 338<br />33: 31<br />34: 412<br />35: 146<br />36: 348<br />37: 432<br />38: 108<br />39: 559<br />40: 285<br />41: 265<br />42: 996<br />43: 824<br />44: 149<br />45: 254<br />46: 460<br />47: 84<br />48: 779<br />49: 358<br />50: 528<br />Total: 19857</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:09 PM</span>
+<div class="msg-content">
+*dice roll 500d500000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:09 PM</span>
+<div class="msg-content">
+character limit is too large <span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span></div>
+<div class="msg-content">
+threw a console error</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:09 PM</span>
+<div class="msg-content">
+rip</div>
+<div class="msg-content">
+*dice roll 50d500000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span>, <br />1: 337273<br />2: 484343<br />3: 250640<br />4: 223462<br />5: 430729<br />6: 320388<br />7: 357927<br />8: 395393<br />9: 253077<br />10: 124613<br />11: 320306<br />12: 148259<br />13: 181253<br />14: 225354<br />15: 446379<br />16: 42659<br />17: 412757<br />18: 333304<br />19: 51766<br />20: 268649<br />21: 150249<br />22: 109123<br />23: 136727<br />24: 173334<br />25: 219518<br />26: 459503<br />27: 68273<br />28: 494608<br />29: 333592<br />30: 475151<br />31: 352396<br />32: 435019<br />33: 116907<br />34: 256335<br />35: 4332<br />36: 355594<br />37: 111407<br />38: 185987<br />39: 187025<br />40: 51123<br />41: 366970<br />42: 440866<br />43: 282947<br />44: 373354<br />45: 396357<br />46: 198178<br />47: 242708<br />48: 58846<br />49: 97103<br />50: 229591<br />Total: 12971654</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+*dice roll 1d99999999999999999999999</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span>, <br />1: 8.26511179497031e+22<br />Total: 8.26511179497031e+22</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+*dice roll 1d999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span>, <br />1: 3.653464445604837e+172<br />Total: 3.653464445604837e+172</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+*dice roll 1d99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span>, <br />1: Infinity<br />Total: Infinity</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:10 PM</span>
+<div class="msg-content">
+lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:12 PM</span>
+<div class="msg-content">
+*dice roll 1d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:12 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 3<br />Total: 3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:13 PM</span>
+<div class="msg-content">
+*dice roll 99999999999999999999d199043830</div>
+<div class="msg-content">
+bye bye botty</div>
+<div class="msg-content">
+*dice roll 1d20</div>
+<div class="msg-content">
+yeah he dead</div>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span> learn how to kill a bot proper</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:15 PM</span>
+<div class="msg-content">
+i did kill it!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:15 PM</span>
+<div class="msg-content">
+did you?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:15 PM</span>
+<div class="msg-content">
+richard restarted it</div>
+<div class="msg-content">
+scroll up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:15 PM</span>
+<div class="msg-content">
+ah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:16 PM</span>
+<div class="msg-content">
+i wanted to see if the other way also killed it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:16 PM</span>
+<div class="msg-content">
+well you&#39;re the new bot</div>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span> <br />*dice roll 20d100</div>
+<div class="msg-content">
+and make it snappy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:23 PM</span>
+<div class="msg-content">
+ok ummm</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+3</div>
+<div class="msg-content">
+5</div>
+<div class="msg-content">
+7</div>
+<div class="msg-content">
+9</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+3</div>
+<div class="msg-content">
+5</div>
+<div class="msg-content">
+7</div>
+<div class="msg-content">
+9</div>
+<div class="msg-content">
+2</div>
+<div class="msg-content">
+4</div>
+<div class="msg-content">
+6</div>
+<div class="msg-content">
+8</div>
+<div class="msg-content">
+5</div>
+<div class="msg-content">
+87</div>
+<div class="msg-content">
+45</div>
+<div class="msg-content">
+76</div>
+<div class="msg-content">
+45</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:24 PM</span>
+<div class="msg-content">
+78</div>
+<div class="msg-content">
+boom</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:24 PM</span>
+<div class="msg-content">
+noice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:24 PM</span>
+<div class="msg-content">
+give me another one</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:26 PM</span>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span></div>
+<div class="msg-content">
+*dice roll 99999999999999999999d199043830</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:26 PM</span>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:26 PM</span>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:26 PM</span>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+rip</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">07-Dec-16 10:27 PM</span>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+<div class="msg-content">
+1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:28 PM</span>
+<div class="msg-content">
+well looks like Josh&#39;s trick sends the bot spiraling in an endless for loop</div>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:28 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 6<br />Total: 6</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:29 PM</span>
+<div class="msg-content">
+*dice roll 1d</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:29 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />Syntax Error, please try again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:29 PM</span>
+<div class="msg-content">
+*dice roll 1d1d1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:29 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 1<br />Total: 1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:30 PM</span>
+<div class="msg-content">
+*dice roll 0d100</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:30 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />Total: 0</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:30 PM</span>
+<div class="msg-content">
+*dice roll 1d-100</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:30 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />Syntax Error, please try again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:30 PM</span>
+<div class="msg-content">
+*dice roll 1200d6</div>
+<div class="msg-content">
+little heavy of a stack but it should be able to handle it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 10:31 PM</span>
+<div class="msg-content">
+it handled it, it just hit the character limit</div>
+<div class="msg-content">
+I might find a hard limit and just print out the total if the length of the string is over 2000</div>
+<div class="msg-content">
+*dice roll 75d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 8<br />2: 9<br />3: 12<br />4: 10<br />5: 5<br />6: 20<br />7: 17<br />8: 13<br />9: 20<br />10: 13<br />11: 3<br />12: 6<br />13: 6<br />14: 9<br />15: 4<br />16: 20<br />17: 10<br />18: 10<br />19: 2<br />20: 20<br />21: 11<br />22: 19<br />23: 5<br />24: 20<br />25: 20<br />26: 8<br />27: 14<br />28: 6<br />29: 18<br />30: 8<br />31: 1<br />32: 11<br />33: 19<br />34: 15<br />35: 18<br />36: 18<br />37: 14<br />38: 3<br />39: 2<br />40: 18<br />41: 12<br />42: 8<br />43: 18<br />44: 12<br />45: 14<br />46: 4<br />47: 13<br />48: 5<br />49: 16<br />50: 3<br />51: 5<br />52: 19<br />53: 19<br />54: 13<br />55: 12<br />56: 4<br />57: 4<br />58: 12<br />59: 19<br />60: 2<br />61: 18<br />62: 16<br />63: 10<br />64: 3<br />65: 6<br />66: 2<br />67: 9<br />68: 20<br />69: 19<br />70: 4<br />71: 11<br />72: 6<br />73: 18<br />74: 3<br />75: 10<br />Total: 834</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 2443<br />2: 45<br />3: 7837<br />4: 8981<br />5: 6528<br />6: 7608<br />7: 9643<br />8: 7555<br />9: 6795<br />10: 1613<br />11: 1570<br />12: 7676<br />13: 6769<br />14: 6489<br />15: 9777<br />16: 8340<br />17: 6860<br />18: 8964<br />19: 9185<br />20: 6183<br />21: 1259<br />22: 5204<br />23: 9494<br />24: 6367<br />25: 6438<br />26: 2078<br />27: 4294<br />28: 3484<br />29: 9819<br />30: 7300<br />31: 110<br />32: 1117<br />33: 8118<br />34: 5900<br />35: 2778<br />36: 7279<br />37: 8154<br />38: 962<br />39: 3605<br />40: 3479<br />41: 8987<br />42: 5842<br />43: 369<br />44: 6020<br />45: 4288<br />46: 2075<br />47: 649<br />48: 2974<br />49: 3433<br />50: 1497<br />51: 4095<br />52: 7269<br />53: 2106<br />54: 4242<br />55: 1261<br />56: 132<br />57: 1648<br />58: 7808<br />59: 9164<br />60: 4066<br />61: 7940<br />62: 3224<br />63: 9421<br />64: 8830<br />65: 5894<br />66: 3703<br />67: 6887<br />68: 7495<br />69: 1142<br />70: 5741<br />71: 8997<br />72: 6762<br />73: 226<br />74: 9413<br />75: 1239<br />76: 4190<br />77: 1641<br />78: 6690<br />79: 8822<br />80: 2425<br />81: 7395<br />82: 3862<br />83: 5526<br />84: 6062<br />85: 6031<br />86: 4422<br />87: 2196<br />88: 9367<br />89: 1478<br />90: 3775<br />91: 7856<br />92: 2908<br />93: 9835<br />94: 3311<br />95: 4694<br />96: 7680<br />97: 9610<br />98: 422<br />99: 6790<br />Total: 519927</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 8307<br />2: 6882<br />3: 2352<br />4: 8856<br />5: 2282<br />6: 1809<br />7: 7194<br />8: 6337<br />9: 2671<br />10: 8245<br />11: 590<br />12: 9427<br />13: 2245<br />14: 6689<br />15: 9837<br />16: 3368<br />17: 5107<br />18: 5820<br />19: 8734<br />20: 3631<br />21: 6316<br />22: 2418<br />23: 7791<br />24: 3873<br />25: 2684<br />26: 7198<br />27: 3922<br />28: 7214<br />29: 9248<br />30: 5291<br />31: 5997<br />32: 6545<br />33: 861<br />34: 3697<br />35: 5709<br />36: 4943<br />37: 1420<br />38: 8436<br />39: 4227<br />40: 5691<br />41: 6533<br />42: 5579<br />43: 6345<br />44: 8074<br />45: 9466<br />46: 7667<br />47: 4935<br />48: 4254<br />49: 9486<br />50: 8327<br />51: 9111<br />52: 3802<br />53: 9558<br />54: 310<br />55: 6767<br />56: 4208<br />57: 4134<br />58: 4638<br />59: 5558<br />60: 6390<br />61: 8464<br />62: 187<br />63: 5104<br />64: 4461<br />65: 3437<br />66: 4062<br />67: 9433<br />68: 2970<br />69: 9982<br />70: 1568<br />71: 6501<br />72: 1374<br />73: 1738<br />74: 4191<br />75: 4259<br />76: 7242<br />77: 9021<br />78: 5918<br />79: 8841<br />80: 3517<br />81: 6871<br />82: 7327<br />83: 8540<br />84: 888<br />85: 1665<br />86: 6318<br />87: 8518<br />88: 4643<br />89: 6071<br />90: 731<br />91: 3476<br />92: 2479<br />93: 6444<br />94: 9408<br />95: 2232<br />96: 6287<br />97: 6587<br />98: 6176<br />99: 6133<br />Total: 542070</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 2586<br />2: 1849<br />3: 7361<br />4: 9763<br />5: 3540<br />6: 154<br />7: 1512<br />8: 5074<br />9: 5298<br />10: 6347<br />11: 9438<br />12: 7406<br />13: 9240<br />14: 6656<br />15: 7013<br />16: 5711<br />17: 217<br />18: 4593<br />19: 6277<br />20: 7905<br />21: 6281<br />22: 5381<br />23: 1212<br />24: 3130<br />25: 8946<br />26: 5668<br />27: 8497<br />28: 6641<br />29: 3033<br />30: 7636<br />31: 4089<br />32: 7825<br />33: 9712<br />34: 9532<br />35: 467<br />36: 3828<br />37: 8830<br />38: 3207<br />39: 5174<br />40: 6249<br />41: 4210<br />42: 1907<br />43: 4373<br />44: 8971<br />45: 6511<br />46: 8666<br />47: 7094<br />48: 7661<br />49: 8717<br />50: 7559<br />51: 302<br />52: 194<br />53: 8990<br />54: 8876<br />55: 2380<br />56: 1584<br />57: 6814<br />58: 2689<br />59: 790<br />60: 4374<br />61: 205<br />62: 6987<br />63: 8341<br />64: 3173<br />65: 8720<br />66: 325<br />67: 2591<br />68: 7225<br />69: 4872<br />70: 3385<br />71: 6146<br />72: 2764<br />73: 1755<br />74: 4260<br />75: 5821<br />76: 1831<br />77: 6588<br />78: 7063<br />79: 9060<br />80: 3824<br />81: 8546<br />82: 2973<br />83: 257<br />84: 7686<br />85: 2783<br />86: 7141<br />87: 6428<br />88: 7668<br />89: 3343<br />90: 6447<br />91: 1737<br />92: 8145<br />93: 1826<br />94: 7220<br />95: 8650<br />96: 9101<br />97: 7728<br />98: 6276<br />99: 6425<br />Total: 531256</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 7903<br />2: 5233<br />3: 3530<br />4: 6539<br />5: 7819<br />6: 8358<br />7: 9146<br />8: 1246<br />9: 3979<br />10: 5616<br />11: 8656<br />12: 3165<br />13: 6906<br />14: 6741<br />15: 8004<br />16: 7371<br />17: 6514<br />18: 4683<br />19: 9251<br />20: 9373<br />21: 3875<br />22: 524<br />23: 3270<br />24: 7846<br />25: 3198<br />26: 4959<br />27: 2237<br />28: 5430<br />29: 840<br />30: 6753<br />31: 1247<br />32: 9873<br />33: 9620<br />34: 2841<br />35: 5317<br />36: 3798<br />37: 40<br />38: 1852<br />39: 3066<br />40: 3813<br />41: 8167<br />42: 5820<br />43: 1193<br />44: 4544<br />45: 3656<br />46: 2701<br />47: 3915<br />48: 7260<br />49: 5407<br />50: 2230<br />51: 9698<br />52: 6507<br />53: 8779<br />54: 6765<br />55: 6732<br />56: 94<br />57: 8297<br />58: 3055<br />59: 4128<br />60: 5031<br />61: 2403<br />62: 5864<br />63: 2764<br />64: 6500<br />65: 6405<br />66: 5397<br />67: 9131<br />68: 7258<br />69: 4539<br />70: 5325<br />71: 6921<br />72: 5913<br />73: 1917<br />74: 3926<br />75: 6356<br />76: 1450<br />77: 4362<br />78: 4766<br />79: 2218<br />80: 7963<br />81: 1139<br />82: 5920<br />83: 2761<br />84: 3528<br />85: 4122<br />86: 2791<br />87: 352<br />88: 1940<br />89: 8883<br />90: 9465<br />91: 4956<br />92: 7009<br />93: 7784<br />94: 5353<br />95: 7569<br />96: 6237<br />97: 3169<br />98: 9347<br />99: 5017<br />Total: 513131</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 1088<br />2: 4994<br />3: 7248<br />4: 8631<br />5: 1684<br />6: 9080<br />7: 1128<br />8: 1961<br />9: 8170<br />10: 2111<br />11: 4965<br />12: 973<br />13: 1286<br />14: 8703<br />15: 2603<br />16: 6510<br />17: 2620<br />18: 9125<br />19: 5063<br />20: 3007<br />21: 7423<br />22: 8188<br />23: 5630<br />24: 139<br />25: 5347<br />26: 326<br />27: 6465<br />28: 3865<br />29: 8358<br />30: 3022<br />31: 9663<br />32: 8503<br />33: 1757<br />34: 5921<br />35: 5996<br />36: 858<br />37: 706<br />38: 4658<br />39: 1363<br />40: 3530<br />41: 1245<br />42: 8357<br />43: 4212<br />44: 8606<br />45: 2497<br />46: 2956<br />47: 8851<br />48: 8130<br />49: 856<br />50: 1580<br />51: 6136<br />52: 2678<br />53: 9095<br />54: 2347<br />55: 7031<br />56: 2341<br />57: 2010<br />58: 3389<br />59: 8224<br />60: 4898<br />61: 3010<br />62: 204<br />63: 302<br />64: 5296<br />65: 4664<br />66: 7055<br />67: 5199<br />68: 6167<br />69: 1537<br />70: 5015<br />71: 7068<br />72: 7062<br />73: 4982<br />74: 1072<br />75: 9716<br />76: 2524<br />77: 8510<br />78: 4327<br />79: 6252<br />80: 9290<br />81: 8529<br />82: 4889<br />83: 1344<br />84: 4295<br />85: 385<br />86: 8282<br />87: 6258<br />88: 9170<br />89: 4315<br />90: 2745<br />91: 9280<br />92: 1690<br />93: 9364<br />94: 4730<br />95: 7691<br />96: 7619<br />97: 3526<br />98: 9475<br />99: 2121<br />Total: 483067</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<i>dice roll 99d10000</i>dice roll 99d10000*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 4088<br />2: 9739<br />3: 4991<br />4: 599<br />5: 8731<br />6: 6488<br />7: 3112<br />8: 781<br />9: 5955<br />10: 4019<br />11: 1875<br />12: 5912<br />13: 2498<br />14: 2261<br />15: 9951<br />16: 1900<br />17: 1610<br />18: 6457<br />19: 6309<br />20: 5215<br />21: 4601<br />22: 4462<br />23: 7051<br />24: 8932<br />25: 6653<br />26: 9056<br />27: 7555<br />28: 5041<br />29: 1628<br />30: 6002<br />31: 375<br />32: 261<br />33: 4190<br />34: 2560<br />35: 4585<br />36: 315<br />37: 3642<br />38: 1404<br />39: 7559<br />40: 2530<br />41: 9605<br />42: 228<br />43: 6465<br />44: 8230<br />45: 6183<br />46: 593<br />47: 5961<br />48: 6171<br />49: 4764<br />50: 5445<br />51: 1557<br />52: 2416<br />53: 9363<br />54: 8256<br />55: 1899<br />56: 4142<br />57: 9117<br />58: 369<br />59: 2658<br />60: 1350<br />61: 3000<br />62: 2927<br />63: 1316<br />64: 6640<br />65: 798<br />66: 5821<br />67: 9418<br />68: 2869<br />69: 7126<br />70: 4143<br />71: 5051<br />72: 1718<br />73: 4064<br />74: 4543<br />75: 8651<br />76: 5950<br />77: 1151<br />78: 1442<br />79: 6656<br />80: 5752<br />81: 1484<br />82: 3238<br />83: 6223<br />84: 8681<br />85: 2340<br />86: 1167<br />87: 3961<br />88: 6207<br />89: 822<br />90: 6828<br />91: 4000<br />92: 3240<br />93: 5706<br />94: 6584<br />95: 5865<br />96: 1987<br />97: 3944<br />98: 5960<br />99: 6897<br />Total: 449835</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<i>dice roll 99d10000<br /></i>dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:33 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 4802<br />2: 582<br />3: 796<br />4: 7890<br />5: 9715<br />6: 1719<br />7: 6097<br />8: 3216<br />9: 2096<br />10: 9212<br />11: 8038<br />12: 1864<br />13: 8247<br />14: 1664<br />15: 6587<br />16: 7239<br />17: 5732<br />18: 6480<br />19: 5064<br />20: 8159<br />21: 6865<br />22: 468<br />23: 7647<br />24: 3218<br />25: 3179<br />26: 2672<br />27: 8884<br />28: 7691<br />29: 5673<br />30: 290<br />31: 3593<br />32: 3145<br />33: 9668<br />34: 1959<br />35: 37<br />36: 395<br />37: 9536<br />38: 1891<br />39: 925<br />40: 5794<br />41: 175<br />42: 7615<br />43: 6303<br />44: 7615<br />45: 2821<br />46: 8299<br />47: 4639<br />48: 4956<br />49: 3173<br />50: 9932<br />51: 9109<br />52: 3713<br />53: 6936<br />54: 9800<br />55: 8537<br />56: 9758<br />57: 8939<br />58: 1702<br />59: 362<br />60: 4114<br />61: 8250<br />62: 9921<br />63: 5819<br />64: 2953<br />65: 4096<br />66: 7470<br />67: 7068<br />68: 9050<br />69: 791<br />70: 7230<br />71: 74<br />72: 4051<br />73: 6029<br />74: 1311<br />75: 5137<br />76: 5785<br />77: 5926<br />78: 6118<br />79: 4621<br />80: 943<br />81: 3900<br />82: 7677<br />83: 7538<br />84: 4438<br />85: 6386<br />86: 1099<br />87: 3000<br />88: 3567<br />89: 6743<br />90: 9447<br />91: 2092<br />92: 8735<br />93: 6319<br />94: 2738<br />95: 132<br />96: 9710<br />97: 1487<br />98: 8969<br />99: 9088<br />Total: 512935</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 8681<br />2: 1571<br />3: 1166<br />4: 6820<br />5: 849<br />6: 7240<br />7: 7254<br />8: 6269<br />9: 7220<br />10: 9206<br />11: 2678<br />12: 1580<br />13: 5494<br />14: 8497<br />15: 3944<br />16: 7328<br />17: 6678<br />18: 4710<br />19: 1147<br />20: 6689<br />21: 9938<br />22: 1420<br />23: 6489<br />24: 426<br />25: 4494<br />26: 5842<br />27: 3957<br />28: 7087<br />29: 5715<br />30: 8739<br />31: 3434<br />32: 9686<br />33: 6830<br />34: 6818<br />35: 6956<br />36: 8341<br />37: 1013<br />38: 6270<br />39: 8055<br />40: 1558<br />41: 4028<br />42: 6877<br />43: 1363<br />44: 5061<br />45: 1556<br />46: 4936<br />47: 2956<br />48: 2811<br />49: 5284<br />50: 5537<br />51: 4657<br />52: 4525<br />53: 6952<br />54: 9543<br />55: 9405<br />56: 1189<br />57: 3150<br />58: 5270<br />59: 1728<br />60: 2040<br />61: 3831<br />62: 2068<br />63: 2288<br />64: 5085<br />65: 9354<br />66: 8273<br />67: 4<br />68: 9949<br />69: 7898<br />70: 6533<br />71: 8180<br />72: 3185<br />73: 8358<br />74: 2906<br />75: 6630<br />76: 8239<br />77: 3765<br />78: 4034<br />79: 5119<br />80: 9428<br />81: 8050<br />82: 8199<br />83: 8121<br />84: 7667<br />85: 4234<br />86: 7475<br />87: 2743<br />88: 4163<br />89: 234<br />90: 4090<br />91: 6885<br />92: 38<br />93: 248<br />94: 5860<br />95: 1142<br />96: 5671<br />97: 208<br />98: 7587<br />99: 2502<br />Total: 507201</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 1724<br />2: 5165<br />3: 4348<br />4: 2056<br />5: 8610<br />6: 3167<br />7: 1600<br />8: 1912<br />9: 8267<br />10: 7819<br />11: 6847<br />12: 7527<br />13: 4798<br />14: 2745<br />15: 363<br />16: 7383<br />17: 5068<br />18: 5304<br />19: 4747<br />20: 3630<br />21: 1622<br />22: 143<br />23: 9439<br />24: 2482<br />25: 5076<br />26: 5578<br />27: 7082<br />28: 3824<br />29: 5455<br />30: 1929<br />31: 7970<br />32: 6942<br />33: 9137<br />34: 458<br />35: 3187<br />36: 4431<br />37: 7808<br />38: 5216<br />39: 5317<br />40: 9562<br />41: 5741<br />42: 1268<br />43: 1331<br />44: 9715<br />45: 9409<br />46: 649<br />47: 8606<br />48: 1551<br />49: 257<br />50: 1322<br />51: 9770<br />52: 4253<br />53: 8937<br />54: 8367<br />55: 3280<br />56: 8024<br />57: 3407<br />58: 7463<br />59: 8585<br />60: 8788<br />61: 3749<br />62: 1064<br />63: 3286<br />64: 8926<br />65: 4321<br />66: 5009<br />67: 6748<br />68: 9044<br />69: 9764<br />70: 770<br />71: 8578<br />72: 9752<br />73: 3423<br />74: 918<br />75: 7592<br />76: 7888<br />77: 325<br />78: 5739<br />79: 4865<br />80: 7220<br />81: 1682<br />82: 3955<br />83: 4564<br />84: 8428<br />85: 9225<br />86: 6725<br />87: 5560<br />88: 7379<br />89: 7308<br />90: 8271<br />91: 5645<br />92: 2999<br />93: 5146<br />94: 6839<br />95: 2911<br />96: 4574<br />97: 8748<br />98: 3168<br />99: 5901<br />Total: 524470</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 7453<br />2: 806<br />3: 298<br />4: 3628<br />5: 6728<br />6: 4000<br />7: 8434<br />8: 4650<br />9: 8737<br />10: 1065<br />11: 961<br />12: 4869<br />13: 373<br />14: 1205<br />15: 7357<br />16: 5311<br />17: 7815<br />18: 8892<br />19: 4729<br />20: 1330<br />21: 9217<br />22: 2674<br />23: 7315<br />24: 511<br />25: 7516<br />26: 472<br />27: 9256<br />28: 5235<br />29: 8724<br />30: 2795<br />31: 163<br />32: 1477<br />33: 2418<br />34: 4135<br />35: 418<br />36: 9453<br />37: 8023<br />38: 9020<br />39: 873<br />40: 2044<br />41: 4756<br />42: 9299<br />43: 1341<br />44: 8998<br />45: 7066<br />46: 276<br />47: 4603<br />48: 2476<br />49: 658<br />50: 6312<br />51: 9564<br />52: 7930<br />53: 9625<br />54: 6915<br />55: 671<br />56: 2569<br />57: 7076<br />58: 3543<br />59: 5373<br />60: 1174<br />61: 8909<br />62: 1217<br />63: 1450<br />64: 4427<br />65: 3957<br />66: 8866<br />67: 7069<br />68: 306<br />69: 662<br />70: 4337<br />71: 3496<br />72: 9182<br />73: 3251<br />74: 898<br />75: 7828<br />76: 3906<br />77: 7989<br />78: 6678<br />79: 7033<br />80: 3643<br />81: 7509<br />82: 8680<br />83: 242<br />84: 2839<br />85: 4288<br />86: 8486<br />87: 9513<br />88: 582<br />89: 2960<br />90: 520<br />91: 6669<br />92: 6514<br />93: 5909<br />94: 5788<br />95: 1342<br />96: 4458<br />97: 1547<br />98: 3617<br />99: 8887<br />Total: 466059</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 4116<br />2: 3548<br />3: 8392<br />4: 5343<br />5: 7933<br />6: 3972<br />7: 306<br />8: 7080<br />9: 1916<br />10: 6912<br />11: 6808<br />12: 5232<br />13: 4928<br />14: 2590<br />15: 8229<br />16: 6060<br />17: 9244<br />18: 5743<br />19: 4894<br />20: 7245<br />21: 917<br />22: 7108<br />23: 5792<br />24: 6914<br />25: 534<br />26: 5144<br />27: 5199<br />28: 100<br />29: 7625<br />30: 9357<br />31: 2979<br />32: 2226<br />33: 6753<br />34: 8190<br />35: 1987<br />36: 6487<br />37: 799<br />38: 4289<br />39: 4572<br />40: 2066<br />41: 8033<br />42: 4322<br />43: 9874<br />44: 8862<br />45: 3131<br />46: 3640<br />47: 7382<br />48: 9611<br />49: 3677<br />50: 8982<br />51: 1464<br />52: 3364<br />53: 3502<br />54: 2660<br />55: 9445<br />56: 8498<br />57: 6334<br />58: 7783<br />59: 5894<br />60: 4053<br />61: 8256<br />62: 9816<br />63: 9799<br />64: 5019<br />65: 2050<br />66: 2102<br />67: 4006<br />68: 1054<br />69: 7234<br />70: 5374<br />71: 5908<br />72: 8510<br />73: 8319<br />74: 6504<br />75: 3839<br />76: 2175<br />77: 9721<br />78: 503<br />79: 6261<br />80: 7139<br />81: 7646<br />82: 4570<br />83: 7041<br />84: 102<br />85: 3611<br />86: 3236<br />87: 1321<br />88: 5521<br />89: 9954<br />90: 4340<br />91: 5477<br />92: 9334<br />93: 9579<br />94: 7784<br />95: 2832<br />96: 6259<br />97: 1486<br />98: 3674<br />99: 166<br />Total: 527562</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+*dice roll 99d10000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 6425<br />2: 4137<br />3: 1690<br />4: 6183<br />5: 402<br />6: 5257<br />7: 6700<br />8: 6914<br />9: 6681<br />10: 2244<br />11: 2273<br />12: 7905<br />13: 8937<br />14: 5158<br />15: 4125<br />16: 5919<br />17: 1555<br />18: 9894<br />19: 26<br />20: 8494<br />21: 4087<br />22: 7754<br />23: 2422<br />24: 8166<br />25: 9925<br />26: 4345<br />27: 5927<br />28: 6405<br />29: 4087<br />30: 5752<br />31: 8803<br />32: 7516<br />33: 1883<br />34: 8959<br />35: 522<br />36: 1570<br />37: 2020<br />38: 8126<br />39: 8922<br />40: 5080<br />41: 174<br />42: 9511<br />43: 3512<br />44: 4179<br />45: 1923<br />46: 504<br />47: 5375<br />48: 8830<br />49: 9543<br />50: 6270<br />51: 1088<br />52: 2613<br />53: 2163<br />54: 10<br />55: 2624<br />56: 1156<br />57: 4872<br />58: 1411<br />59: 7299<br />60: 7689<br />61: 5023<br />62: 6468<br />63: 9888<br />64: 2612<br />65: 3767<br />66: 913<br />67: 7181<br />68: 2461<br />69: 4203<br />70: 5580<br />71: 1919<br />72: 9247<br />73: 7251<br />74: 8485<br />75: 8195<br />76: 3604<br />77: 6392<br />78: 4320<br />79: 2252<br />80: 1625<br />81: 8186<br />82: 2611<br />83: 5050<br />84: 6091<br />85: 4943<br />86: 1926<br />87: 9123<br />88: 1679<br />89: 2996<br />90: 9945<br />91: 5386<br />92: 4892<br />93: 1946<br />94: 4241<br />95: 8280<br />96: 6364<br />97: 683<br />98: 3122<br />99: 2696<br />Total: 485482</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+*dice roll 9999d10000</div>
+<div class="msg-content">
+*dice roll 9d6</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />1: 1<br />2: 4<br />3: 4<br />4: 6<br />5: 1<br />6: 3<br />7: 3<br />8: 3<br />9: 6<br />Total: 31</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Dec-16 10:34 PM</span>
+<div class="msg-content">
+*dice roll 99999d1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 02:15 PM</span>
+<div class="msg-content">
+*dice roll 10d10</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 02:15 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 1<br />2: 9<br />3: 8<br />4: 4<br />5: 7<br />6: 4<br />7: 1<br />8: 3<br />9: 1<br />10: 9<br />Total: 47</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-16 02:15 PM</span>
+<div class="msg-content">
+*dice roll 4d2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 02:15 PM</span>
+<div class="msg-content">
+<span class="mention" title="MrAverageJoe#9851">@MrAverageJoe</span>, <br />1: 1<br />2: 1<br />3: 2<br />4: 2<br />Total: 6</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 02:16 PM</span>
+<div class="msg-content">
+fuckin ace</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-16 02:16 PM</span>
+<div class="msg-content">
+does that work everywhere?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 02:16 PM</span>
+<div class="msg-content">
+yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-16 02:16 PM</span>
+<div class="msg-content">
+cool</div>
+<div class="msg-content">
+are there limit?</div>
+<div class="msg-content">
+limits?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 02:17 PM</span>
+<div class="msg-content">
+for some reason if you try to roll 100 dice it doesn&#39;t respond</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-16 02:17 PM</span>
+<div class="msg-content">
+also who is bowser 2?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 02:17 PM</span>
+<div class="msg-content">
+that&#39;s going to be another bot</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-16 02:18 PM</span>
+<div class="msg-content">
+do you download these or code them yourself?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 02:18 PM</span>
+<div class="msg-content">
+coded them myself</div>
+<div class="msg-content">
+in javascript</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-16 02:18 PM</span>
+<div class="msg-content">
+what language?</div>
+<div class="msg-content">
+oh</div>
+<div class="msg-content">
+cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 05:44 PM</span>
+<div class="msg-content">
+*</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">08-Dec-16 05:44 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, recieved command</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 05:44 PM</span>
+<div class="msg-content">
+test</div>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 05:44 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 6<br />Total: 6</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">08-Dec-16 05:44 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, recieved command</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/178552765495246848/5041c2b5a25139dc3bbdb3003e20866d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Omnicoder32#7353">Omnicoder32</span>
+<span class="msg-date">08-Dec-16 05:59 PM</span>
+<div class="msg-content">
+*</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">08-Dec-16 05:59 PM</span>
+<div class="msg-content">
+<span class="mention" title="Omnicoder32#7353">@Omnicoder32</span>, recieved command</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 06:04 PM</span>
+<div class="msg-content">
+*createcommand</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">08-Dec-16 06:04 PM</span>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">08-Dec-16 06:05 PM</span>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:40 PM</span>
+<div class="msg-content">
+*dicebot 1d1</div>
+<div class="msg-content">
+*dice roll 1d1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:40 PM</span>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span>, <br />1: 1<br />Total: 1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:40 PM</span>
+<div class="msg-content">
+*dive roll 1000000d1000000</div>
+<div class="msg-content">
+*dice roll 1d1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:41 PM</span>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span>, <br />1: 1<br />Total: 1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:41 PM</span>
+<div class="msg-content">
+*dice roll 1000000d1000000</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-16 06:41 PM</span>
+<div class="msg-content">
+*dice roll InfinitydInfinity</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:41 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />Syntax Error, please try again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+*dice roll 1d0</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />Syntax Error, please try again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+*dice roll -1d-1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span>, <br />Error: not every required argument was fulfilled. Missing arguments:<br />type<br /><br />Type *dice roll --help for help.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+*dice roll 0d99999</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+*dice roll --help</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span>, <br />Total: 0</div>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span>, <br />Usage:  *dice roll (type)<br />rolls a dice<br /><br />Available arguments:<br /><br /><div class="pre"> type              Amount of Dice and size of Dice you want to roll, in format NumberdSize        No Dice Defined                            </div><br /><br />Arguments in (parenthesis) are required, arguments in [brackets] are optional</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+*dice roll 10d99999</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:42 PM</span>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span>, <br />1: 9560<br />2: 10018<br />3: 70179<br />4: 61998<br />5: 94091<br />6: 8092<br />7: 33185<br />8: 65168<br />9: 35070<br />10: 21738<br />Total: 409099</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-16 06:43 PM</span>
+<div class="msg-content">
+*dice roll 99999999999d1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:43 PM</span>
+<div class="msg-content">
+*dice roll 1.0d1.2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-16 06:43 PM</span>
+<div class="msg-content">
+*dice roll 23d30</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 06:44 PM</span>
+<div class="msg-content">
+*dice roll 23d30</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 06:44 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 27<br />2: 27<br />3: 13<br />4: 30<br />5: 3<br />6: 6<br />7: 8<br />8: 17<br />9: 20<br />10: 2<br />11: 14<br />12: 26<br />13: 2<br />14: 29<br />15: 5<br />16: 29<br />17: 10<br />18: 19<br />19: 25<br />20: 26<br />21: 28<br />22: 17<br />23: 23<br />Total: 406</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 06:47 PM</span>
+<div class="msg-content">
+*createcommand</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">08-Dec-16 06:47 PM</span>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+<div class="msg-content">
+*CreateCommand</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:47 PM</span>
+<div class="msg-content">
+ruck fichard</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">08-Dec-16 06:47 PM</span>
+<div class="msg-content">
+*CreateCommand</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">08-Dec-16 06:47 PM</span>
+<div class="msg-content">
+pls</div>
+<div class="msg-content">
+no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:48 PM</span>
+<div class="msg-content">
+tuck faylor</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 06:48 PM</span>
+<div class="msg-content">
+Machine gun inbound @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">08-Dec-16 06:48 PM</span>
+<div class="msg-content">
+/tps pls no</div>
+<div class="msg-content">
+pls no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">08-Dec-16 06:49 PM</span>
+<div class="msg-content">
+GET DOWN MR PRESIDENT @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 09:29 PM</span>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">08-Dec-16 09:29 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 18<br />Total: 18</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">09-Dec-16 12:26 AM</span>
+<div class="msg-content">
+*dice roll 99d99</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">09-Dec-16 12:26 AM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 3<br />2: 35<br />3: 24<br />4: 79<br />5: 43<br />6: 70<br />7: 6<br />8: 18<br />9: 86<br />10: 79<br />11: 55<br />12: 69<br />13: 97<br />14: 14<br />15: 28<br />16: 69<br />17: 11<br />18: 79<br />19: 32<br />20: 88<br />21: 15<br />22: 78<br />23: 20<br />24: 33<br />25: 10<br />26: 20<br />27: 8<br />28: 13<br />29: 49<br />30: 1<br />31: 81<br />32: 26<br />33: 98<br />34: 53<br />35: 30<br />36: 77<br />37: 13<br />38: 88<br />39: 74<br />40: 43<br />41: 97<br />42: 92<br />43: 50<br />44: 64<br />45: 23<br />46: 93<br />47: 63<br />48: 83<br />49: 83<br />50: 40<br />51: 5<br />52: 62<br />53: 7<br />54: 36<br />55: 34<br />56: 89<br />57: 11<br />58: 56<br />59: 89<br />60: 52<br />61: 50<br />62: 88<br />63: 19<br />64: 42<br />65: 25<br />66: 42<br />67: 13<br />68: 39<br />69: 28<br />70: 97<br />71: 5<br />72: 76<br />73: 11<br />74: 78<br />75: 85<br />76: 55<br />77: 54<br />78: 79<br />79: 9<br />80: 95<br />81: 99<br />82: 2<br />83: 3<br />84: 50<br />85: 12<br />86: 79<br />87: 8<br />88: 21<br />89: 28<br />90: 55<br />91: 95<br />92: 69<br />93: 23<br />94: 43<br />95: 33<br />96: 76<br />97: 16<br />98: 53<br />99: 64<br />Total: 4763</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:33 PM</span>
+<div class="msg-content">
+*createcommand cmd|response</div>
+<div class="msg-content">
+*createcommand cmd|response</div>
+<div class="msg-content">
+*createcommand cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:36 PM</span>
+<div class="msg-content">
+md|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:37 PM</span>
+<div class="msg-content">
+*createcommand cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:37 PM</span>
+<div class="msg-content">
+cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:38 PM</span>
+<div class="msg-content">
+*createcommandcmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:38 PM</span>
+<div class="msg-content">
+cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:38 PM</span>
+<div class="msg-content">
+*createcommandcmd|response</div>
+<div class="msg-content">
+*createcommand cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:38 PM</span>
+<div class="msg-content">
+cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:39 PM</span>
+<div class="msg-content">
+*createcommand kappa|<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:39 PM</span>
+<div class="msg-content">
+kappa|<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:46 PM</span>
+<div class="msg-content">
+*createcommand kappa|<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+<div class="msg-content">
+*createcommand kappa|<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+<div class="msg-content">
+*createcommand kappa|<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+<div class="msg-content">
+*createcommand kappa|<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:48 PM</span>
+<div class="msg-content">
+kappa|</div>
+<div class="msg-content">
+<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:49 PM</span>
+<div class="msg-content">
+*createcommand kappa|<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:49 PM</span>
+<div class="msg-content">
+kappa</div>
+<div class="msg-content">
+<a href="http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large">http://i3.kym-cdn.com/photos/images/newsfeed/000/925/494/218.png_large</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:52 PM</span>
+<div class="msg-content">
+*createcommand juckfustin| <span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span> <a href="http://www.warstore.co.uk/ekmps/shops/marlina/images/german-ww2-regular-nazi-5-x-3-flag-1493-p.jpg">http://www.warstore.co.uk/ekmps/shops/marlina/images/german-ww2-regular-nazi-5-x-3-flag-1493-p.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 04:52 PM</span>
+<div class="msg-content">
+juckfustin</div>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span> <a href="http://www.warstore.co.uk/ekmps/shops/marlina/images/german-ww2-regular-nazi-5-x-3-flag-1493-p.jpg">http://www.warstore.co.uk/ekmps/shops/marlina/images/german-ww2-regular-nazi-5-x-3-flag-1493-p.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">21-Dec-16 04:53 PM</span>
+<div class="msg-content">
+Lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 04:53 PM</span>
+<div class="msg-content">
+unfortunately it isn&#39;t complete yet</div>
+<div class="msg-content">
+so it didn&#39;t save that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 05:00 PM</span>
+<div class="msg-content">
+*createcommand cmd|response</div>
+<div class="msg-content">
+*createcommand cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 05:01 PM</span>
+<div class="msg-content">
+Success! cmd created with the response: response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 05:01 PM</span>
+<div class="msg-content">
+*createcommand cmd|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 05:01 PM</span>
+<div class="msg-content">
+Error! cmd Already Exists</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 05:18 PM</span>
+<div class="msg-content">
+*createcommand createcommand|response</div>
+<div class="msg-content">
+*createcommand createcommand|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 05:18 PM</span>
+<div class="msg-content">
+Success! createcommand created with the response: response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 05:19 PM</span>
+<div class="msg-content">
+*createcommand createcommand|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 05:19 PM</span>
+<div class="msg-content">
+Success! createcommand created with the response: response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 05:24 PM</span>
+<div class="msg-content">
+*createcommand createcommand|response</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">21-Dec-16 05:24 PM</span>
+<div class="msg-content">
+Error! createcommand Already Exists</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 06:56 AM</span>
+<div class="msg-content">
+!dice roll d20</div>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">01-Jan-17 06:56 AM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 15<br />Total: 15</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 06:56 AM</span>
+<div class="msg-content">
+*dice roll 10d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">01-Jan-17 06:56 AM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 13<br />2: 18<br />3: 5<br />4: 16<br />5: 3<br />6: 4<br />7: 7<br />8: 8<br />9: 18<br />10: 15<br />Total: 107</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 06:57 AM</span>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 07:00 AM</span>
+<div class="msg-content">
+*dice roll d20</div>
+<div class="msg-content">
+*dice roll d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">01-Jan-17 07:02 AM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 18<br />Total: 18</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">01-Jan-17 07:02 AM</span>
+<div class="msg-content">
+pls stop spamming or im gonna report</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 07:02 AM</span>
+<div class="msg-content">
+<span class="mention" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">@&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span> banned</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">01-Jan-17 07:02 AM</span>
+<div class="msg-content">
+oops mt</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:20 PM</span>
+<div class="msg-content">
+*testt</div>
+<div class="msg-content">
+*test</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:20 PM</span>
+<div class="msg-content">
+test</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:20 PM</span>
+<div class="msg-content">
+*test test</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:20 PM</span>
+<div class="msg-content">
+test</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:21 PM</span>
+<div class="msg-content">
+*fuckbitches get money</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:21 PM</span>
+<div class="msg-content">
+fuckbitches</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:21 PM</span>
+<div class="msg-content">
+*dfhghjfhgfhjgfhjgfhgjfhgfjhgfhjgfhjgfhjgfhjgfhjgfhjgfjgfjhfhjgfhjg</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:22 PM</span>
+<div class="msg-content">
+dfhghjfhgfhjgfhjgfhgjfhgfjhgfhjgfhjgfhjgfhjgfhjgfhjgfjgfjhfhjgfhjg</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:23 PM</span>
+<div class="msg-content">
+*createcommand maga|<a href="http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg">http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:23 PM</span>
+<div class="msg-content">
+Success! maga created with the response: <a href="http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg">http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:23 PM</span>
+<div class="msg-content">
+*maga</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:23 PM</span>
+<div class="msg-content">
+<a href="http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg">http://az616578.vo.msecnd.net/files/2016/07/23/6360489455192162291563850737_Trump.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:23 PM</span>
+<div class="msg-content">
+*test</div>
+<div class="msg-content">
+*createcommand trapcard|<a href="https://i.imgur.com/XHBa71T.jpg">https://i.imgur.com/XHBa71T.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:24 PM</span>
+<div class="msg-content">
+Success! trapcard created with the response: <a href="https://i.imgur.com/XHBa71T.jpg">https://i.imgur.com/XHBa71T.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">01-Jan-17 08:24 PM</span>
+<div class="msg-content">
+*trapcard</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BowserToo#1576">BowserToo</span>
+<span class="msg-date">01-Jan-17 08:24 PM</span>
+<div class="msg-content">
+<a href="https://i.imgur.com/XHBa71T.jpg">https://i.imgur.com/XHBa71T.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">02-Jan-17 02:53 PM</span>
+<div class="msg-content">
+<img class="emoji" title=":Gyazo:" src="https://cdn.discordapp.com/emojis/263061175619682314.png" /></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">20-Jan-17 01:32 PM</span>
+<div class="msg-content">
+*dice roll d10</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">20-Jan-17 01:32 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 8<br />Total: 8</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">25-Jan-17 06:18 PM</span>
+<div class="msg-content">
+*dice roll 6d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">25-Jan-17 06:18 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 12<br />2: 15<br />3: 12<br />4: 20<br />5: 20<br />6: 17<br />Total: 96</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">17-Feb-17 03:51 AM</span>
+<div class="msg-content">
+*dice roll 3d6</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">02-Apr-17 11:27 PM</span>
+<div class="msg-content">
+*dice roll 1d100</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">03-Apr-17 01:14 PM</span>
+<div class="msg-content">
+*dice roll 3d6</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DiceBot#2449">DiceBot</span>
+<span class="msg-date">03-Apr-17 01:14 PM</span>
+<div class="msg-content">
+<span class="mention" title="Techdude154#1209">@Techdude154</span>, <br />1: 3<br />2: 1<br />3: 2<br />Total: 6</div>
+</div>
+</div>
+</div>
+</body>
+</html>

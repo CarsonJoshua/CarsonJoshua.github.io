@@ -1,0 +1,2380 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GoatNest - video</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/254499779613032448/a6f8f85db25377aa35af7277441cd653.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">GoatNest</div>
+<div class="channel-name">video</div>
+<div class="misc">254 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">04-Dec-16 03:59 AM</span>
+<div class="msg-content">
+<span class="mention" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">@&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">04-Dec-16 03:59 AM</span>
+<div class="msg-content">
+no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">04-Dec-16 03:59 AM</span>
+<div class="msg-content">
+just an offer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">04-Dec-16 03:59 AM</span>
+<div class="msg-content">
+how daor ruo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">04-Dec-16 04:00 AM</span>
+<div class="msg-content">
+yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">04-Dec-16 04:00 AM</span>
+<div class="msg-content">
+whoat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">04-Dec-16 05:11 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=_oTXNMYPGOg&amp;feature=youtu.be">https://www.youtube.com/watch?v=_oTXNMYPGOg&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=3O5XCgEyFvU">https://www.youtube.com/watch?v=3O5XCgEyFvU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">04-Dec-16 09:21 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=dW1BIid8Osg">https://www.youtube.com/watch?v=dW1BIid8Osg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/403a4344fca8ec541d7d9e5cf139bd82.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord Jewcifer#2411">Lord Jewcifer</span>
+<span class="msg-date">04-Dec-16 11:31 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=9AMYVgtmkoM">https://www.youtube.com/watch?v=9AMYVgtmkoM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">05-Dec-16 12:07 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=y8RoUgSE7so&amp;index=29">https://www.youtube.com/watch?v=y8RoUgSE7so&amp;index=29</a></div>
+<div class="msg-content">
+<span class="mention" title="Jew Jitsu#6835">@Jew Jitsu</span> IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">05-Dec-16 07:29 PM</span>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span> <span class="mention" title="Techdude154#1209">@Techdude154</span> for future video posts</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">05-Dec-16 08:13 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=tI0o4WwpXTY">https://www.youtube.com/watch?v=tI0o4WwpXTY</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=K7yxiDzbCZM">https://www.youtube.com/watch?v=K7yxiDzbCZM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">06-Dec-16 04:54 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=1vQ52NQ37GM&amp;t=0s">https://www.youtube.com/watch?v=1vQ52NQ37GM&amp;t=0s</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=UCI8OztLF8o&amp;feature=youtu.be">https://www.youtube.com/watch?v=UCI8OztLF8o&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">06-Dec-16 07:29 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=cU9l99fUP4Y">https://www.youtube.com/watch?v=cU9l99fUP4Y</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Dec-16 09:09 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=3Og6UVmRcIQ">https://www.youtube.com/watch?v=3Og6UVmRcIQ</a></div>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">07-Dec-16 07:43 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=mtTAhXuiRTc">https://www.youtube.com/watch?v=mtTAhXuiRTc</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">07-Dec-16 08:29 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=LQCU36pkH7c">https://www.youtube.com/watch?v=LQCU36pkH7c</a> <span class="mention" title="omnicoder32#8232">@omnicoder32</span>  Me_IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">08-Dec-16 04:30 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=IMn1ealC9fQ">https://www.youtube.com/watch?v=IMn1ealC9fQ</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=gtXGc-2Tq3o">https://www.youtube.com/watch?v=gtXGc-2Tq3o</a></div>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=wvbkOIaUSIU">https://www.youtube.com/watch?v=wvbkOIaUSIU</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=wbHY5fGHfa4">https://www.youtube.com/watch?v=wbHY5fGHfa4</a></div>
+<div class="msg-content">
+me irl</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-16 04:45 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=swh4OhWU5Yc">https://www.youtube.com/watch?v=swh4OhWU5Yc</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">08-Dec-16 04:50 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=XhuHIgLWUa0">https://www.youtube.com/watch?v=XhuHIgLWUa0</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">09-Dec-16 01:33 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=csHYzLH0k4I&amp;index=1&amp;list=LLLyl0_96ag1uzIWbEpzGzIw">https://www.youtube.com/watch?v=csHYzLH0k4I&amp;index=1&amp;list=LLLyl0_96ag1uzIWbEpzGzIw</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">09-Dec-16 01:16 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/0CXvgZpzH-I">https://youtu.be/0CXvgZpzH-I</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">09-Dec-16 03:46 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=WLeTxxppXCU&amp;feature=youtu.be">https://www.youtube.com/watch?v=WLeTxxppXCU&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<a href="https://youtu.be/BTHGqEqQeTI">https://youtu.be/BTHGqEqQeTI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">10-Dec-16 02:29 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=TByiofHaEKk">https://www.youtube.com/watch?v=TByiofHaEKk</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">11-Dec-16 04:59 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=6goa1pI_az8">https://www.youtube.com/watch?v=6goa1pI_az8</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">11-Dec-16 04:38 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=PfhtHRdaAnA">https://www.youtube.com/watch?v=PfhtHRdaAnA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">11-Dec-16 05:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=pwaqBEuqfh4">https://www.youtube.com/watch?v=pwaqBEuqfh4</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">11-Dec-16 06:39 PM</span>
+<div class="msg-content">
+<a href="https://www.facebook.com/mccreeee/videos/691535337662041/?pnref=story">https://www.facebook.com/mccreeee/videos/691535337662041/?pnref=story</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">11-Dec-16 07:32 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/Yq0ztaCwb-A">https://youtu.be/Yq0ztaCwb-A</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">12-Dec-16 09:16 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=lbwalf8-q0k">https://www.youtube.com/watch?v=lbwalf8-q0k</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">16-Dec-16 04:01 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=9KSGUVcNfZM">https://www.youtube.com/watch?v=9KSGUVcNfZM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">16-Dec-16 05:11 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/z7HMZ4iLUYg">https://youtu.be/z7HMZ4iLUYg</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">16-Dec-16 10:58 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ZRA7xtlCmyY">https://www.youtube.com/watch?v=ZRA7xtlCmyY</a></div>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">17-Dec-16 12:00 AM</span>
+<div class="msg-content">
+<a href="https://youtu.be/CVJOPucMAXY">https://youtu.be/CVJOPucMAXY</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">17-Dec-16 12:42 AM</span>
+<div class="msg-content">
+grab america by the pussy</div>
+<div class="msg-content">
+^ also that counter video ^</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">17-Dec-16 12:37 PM</span>
+<div class="msg-content">
+When Trump says he&#39;s going to drain the swamp, he really means he&#39;s going to fill it with his prefered snake.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">17-Dec-16 09:54 PM</span>
+<div class="msg-content">
+he&#39;s gonna drain america&#39;s swamp a snake again<span class="msg-edited" title="17-Dec-16 09:55 PM">(edited)</span></div>
+<div class="msg-content">
+preferably</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">17-Dec-16 11:48 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=lWKd5xquliU">https://www.youtube.com/watch?v=lWKd5xquliU</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=3TrR6eMvwEU">https://www.youtube.com/watch?v=3TrR6eMvwEU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">18-Dec-16 06:32 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=O3pf7HCbtXo">https://www.youtube.com/watch?v=O3pf7HCbtXo</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">18-Dec-16 06:58 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=mrgjBNvcv44">https://www.youtube.com/watch?v=mrgjBNvcv44</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">19-Dec-16 09:34 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=cbbt-InYlAE&amp;feature=youtu.be">https://www.youtube.com/watch?v=cbbt-InYlAE&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Dec-16 03:52 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=fWDY-p2kFGU">https://www.youtube.com/watch?v=fWDY-p2kFGU</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=RYtLEzqq120">https://www.youtube.com/watch?v=RYtLEzqq120</a><span class="msg-edited" title="20-Dec-16 03:56 AM">(edited)</span></div>
+<div class="msg-content">
+what</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Dec-16 03:37 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=UBgrsC6uHUk">https://www.youtube.com/watch?v=UBgrsC6uHUk</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">20-Dec-16 07:40 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=mNT51DJqzYE&amp;feature=youtu.be">https://www.youtube.com/watch?v=mNT51DJqzYE&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> and <span class="mention" title="ttaM#6782">@ttaM</span>  IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">20-Dec-16 09:36 PM</span>
+<div class="msg-content">
+wtf is that gay ass shit<span class="msg-edited" title="20-Dec-16 09:37 PM">(edited)</span></div>
+<div class="msg-content">
+at least I don&#39;t find youtube videos of animated children dancing</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">20-Dec-16 09:37 PM</span>
+<div class="msg-content">
+hey, I was browsing some good memes on /r/youtubehaiku</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">20-Dec-16 09:37 PM</span>
+<div class="msg-content">
+that was a shit tier meme</div>
+<div class="msg-content">
+like you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">21-Dec-16 11:22 AM</span>
+<div class="msg-content">
+browsing some good memes did you find any?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">21-Dec-16 03:02 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=dMZrdI8PoZA">https://www.youtube.com/watch?v=dMZrdI8PoZA</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=mN7uuAAeiDs">https://www.youtube.com/watch?v=mN7uuAAeiDs</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">22-Dec-16 03:15 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=jAF9ofwUhkM">https://www.youtube.com/watch?v=jAF9ofwUhkM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">22-Dec-16 04:14 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=DN9DW4rrEjY">https://www.youtube.com/watch?v=DN9DW4rrEjY</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=_B13yISVHWI">https://www.youtube.com/watch?v=_B13yISVHWI</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=wgsYH21Gh0Y">https://www.youtube.com/watch?v=wgsYH21Gh0Y</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/e3c512bfcc262570d5cc285d5dcf95c9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Jew Jitsu#6835">Jew Jitsu</span>
+<span class="msg-date">23-Dec-16 07:57 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Tu7UNA567Oo">https://www.youtube.com/watch?v=Tu7UNA567Oo</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">24-Dec-16 12:29 AM</span>
+<div class="msg-content">
+<a href="https://m.youtube.com/watch?v=fcbn-OjsK3U&amp;feature=youtu.be">https://m.youtube.com/watch?v=fcbn-OjsK3U&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">24-Dec-16 03:12 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ymsgxVCy76M">https://www.youtube.com/watch?v=ymsgxVCy76M</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">29-Dec-16 04:29 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=kcSq64vwkHU&amp;feature=youtu.be&amp;t=10">https://www.youtube.com/watch?v=kcSq64vwkHU&amp;feature=youtu.be&amp;t=10</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">30-Dec-16 07:23 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=G5KxZ5Lc_YA">https://www.youtube.com/watch?v=G5KxZ5Lc_YA</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> <span class="mention" title="SeaHacking#8906">@SeaHacking</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">30-Dec-16 08:16 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=r5p0gqCIEa8&amp;feature=youtu.be">https://www.youtube.com/watch?v=r5p0gqCIEa8&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">31-Dec-16 12:12 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=bOaxoN5m3dY">https://www.youtube.com/watch?v=bOaxoN5m3dY</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">04-Jan-17 04:05 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=KdXP4Lbryns">https://www.youtube.com/watch?v=KdXP4Lbryns</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> me irl</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">12-Jan-17 04:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=xuqkQAoDz1w">https://www.youtube.com/watch?v=xuqkQAoDz1w</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">13-Jan-17 04:28 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ISZVHiLW3_M">https://www.youtube.com/watch?v=ISZVHiLW3_M</a></div>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">14-Jan-17 02:30 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=8L86T6o8lZc">https://www.youtube.com/watch?v=8L86T6o8lZc</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">14-Jan-17 01:39 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=JDqHoxVHW_s&amp;feature=youtu.be">https://www.youtube.com/watch?v=JDqHoxVHW_s&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=UDGMFg_LZ8w">https://www.youtube.com/watch?v=UDGMFg_LZ8w</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=EcnO3xaXNtM&amp;feature=youtu.be">https://www.youtube.com/watch?v=EcnO3xaXNtM&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">14-Jan-17 04:51 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=TJGwLqvRHOA">https://www.youtube.com/watch?v=TJGwLqvRHOA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">15-Jan-17 03:25 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=aQJ8bJj1XIs">https://www.youtube.com/watch?v=aQJ8bJj1XIs</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=KXO-NQfFbbw">https://www.youtube.com/watch?v=KXO-NQfFbbw</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-Jan-17 04:09 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=hAAxJ2OEG_0">https://www.youtube.com/watch?v=hAAxJ2OEG_0</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">15-Jan-17 05:45 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=P2JMLXUUMjw">https://www.youtube.com/watch?v=P2JMLXUUMjw</a></div>
+<div class="msg-content">
+<span class="mention" title="Tears of Join#7693">@Tears of Join</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">15-Jan-17 05:46 PM</span>
+<div class="msg-content">
+... You&#39;re looking a little rough arounthedgs...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">15-Jan-17 06:01 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=UWX9_GOadlI">https://www.youtube.com/watch?v=UWX9_GOadlI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">16-Jan-17 02:05 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=v_6NILqzyjw">https://www.youtube.com/watch?v=v_6NILqzyjw</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">17-Jan-17 05:27 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=tXKpfnifvD0">https://www.youtube.com/watch?v=tXKpfnifvD0</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Jan-17 12:11 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/pzB6N-iuHEY">https://youtu.be/pzB6N-iuHEY</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">20-Jan-17 02:14 PM</span>
+<div class="msg-content">
+that voice is actually impressive</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Jan-17 12:57 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=LbDv7imglLI">https://www.youtube.com/watch?v=LbDv7imglLI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">21-Jan-17 05:07 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=W_yK2e5SydE&amp;feature=youtu.be">https://www.youtube.com/watch?v=W_yK2e5SydE&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=1cIAA5nzP4E&amp;feature=youtu.be">https://www.youtube.com/watch?v=1cIAA5nzP4E&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">22-Jan-17 12:24 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=EEyUeCyXl1Q">https://www.youtube.com/watch?v=EEyUeCyXl1Q</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">22-Jan-17 10:20 PM</span>
+<div class="msg-content">
+<a href="https://www.twitch.tv/vgbootcamp">https://www.twitch.tv/vgbootcamp</a> major smash bros melee tournament here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">23-Jan-17 06:40 AM</span>
+<div class="msg-content">
+<a href="https://youtu.be/4K1FMOlzqaM">https://youtu.be/4K1FMOlzqaM</a></div>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span> IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">23-Jan-17 03:18 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=cbKmm_xAEro&amp;feature=youtu.be">https://www.youtube.com/watch?v=cbKmm_xAEro&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">23-Jan-17 06:35 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=AH390Hljetc">https://www.youtube.com/watch?v=AH390Hljetc</a> Tim from tim and eric on alex jones show</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">23-Jan-17 07:04 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=sJLnlG53AgQ">https://www.youtube.com/watch?v=sJLnlG53AgQ</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">23-Jan-17 09:02 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=fUdsmUbs3s0">https://www.youtube.com/watch?v=fUdsmUbs3s0</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">25-Jan-17 08:10 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=NG-LATBZNBs">https://www.youtube.com/watch?v=NG-LATBZNBs</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">25-Jan-17 04:44 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ELD2AwFN9Nc">https://www.youtube.com/watch?v=ELD2AwFN9Nc</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">27-Jan-17 10:52 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=u_yOUBaVtn8">https://www.youtube.com/watch?v=u_yOUBaVtn8</a></div>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span> IRL</div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=7Ynru7pEUS4/">https://www.youtube.com/watch?v=7Ynru7pEUS4/</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">29-Jan-17 08:50 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=0r0ZFXr0dSc">https://www.youtube.com/watch?v=0r0ZFXr0dSc</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">29-Jan-17 10:16 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=1cIAA5nzP4E">https://www.youtube.com/watch?v=1cIAA5nzP4E</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">31-Jan-17 12:13 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=kpLjGesXjJs">https://www.youtube.com/watch?v=kpLjGesXjJs</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">31-Jan-17 01:09 PM</span>
+<div class="msg-content">
+<a href="https://www.facebook.com/AboveAverage/videos/1439397802751143/">https://www.facebook.com/AboveAverage/videos/1439397802751143/</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">31-Jan-17 04:08 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=s5xst39v8wE&amp;feature=youtu.be">https://www.youtube.com/watch?v=s5xst39v8wE&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">01-Feb-17 12:53 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ubN8qYjXZ2s&amp;t=0s">https://www.youtube.com/watch?v=ubN8qYjXZ2s&amp;t=0s</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">01-Feb-17 01:10 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=tK8S60U471g">https://www.youtube.com/watch?v=tK8S60U471g</a></div>
+<div class="msg-content">
+Steven is my spirit animal</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">01-Feb-17 10:52 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=iGbdZUCl9CA">https://www.youtube.com/watch?v=iGbdZUCl9CA</a> it&#39;s the next Swiss army man-level movie</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">02-Feb-17 03:33 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=RJYPADj2Vg0">https://www.youtube.com/watch?v=RJYPADj2Vg0</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">02-Feb-17 09:55 PM</span>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> <a href="https://www.youtube.com/watch?v=lfzbCg3sdco">https://www.youtube.com/watch?v=lfzbCg3sdco</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">03-Feb-17 06:11 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=SZxDqLH74AI">https://www.youtube.com/watch?v=SZxDqLH74AI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">03-Feb-17 06:45 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=eS8KIrDztS8">https://www.youtube.com/watch?v=eS8KIrDztS8</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">04-Feb-17 04:47 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=N2HBCuD7aPA">https://www.youtube.com/watch?v=N2HBCuD7aPA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">06-Feb-17 06:46 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=VSrv_n4tw7w">https://www.youtube.com/watch?v=VSrv_n4tw7w</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">06-Feb-17 07:21 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Kcm8m5WbZgk">https://www.youtube.com/watch?v=Kcm8m5WbZgk</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">07-Feb-17 03:29 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=3rd_Oka7euk">https://www.youtube.com/watch?v=3rd_Oka7euk</a></div>
+<div class="msg-content">
+<span class="mention" title="Tears of Join#7693">@Tears of Join</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">07-Feb-17 05:22 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=b1kaDyH5M78">https://www.youtube.com/watch?v=b1kaDyH5M78</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">08-Feb-17 04:09 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=PC27-J11i7w">https://www.youtube.com/watch?v=PC27-J11i7w</a></div>
+<div class="msg-content">
+<span class="mention" title="Tears of Join#7693">@Tears of Join</span> <span class="mention" title="MrMeseeks100#5600">@MrMeseeks100</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">09-Feb-17 04:49 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=iYcXcCpD0qA">https://www.youtube.com/watch?v=iYcXcCpD0qA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">09-Feb-17 08:14 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=CsgOOdj-9tI&amp;feature=youtu.be">https://www.youtube.com/watch?v=CsgOOdj-9tI&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/257763046053642240/f0208b9d0362d885c3954cc3ce728369.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="KarlGustav#5854">KarlGustav</span>
+<span class="msg-date">09-Feb-17 08:43 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=V_MD8IVp53E">https://www.youtube.com/watch?v=V_MD8IVp53E</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">11-Feb-17 11:18 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=8I1sQlRiJdY&amp;spfreload=10&amp;user=UC7yPuRdd4ZKhJQueiVnjd2A">https://www.youtube.com/watch?v=8I1sQlRiJdY&amp;spfreload=10&amp;user=UC7yPuRdd4ZKhJQueiVnjd2A</a> <span class="mention" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">@&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">11-Feb-17 11:15 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Rj5MSjMiIu0">https://www.youtube.com/watch?v=Rj5MSjMiIu0</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">13-Feb-17 08:31 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=scB7TIONG_w">https://www.youtube.com/watch?v=scB7TIONG_w</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=u0Vv1OqLKAw&amp;list=PLFpi3i8VUDQD_g87O4a4d5vG2eskFPks8">https://www.youtube.com/watch?v=u0Vv1OqLKAw&amp;list=PLFpi3i8VUDQD_g87O4a4d5vG2eskFPks8</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">14-Feb-17 03:49 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=c--etqIJcow">https://www.youtube.com/watch?v=c--etqIJcow</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">14-Feb-17 03:38 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Ar0Qw6YnVik&amp;user=UCCRNUa9EwvRXMYwUmDi3JtA">https://www.youtube.com/watch?v=Ar0Qw6YnVik&amp;user=UCCRNUa9EwvRXMYwUmDi3JtA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">14-Feb-17 10:55 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=lxVwcYKNMu0">https://www.youtube.com/watch?v=lxVwcYKNMu0</a></div>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">14-Feb-17 10:58 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=EQY38uOH5Ko">https://www.youtube.com/watch?v=EQY38uOH5Ko</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> <span class="mention" title="ttaM#6782">@ttaM</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">15-Feb-17 01:15 PM</span>
+<div class="msg-content">
+everyone send your funniest videos today</div>
+<div class="msg-content">
+I need one</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">15-Feb-17 09:21 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Osd16ILchHs">https://www.youtube.com/watch?v=Osd16ILchHs</a></div>
+<div class="msg-content">
+DND IRL</div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">15-Feb-17 11:55 PM</span>
+<div class="msg-content">
+OR NOT</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">16-Feb-17 04:13 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=hjEvySBmBMs">https://www.youtube.com/watch?v=hjEvySBmBMs</a></div>
+<div class="msg-content">
+<span class="mention" title="ttaM#6782">@ttaM</span>  Phili_IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">16-Feb-17 05:04 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=VPmldO4BlSA">https://www.youtube.com/watch?v=VPmldO4BlSA</a> Richard IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">17-Feb-17 01:12 PM</span>
+<div class="msg-content">
+<a href="https://vimeo.com/203689226">https://vimeo.com/203689226</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">17-Feb-17 10:01 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=boFBdqMFUbI">https://www.youtube.com/watch?v=boFBdqMFUbI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">19-Feb-17 10:48 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=b2XuYND9heI&amp;ab_channel=ChristianPompa">https://www.youtube.com/watch?v=b2XuYND9heI&amp;ab_channel=ChristianPompa</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">21-Feb-17 09:34 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=7FVr0ZYiH-8">https://www.youtube.com/watch?v=7FVr0ZYiH-8</a> Goat Nest Anyone?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">23-Feb-17 04:45 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=f9Vjhy6u4Lo">https://www.youtube.com/watch?v=f9Vjhy6u4Lo</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">23-Feb-17 09:18 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=3pc9XLZ2234">https://www.youtube.com/watch?v=3pc9XLZ2234</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=NPmMwMnMzSI">https://www.youtube.com/watch?v=NPmMwMnMzSI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">23-Feb-17 11:59 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=9TkmpL4rTEc">https://www.youtube.com/watch?v=9TkmpL4rTEc</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">24-Feb-17 12:05 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=BwCY_Bwx3-g">https://www.youtube.com/watch?v=BwCY_Bwx3-g</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">24-Feb-17 09:12 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ZXKAleVdp6s&amp;feature=youtu.be">https://www.youtube.com/watch?v=ZXKAleVdp6s&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/233384774381600769/a8a7c84198a25f0bd5b3b1db5d64efb5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rjm27trekkie#7593">rjm27trekkie</span>
+<span class="msg-date">26-Feb-17 01:40 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=pL9q2lOZ1Fw">https://www.youtube.com/watch?v=pL9q2lOZ1Fw</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">01-Mar-17 04:08 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=M8FKl7f6Als">https://www.youtube.com/watch?v=M8FKl7f6Als</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">02-Mar-17 02:59 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=DWqhXWRaMmU">https://www.youtube.com/watch?v=DWqhXWRaMmU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">02-Mar-17 03:42 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=dYMiSbf2xn8">https://www.youtube.com/watch?v=dYMiSbf2xn8</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">02-Mar-17 04:08 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=2iORsSahgFU">https://www.youtube.com/watch?v=2iORsSahgFU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">03-Mar-17 11:20 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=NWJlVN1DlrI">https://www.youtube.com/watch?v=NWJlVN1DlrI</a></div>
+<div class="msg-content">
+<span class="mention" title="Tears of Join#7693">@Tears of Join</span> <span class="mention" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">@&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span> <span class="mention" title="MrMeseeks100#5600">@MrMeseeks100</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">03-Mar-17 02:52 PM</span>
+<div class="msg-content">
+i seent it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">05-Mar-17 01:13 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=1NSCLo8MEVI">https://www.youtube.com/watch?v=1NSCLo8MEVI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">06-Mar-17 06:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ZJxXXvnkmxA">https://www.youtube.com/watch?v=ZJxXXvnkmxA</a> 17 minutes ago</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">06-Mar-17 06:52 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Y7zBzZs4d8U&amp;feature=youtu.be">https://www.youtube.com/watch?v=Y7zBzZs4d8U&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">11-Mar-17 03:29 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=E16lwDniNiE">https://www.youtube.com/watch?v=E16lwDniNiE</a> say goodbye to your sleep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">12-Mar-17 01:21 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=W6uGP8hHwrQ">https://www.youtube.com/watch?v=W6uGP8hHwrQ</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">12-Mar-17 08:05 PM</span>
+<div class="msg-content">
+l</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">12-Mar-17 09:18 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=RgJZ-UeqxB0">https://www.youtube.com/watch?v=RgJZ-UeqxB0</a></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span> IRL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">15-Mar-17 05:11 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=sPdhdIIG4LI">https://www.youtube.com/watch?v=sPdhdIIG4LI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">15-Mar-17 09:10 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=OlW2XoSaPwM">https://www.youtube.com/watch?v=OlW2XoSaPwM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">16-Mar-17 12:11 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=SFmM5CWnmtE">https://www.youtube.com/watch?v=SFmM5CWnmtE</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">17-Mar-17 08:28 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=beDN-q3UcbY&amp;feature=youtu.be">https://www.youtube.com/watch?v=beDN-q3UcbY&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/233384774381600769/a8a7c84198a25f0bd5b3b1db5d64efb5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rjm27trekkie#7593">rjm27trekkie</span>
+<span class="msg-date">18-Mar-17 04:23 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=W3ifbSHZMmg">https://www.youtube.com/watch?v=W3ifbSHZMmg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">19-Mar-17 12:58 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Gzxa82wCikU">https://www.youtube.com/watch?v=Gzxa82wCikU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">19-Mar-17 01:09 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=0WxYvvcb0BE">https://www.youtube.com/watch?v=0WxYvvcb0BE</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">19-Mar-17 09:13 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=rA2JuxRdlmA">https://www.youtube.com/watch?v=rA2JuxRdlmA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Mar-17 03:31 AM</span>
+<div class="msg-content">
+<a href="https://youtu.be/WhDqqQSCJH4">https://youtu.be/WhDqqQSCJH4</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Mar-17 01:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=ywZt6igT5Dw">https://www.youtube.com/watch?v=ywZt6igT5Dw</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">20-Mar-17 09:12 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=qYzXoNXgu9k">https://www.youtube.com/watch?v=qYzXoNXgu9k</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">23-Mar-17 07:12 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/JZbP3MR3T00">https://youtu.be/JZbP3MR3T00</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">23-Mar-17 11:03 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=NvFX-G3PJwY&amp;index=146&amp;list=PLGesdF23YXtELgP">https://www.youtube.com/watch?v=NvFX-G3PJwY&amp;index=146&amp;list=PLGesdF23YXtELgP</a><i>2</i>1KrVRCO5qdRUXLG</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">24-Mar-17 01:55 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=9-M5xg2Uyxw">https://www.youtube.com/watch?v=9-M5xg2Uyxw</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">26-Mar-17 02:42 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=tihXtEzt6qU">https://www.youtube.com/watch?v=tihXtEzt6qU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">27-Mar-17 12:17 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=VQNcIfEURrI&amp;feature=youtu.be&amp;user=UC">https://www.youtube.com/watch?v=VQNcIfEURrI&amp;feature=youtu.be&amp;user=UC</a><i>lOhO</i>NKdGJ7quH4jTXObA</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">27-Mar-17 08:30 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=DKplyPPtAJ0">https://www.youtube.com/watch?v=DKplyPPtAJ0</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">28-Mar-17 12:43 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=iS_5S8sI-us">https://www.youtube.com/watch?v=iS_5S8sI-us</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=88SDcruHWTI">https://www.youtube.com/watch?v=88SDcruHWTI</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=NeDJRiApaSk">https://www.youtube.com/watch?v=NeDJRiApaSk</a></div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=OySWpUFnaZA">https://www.youtube.com/watch?v=OySWpUFnaZA</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">28-Mar-17 01:01 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=qYNeWBFMCcg">https://www.youtube.com/watch?v=qYNeWBFMCcg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">28-Mar-17 09:06 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=n86h5Z_XXvU">https://www.youtube.com/watch?v=n86h5Z_XXvU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">29-Mar-17 03:50 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=N33SwU0fqRA">https://www.youtube.com/watch?v=N33SwU0fqRA</a></div>
+<div class="msg-content">
+<span class="mention" title="Tears of Join#7693">@Tears of Join</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">31-Mar-17 02:03 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=n4jjizFSuoQ">https://www.youtube.com/watch?v=n4jjizFSuoQ</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">31-Mar-17 09:48 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=fnptKjCRgjs">https://www.youtube.com/watch?v=fnptKjCRgjs</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">03-Apr-17 01:30 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=6muRdE5GkAk&amp;feature=youtu.be">https://www.youtube.com/watch?v=6muRdE5GkAk&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">03-Apr-17 01:43 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Cu5O47dStb8">https://www.youtube.com/watch?v=Cu5O47dStb8</a></div>
+<div class="msg-content">
+<span class="mention" title="Tears of Join#7693">@Tears of Join</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">03-Apr-17 05:45 PM</span>
+<div class="msg-content">
+<a href="https://clips.twitch.tv/AdventurousLightRedpandaShazBotstix">https://clips.twitch.tv/AdventurousLightRedpandaShazBotstix</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">04-Apr-17 12:16 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=I0p94UtBMgs&amp;r=">https://www.youtube.com/watch?v=I0p94UtBMgs&amp;r=</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">06-Apr-17 10:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=dQfvSLxTsEs">https://www.youtube.com/watch?v=dQfvSLxTsEs</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/c7b2639b01a7a7fe4551383e6dfa3c0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Tears of Join#7693">Tears of Join</span>
+<span class="msg-date">10-Apr-17 05:33 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=WfGMYdalClU">https://www.youtube.com/watch?v=WfGMYdalClU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">10-Apr-17 06:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=OEnhVQeKGc8&amp;feature=youtu.be">https://www.youtube.com/watch?v=OEnhVQeKGc8&amp;feature=youtu.be</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">10-Apr-17 09:07 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=kMtFaZSR-s0">https://www.youtube.com/watch?v=kMtFaZSR-s0</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">13-Apr-17 08:17 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=1fVwXs6-38g">https://www.youtube.com/watch?v=1fVwXs6-38g</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/257763046053642240/f0208b9d0362d885c3954cc3ce728369.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="KarlGustav#5854">KarlGustav</span>
+<span class="msg-date">13-Apr-17 08:23 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=pi_AQen5kI8">https://www.youtube.com/watch?v=pi_AQen5kI8</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">15-Apr-17 02:08 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=nHrs9n2N_dI">https://www.youtube.com/watch?v=nHrs9n2N_dI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">15-Apr-17 02:19 AM</span>
+<div class="msg-content">
+Has science gone too far</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/fb8725398a4b506fc1c11d15ff9379ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">16-Apr-17 03:26 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=NpfrSjLP8wc&amp;feature=youtu.be">https://www.youtube.com/watch?v=NpfrSjLP8wc&amp;feature=youtu.be</a></div>
+<div class="msg-content">
+<a href="https://youtu.be/CTEZLU2mYSo">https://youtu.be/CTEZLU2mYSo</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">17-Apr-17 08:11 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=7u3uhKxNPNg">https://www.youtube.com/watch?v=7u3uhKxNPNg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/bf055adb6fd91504b3c41f99cff6b9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Apr-17 11:44 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=2PFT1qCUEyk&amp;t=606s">https://www.youtube.com/watch?v=2PFT1qCUEyk&amp;t=606s</a></div>
+<div class="msg-content">
+<span class="mention" title="Invernadero#4257">@Invernadero</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">21-Apr-17 02:31 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=vZ-Md56jK9Y">https://www.youtube.com/watch?v=vZ-Md56jK9Y</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">24-Apr-17 02:28 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=uYjl15ggeJo">https://www.youtube.com/watch?v=uYjl15ggeJo</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">24-Apr-17 08:56 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=qvCGqhShNnk">https://www.youtube.com/watch?v=qvCGqhShNnk</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">26-Apr-17 11:09 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=cRhAoHo-kHM">https://www.youtube.com/watch?v=cRhAoHo-kHM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">09-May-17 03:58 PM</span>
+<div class="msg-content">
+<a href="https://clips.twitch.tv/TolerantOnerousCurryDxCat">https://clips.twitch.tv/TolerantOnerousCurryDxCat</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87282368292855808/dae8303530fccbe1f0fd8686f5ab83b9.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Invernadero#4257">Invernadero</span>
+<span class="msg-date">09-May-17 08:36 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=GGrtDAx5ywg">https://www.youtube.com/watch?v=GGrtDAx5ywg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/9a64a5d5a83ff9f0035d3d5168075df4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrMeseeks100#5600">MrMeseeks100</span>
+<span class="msg-date">10-May-17 02:28 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=dxiCnhH6TcM">https://www.youtube.com/watch?v=dxiCnhH6TcM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">18-Sep-17 12:14 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=PJKFdPSYLMk">https://www.youtube.com/watch?v=PJKFdPSYLMk</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">16-Oct-17 01:25 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=t8VwE92HqME">https://www.youtube.com/watch?v=t8VwE92HqME</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">18-Oct-17 02:58 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=0TBht1kVYwI">https://www.youtube.com/watch?v=0TBht1kVYwI</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">12-Nov-17 04:19 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=kMvpNekucC4">https://www.youtube.com/watch?v=kMvpNekucC4</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/da62caec8c8f1083e934a6950f99743b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-Apr-18 03:54 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=OYcv406J_J4">https://www.youtube.com/watch?v=OYcv406J_J4</a></div>
+</div>
+</div>
+</div>
+</body>
+</html>
