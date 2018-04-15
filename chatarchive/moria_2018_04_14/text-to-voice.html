@@ -1,0 +1,564 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Moria, Bruh - text-to-voice</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/347645489652563968/2537f8363b01198fb47c1ed9339346c6.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Moria, Bruh</div>
+<div class="channel-name">text-to-voice</div>
+<div class="misc">48 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 05:21 PM</span>
+<div class="msg-content">
+good idea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 05:21 PM</span>
+<div class="msg-content">
+&#128077;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 05:21 PM</span>
+<div class="msg-content">
+no clue</div>
+<div class="msg-content">
+plantronic</div>
+<div class="msg-content">
+look.</div>
+<div class="msg-content">
+lemme get my items back lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:27 PM</span>
+<div class="msg-content">
+nay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 06:27 PM</span>
+<div class="msg-content">
+did i scare you?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:27 PM</span>
+<div class="msg-content">
+no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 06:27 PM</span>
+<div class="msg-content">
+y u leev?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:27 PM</span>
+<div class="msg-content">
+my volume was quite high though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 06:28 PM</span>
+<div class="msg-content">
+<span class="mention" title="hplan#225">@hplan</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:28 PM</span>
+<div class="msg-content">
+wat?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 06:28 PM</span>
+<div class="msg-content">
+y did you leave?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:30 PM</span>
+<div class="msg-content">
+omg</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:30 PM</span>
+<div class="msg-content">
+wa</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 06:30 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:31 PM</span>
+<div class="msg-content">
+idk</div>
+<div class="msg-content">
+text to voice my ass though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 06:32 PM</span>
+<div class="msg-content">
+for talking to voice chat without a mic</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:36 PM</span>
+<div class="msg-content">
+like</div>
+<div class="msg-content">
+every headset has a mic nowadays</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:36 PM</span>
+<div class="msg-content">
+yeah, but mine&#39;s broke</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:36 PM</span>
+<div class="msg-content">
+didnt you like</div>
+<div class="msg-content">
+just get it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:36 PM</span>
+<div class="msg-content">
+yeah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:36 PM</span>
+<div class="msg-content">
+how, the fuck</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:36 PM</span>
+<div class="msg-content">
+it was $40 too</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">25-Aug-17 06:37 PM</span>
+<div class="msg-content">
+&#128528;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:38 PM</span>
+<div class="msg-content">
+Like</div>
+<div class="msg-content">
+I cant really say much</div>
+<div class="msg-content">
+but how tf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:39 PM</span>
+<div class="msg-content">
+idk</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:39 PM</span>
+<div class="msg-content">
+<i>I may splash cash on my equipment now but how the fuck did you break that so quick</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:39 PM</span>
+<div class="msg-content">
+i didn;t break it</div>
+<div class="msg-content">
+it broke</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">25-Aug-17 06:39 PM</span>
+<div class="msg-content">
+How does it just break</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">25-Aug-17 06:39 PM</span>
+<div class="msg-content">
+i have no idea</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/230128205401423872/f180183aa902b3ed0f4f6bfdb5cac681.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dr. Pringles#6558">Dr. Pringles</span>
+<span class="msg-date">26-Aug-17 11:18 AM</span>
+<div class="msg-content">
+&#175;\<i>(ツ)</i>/&#175;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">26-Aug-17 11:36 AM</span>
+<div class="msg-content">
+(╯&#176;□&#176;）╯︵ ┻━┻</div>
+<div class="msg-content">
+┬─┬﻿ ノ( ゜-゜ノ)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/230128205401423872/f180183aa902b3ed0f4f6bfdb5cac681.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dr. Pringles#6558">Dr. Pringles</span>
+<span class="msg-date">26-Aug-17 11:37 AM</span>
+<div class="msg-content">
+XD</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136336076934610944/235fad1c08ead83c5160b988efadcd83.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="hplan#225">hplan</span>
+<span class="msg-date">28-Sep-17 04:51 AM</span>
+<div class="msg-content">
+͡&#175;\<i>(&#176;</i>o)_/&#175;</div>
+<div class="msg-content">
+whaaat the feck is that</div>
+<div class="msg-content">
+&#175;\<i>(ᗒᗩᗕ)</i>/&#175;</div>
+<div class="msg-content">
+┐(￣ー￣)┌</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/224248228315529216/28d33bc8b9b9ac833652962e64133e78.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Devin#6096">Devin</span>
+<span class="msg-date">28-Sep-17 01:36 PM</span>
+<div class="msg-content">
+Vagina vaginaVagina vaginaVagina vaginaVagina vaginaVagina vaginaVagina vagina</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/96716994136514560/5393bc18ab9d7ddf19b6fe54575d93a7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="dragongod100#5291">dragongod100</span>
+<span class="msg-date">28-Sep-17 01:54 PM</span>
+<div class="msg-content">
+SGSg1</div>
+</div>
+</div>
+</div>
+</body>
+</html>
