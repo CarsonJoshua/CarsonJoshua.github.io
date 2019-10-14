@@ -1,0 +1,247 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Asteroids & Androids - class-design</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/445979910033637376/f5985d0092d8366243d1874a40bf2eb7.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Asteroids & Androids</div>
+<div class="channel-name">class-design</div>
+<div class="misc">11 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:31 PM</span>
+<div class="msg-content">
+<span class="mention" title="Dungeon Lord Jewcifer#2411">@Dungeon Lord Jewcifer</span> how about making a robotics expert off of druid who has a drone (animal companion), gets mechs (wild shape) and does lots of robotics and defective based spells</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/5305a7b35d5d09a78b18979fb8ad5abb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">15-May-18 03:44 PM</span>
+<div class="msg-content">
+Scrapper barbarian-esque preferring brute strength over tech or politics</div>
+<div class="msg-content">
+Wears metal scraps as trophies/armor</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:45 PM</span>
+<div class="msg-content">
+Gunslinger, see name</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:46 PM</span>
+<div class="msg-content">
+Mechanic ---&gt; Cleric</div>
+<div class="msg-content">
+Scrapper ---&gt; Barbarian</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:46 PM</span>
+<div class="msg-content">
+Augment = warlock<br />Engineer = Cleric<br />Mechanist = Druid<br />Programmer = Wizard<br />Operator? = Sorcerer<br />Smuggler = Bard<br />Bounty Hunter = Rogue<br />Gun Slinger = Ranger (ish)/Ranged Fighter<br />Scrapper = Barbarian<br />Officer = Paladin<span class="msg-edited" title="15-May-18 04:00 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:52 PM</span>
+<div class="msg-content">
+Commmunication Tech</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 10:38 PM</span>
+<div class="msg-content">
+<a href="https://docs.google.com/document/d/1HWTqfL4rhnRb1cKT41oNL-xnccLCl9YFBWmY-uXuTZ0/edit?usp=sharing">https://docs.google.com/document/d/1HWTqfL4rhnRb1cKT41oNL-xnccLCl9YFBWmY-uXuTZ0/edit?usp=sharing</a></div>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">16-May-18 02:47 AM</span>
+<div class="msg-content">
+programmer uses ship systems to execute programs (examples: scans, utilize turrets, teleporter bomb) to affect his environment.  He gets item creation feats as class features, and prepares programs each day.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

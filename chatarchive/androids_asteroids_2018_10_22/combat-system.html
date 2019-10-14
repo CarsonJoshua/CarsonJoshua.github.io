@@ -1,0 +1,417 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Asteroids & Androids - combat-system</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/445979910033637376/f5985d0092d8366243d1874a40bf2eb7.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Asteroids & Androids</div>
+<div class="channel-name">combat-system</div>
+<div class="misc">33 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:00 PM</span>
+<div class="msg-content">
+We need to work out damage types before figuring out damage resitances</div>
+<div class="msg-content">
+bludgeoning, piercing, and slashing could be replaced with ballistic weapons, energy weapons, and <u></u>_</div>
+<div class="msg-content">
+need a third type of sci-fi weapons</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:01 PM</span>
+<div class="msg-content">
+well is everything going to be at ranged?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 11:02 PM</span>
+<div class="msg-content">
+no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:02 PM</span>
+<div class="msg-content">
+not necessarily, but I don&#39;t want to have the melee damage types</div>
+<div class="msg-content">
+they aren&#39;t extensive enough</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:02 PM</span>
+<div class="msg-content">
+you could have guys going around with technohammers, shockbolts for crossbows, and energy swords</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:02 PM</span>
+<div class="msg-content">
+it could be ballistic, energy weapons, and slow damage</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:02 PM</span>
+<div class="msg-content">
+theres no reason to reskin them when they make sense</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:03 PM</span>
+<div class="msg-content">
+fine</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:03 PM</span>
+<div class="msg-content">
+we can do it later if you want</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:03 PM</span>
+<div class="msg-content">
+does a laser beam do bludgeoning, slashing, or piercing?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:03 PM</span>
+<div class="msg-content">
+piercing</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:03 PM</span>
+<div class="msg-content">
+and bullets?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:03 PM</span>
+<div class="msg-content">
+also piercing</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:04 PM</span>
+<div class="msg-content">
+tesla rifle?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:04 PM</span>
+<div class="msg-content">
+could use guns or lazer guns instead of bows and crossbow</div>
+<div class="msg-content">
+tesla rifle could be used like a want of some type</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:04 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 11:04 PM</span>
+<div class="msg-content">
+wand*</div>
+<div class="msg-content">
+idk how to handle tesla rifles</div>
+<div class="msg-content">
+could just be a really powerful rifle with bonus piercing damage and electrical damage</div>
+<div class="msg-content">
+or gets around spell resistance</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 11:29 PM</span>
+<div class="msg-content">
+damage types: kinetic, energy, explosive</div>
+<div class="msg-content">
+replaces bludgeoning , piercing, slashing</div>
+<div class="msg-content">
+material types plasma, electrical, <s>laser</s>, magnetic, maybe a couple of metals to replace the cold steel, mithril, adamantine, silver, etc<span class="msg-edited" title="16-May-18 12:12 AM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">16-May-18 12:02 AM</span>
+<div class="msg-content">
+still need to replace energy damage, since energy weapons are a damage type.  What types of damage do the programs do?</div>
+<div class="msg-content">
+replacing: acid, cold, electricity, fire, sonic</div>
+<div class="msg-content">
+energy types replaced with radiation:</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">16-May-18 12:18 AM</span>
+<div class="msg-content">
+Radiations: Gamma, Micro, X-ray, UV, visible respectively</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">16-May-18 12:21 AM</span>
+<div class="msg-content">
+elemental types acid, cold, vacuum, radiation, sonic<span class="msg-edited" title="16-May-18 12:21 AM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">16-May-18 02:50 AM</span>
+<div class="msg-content">
+vacuums do environmental damage to shield systems, that is your RIG  lets you survive in a vacuum until your shield points are depleted</div>
+</div>
+</div>
+</div>
+</body>
+</html>

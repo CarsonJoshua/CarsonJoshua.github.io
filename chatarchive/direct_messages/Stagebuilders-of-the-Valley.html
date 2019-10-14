@@ -1,0 +1,853 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Direct Messages - </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/embed/avatars/0.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Direct Messages</div>
+<div class="channel-name"></div>
+<div class="misc">86 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 09:16 PM</span>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Changed the channel name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 09:21 PM</span>
+<div class="msg-content">
+Howdy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 09:22 PM</span>
+<div class="msg-content">
+Got a lot of awesome work being done on this campaign setting I plan to run:  The Plinth of the Heavens.  Just wanted to take inventory on what everyone&#39;s been designing.<br /><span class="mention" title="Dxzain#8016">@Dxzain</span> Dwarves<br /><span class="mention" title="Leech Boy#8207">@Leech Boy</span> Humans<br /><span class="mention" title="McHennessey#282">@McHennessey</span> Gnomes<br /><span class="mention" title="MrAverageJoe#9851">@MrAverageJoe</span> Hobbits<br />And a couple I&#39;m not too sure of.<br /><span class="mention" title="rayn man#7693">@rayn man</span> Are you still interested in doing Yuan-Ti?  No problem if you want to drop it, or we could even set you up with a smaller part of the world to build, if you like.  Otherwise, we should talk some more about it.<br /><span class="mention" title="Hades7899#6264">@Hades7899</span> I&#39;ve heard rumors about you wanting to do the orcs.  We talked a bit about the small bloodline of orcs your character will come from, but did you want to work on the rest of the orc stuff too?</div>
+<div class="msg-content">
+I was thinking of making the valley bigger, to help justify the diversity.  Right know, its about three times the size of Rhode Island.  What do you guys think?  If we enbiggen everything, should we scale up populations as well?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/2003a0fe37cdbb8cdfa2eed03b61c658.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Leech Boy#8207">Leech Boy</span>
+<span class="msg-date">08-Dec-18 09:47 PM</span>
+<div class="msg-content">
+I think making things bigger would help</div>
+<div class="msg-content">
+What&#39;s the total population?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/9234d7d0d6049c404e70e872c9dc4248.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rayn man#7693">rayn man</span>
+<span class="msg-date">08-Dec-18 09:47 PM</span>
+<div class="msg-content">
+1</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 09:47 PM</span>
+<div class="msg-content">
+I could do the orcs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 09:49 PM</span>
+<div class="msg-content">
+About 125000 between all the kingdoms, plus almost 30000 undead</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/2003a0fe37cdbb8cdfa2eed03b61c658.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Leech Boy#8207">Leech Boy</span>
+<span class="msg-date">08-Dec-18 09:50 PM</span>
+<div class="msg-content">
+And 1 king</div>
+<div class="msg-content">
+Making it bigger seems fine with me. The population could stay the same though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 10:05 PM</span>
+<div class="msg-content">
+How do you all want to do the different races have them be at peace how have some warring races?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">08-Dec-18 10:48 PM</span>
+<div class="msg-content">
+I think having the map be small works well because it makes growth a true challenge with limited space, the conditions require extreme diplomacy or all out war for ultimate survival.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 10:48 PM</span>
+<div class="msg-content">
+That&#39;s true</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">08-Dec-18 10:50 PM</span>
+<div class="msg-content">
+Also “the Dwarven race (after years of self imposed cloistering) has sent emissaries to most major faction inquiring about the creation of a council of the races (this is odd considering the dwarves stance on individuals with no proof of honor)”</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 10:51 PM</span>
+<div class="msg-content">
+What is the name of the dwarf nation?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">08-Dec-18 10:53 PM</span>
+<div class="msg-content">
+These mountains are under the domain of Clan Morgrim</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 11:16 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> I need some names for capital cities</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">08-Dec-18 11:16 PM</span>
+<div class="msg-content">
+Karak White Peaks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 11:16 PM</span>
+<div class="msg-content">
+also other cities</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/2003a0fe37cdbb8cdfa2eed03b61c658.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Leech Boy#8207">Leech Boy</span>
+<span class="msg-date">08-Dec-18 11:18 PM</span>
+<div class="msg-content">
+The human country is named Deiach, it&#39;s capital is Mornington</div>
+<div class="msg-content">
+It&#39;s commercial hub is Griggins</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Dec-18 11:19 PM</span>
+<div class="msg-content">
+Is their a boy wizard too?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/9234d7d0d6049c404e70e872c9dc4248.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rayn man#7693">rayn man</span>
+<span class="msg-date">08-Dec-18 11:22 PM</span>
+<div class="msg-content">
+yes, snandelion</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Dec-18 11:22 PM</span>
+<div class="msg-content">
+<span class="mention" title="rayn man#7693">@rayn man</span> dm me with your reply btw</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/9234d7d0d6049c404e70e872c9dc4248.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rayn man#7693">rayn man</span>
+<span class="msg-date">08-Dec-18 11:22 PM</span>
+<div class="msg-content">
+the flatulent</div>
+<div class="msg-content">
+havent worked out yuan ti yet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Dec-18 11:22 PM</span>
+<div class="msg-content">
+k</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/9234d7d0d6049c404e70e872c9dc4248.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rayn man#7693">rayn man</span>
+<span class="msg-date">08-Dec-18 11:23 PM</span>
+<div class="msg-content">
+but they shall be...reptile...y</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/2003a0fe37cdbb8cdfa2eed03b61c658.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Leech Boy#8207">Leech Boy</span>
+<span class="msg-date">08-Dec-18 11:24 PM</span>
+<div class="msg-content">
+Their capital is innsmouth</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/9234d7d0d6049c404e70e872c9dc4248.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rayn man#7693">rayn man</span>
+<span class="msg-date">08-Dec-18 11:25 PM</span>
+<div class="msg-content">
+*slunchington</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 11:30 PM</span>
+<div class="msg-content">
+Qronos is the capital city of the orc it has 4 out cropping towns Oseanis, hiprion, lapetus, Rhyas</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 11:45 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/521148056146673674/521185673336586251/map.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/521148056146673674/521185673336586251/map.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 11:47 PM</span>
+<div class="msg-content">
+Is that dessert or rolling hills to the mid right</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 11:48 PM</span>
+<div class="msg-content">
+Rolling hills</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 11:48 PM</span>
+<div class="msg-content">
+Alright</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Dec-18 11:48 PM</span>
+<div class="msg-content">
+hobbit hills</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 11:48 PM</span>
+<div class="msg-content">
+Yea</div>
+<div class="msg-content">
+Orcs in the grasslands?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 11:49 PM</span>
+<div class="msg-content">
+To the far east</div>
+<div class="msg-content">
+High elevation plateua</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Dec-18 11:50 PM</span>
+<div class="msg-content">
+Is up north?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">08-Dec-18 11:50 PM</span>
+<div class="msg-content">
+And the Dwarven domain to the north east</div>
+<div class="msg-content">
+Though old Dwarven cities pocket every suitable mountain</div>
+<div class="msg-content">
+Not all are inhabited or recorded</div>
+<div class="msg-content">
+Due to the reclusive tendency of the dwarves over the centuries</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Dec-18 11:52 PM</span>
+<div class="msg-content">
+I&#39;m not sure if I&#39;d call it north east, KWP is just east of the hobbits.  Your sphere of influence covers most of the mountains in the east, due to slayers and soldiers littering the mountains.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">08-Dec-18 11:53 PM</span>
+<div class="msg-content">
+Awwww</div>
+<div class="msg-content">
+Ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-Dec-18 12:02 AM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/521148056146673674/521189996426690581/map2.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/521148056146673674/521189996426690581/map2.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">09-Dec-18 12:04 AM</span>
+<div class="msg-content">
+But yeah quick vote of those who received the Dwarven emissaries who wants to be a part of this council of nations</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Dec-18 12:04 AM</span>
+<div class="msg-content">
+Do the gnomes, who don&#39;t have a formal nation, get a seat on the council?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-Dec-18 12:05 AM</span>
+<div class="msg-content">
+The orcs will attend</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">09-Dec-18 12:06 AM</span>
+<div class="msg-content">
+If they recognize a leader amongst them then probably. A suggestion then would be the gnomes themselves have a council that elects a speaker at meetings. Just a thought</div>
+<div class="msg-content">
+Otherwise they wouldn’t attend</div>
+<div class="msg-content">
+Hey josh can we get a proper channel? One where we can have other text channels for council meetings?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Dec-18 12:07 AM</span>
+<div class="msg-content">
+might as well create a new server at this point</div>
+<div class="msg-content">
+instead of a group text</div>
+<div class="msg-content">
+And Phil I think the gnomes can find someone to represent their interests</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-Dec-18 12:08 AM</span>
+<div class="msg-content">
+sure, I&#39;ll put a server together</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">09-Dec-18 12:08 AM</span>
+<div class="msg-content">
+the hobbits elect a random member of the merchant class who can travel to dwarven lands to attend this dwarven meeting.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">09-Dec-18 12:09 AM</span>
+<div class="msg-content">
+It’s a council of races, the dwarves are simply proposing it for the good of all. So that’s hobbits gnomes orcs and dwarves attending so far</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-Dec-18 12:13 AM</span>
+<div class="msg-content">
+What should be size of the delegation from each race</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Dec-18 12:13 AM</span>
+<div class="msg-content">
+should the representatives be the PCs?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/1891f3978775e0fd2d5280adfe6cbc26.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-Dec-18 12:13 AM</span>
+<div class="msg-content">
+And also^</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Dec-18 12:13 AM</span>
+<div class="msg-content">
+cause not all Statebuilders are going to be PCs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/5156560b5e289bdc25ee55bf2a931d05.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">09-Dec-18 12:14 AM</span>
+<div class="msg-content">
+The delegation can be as large as needed for the races delegate of authority, housing will be provided</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/9234d7d0d6049c404e70e872c9dc4248.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rayn man#7693">rayn man</span>
+<span class="msg-date">09-Dec-18 12:14 AM</span>
+<div class="msg-content">
+I have enough of the yuan ti out to say that gnomes will be allowed in the swamp</div>
+<div class="msg-content">
+As slaves</div>
+<div class="msg-content">
+in fact there are already a great many ; )</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Dec-18 12:15 AM</span>
+<div class="msg-content">
+if the yuan ti are enslaving gnomes then the gnomes will not go the the lands (or waters) of the yuan ti</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/9234d7d0d6049c404e70e872c9dc4248.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="rayn man#7693">rayn man</span>
+<span class="msg-date">09-Dec-18 12:17 AM</span>
+<div class="msg-content">
+Ha&#39;srammass Ssethas is a slave nation and a theocratic monarchy, it is widely known for this</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-Dec-18 12:17 AM</span>
+<div class="msg-content">
+<a href="https://discord.gg/FsYj2A">https://discord.gg/FsYj2A</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/7dfde443026de2dbdf66d672ff89096c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Dec-18 12:17 AM</span>
+<div class="msg-content">
+Then gnomes will not trade or debate</div>
+<div class="msg-content">
+with the yuan ti</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/44868412d0eef8fcd0af67dd0b5082f2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-Dec-18 12:20 AM</span>
+<div class="msg-content">
+Removed a recipient.</div>
+<div class="msg-content">
+Removed a recipient.</div>
+<div class="msg-content">
+Removed a recipient.</div>
+<div class="msg-content">
+Removed a recipient.</div>
+<div class="msg-content">
+Removed a recipient.</div>
+<div class="msg-content">
+Removed a recipient.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

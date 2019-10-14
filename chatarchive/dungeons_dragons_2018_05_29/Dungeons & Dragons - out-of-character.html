@@ -1,0 +1,3914 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dungeons & Dragons - out-of-character</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/422586179997794314/cfbbdb15b8bb285c359a3cd0b6626da2.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Dungeons & Dragons</div>
+<div class="channel-name">out-of-character</div>
+<div class="misc">434 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">11-Mar-18 11:03 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+<div class="msg-content">
+Admin plz</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">11-Mar-18 11:03 PM</span>
+<div class="msg-content">
+I can&#39;t be bothered to set up roles</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">11-Mar-18 11:04 PM</span>
+<div class="msg-content">
+Lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/178552765495246848/5041c2b5a25139dc3bbdb3003e20866d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Omnicoder32#7353">Omnicoder32</span>
+<span class="msg-date">11-Mar-18 11:05 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Mar-18 11:07 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+<div class="msg-content">
+lol, both are in</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">11-Mar-18 11:08 PM</span>
+<div class="msg-content">
+both of what?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Mar-18 11:08 PM</span>
+<div class="msg-content">
+my accounts</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">11-Mar-18 11:09 PM</span>
+<div class="msg-content">
+no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Mar-18 11:09 PM</span>
+<div class="msg-content">
+i clicked it once, but it launched it both in browser and in app</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/178552765495246848/5041c2b5a25139dc3bbdb3003e20866d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Omnicoder32#7353">Omnicoder32</span>
+<span class="msg-date">11-Mar-18 11:10 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Mar-18 11:10 PM</span>
+<div class="msg-content">
+got it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/178552765495246848/5041c2b5a25139dc3bbdb3003e20866d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Omnicoder32#7353">Omnicoder32</span>
+<span class="msg-date">11-Mar-18 11:10 PM</span>
+<div class="msg-content">
+sup</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Mar-18 11:10 PM</span>
+<div class="msg-content">
+lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">11-Mar-18 11:12 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+<div class="msg-content">
+i am so honored</div>
+<div class="msg-content">
+to be in this exclusive group</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">11-Mar-18 11:51 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+<div class="msg-content">
+Hola</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Mar-18 11:53 PM</span>
+<div class="msg-content">
+<a href="https://rpg.stackexchange.com/questions/39513/what-is-the-largest-possible-melee-critical-range-in-dungeons-and-dragons-3rd-or">https://rpg.stackexchange.com/questions/39513/what-is-the-largest-possible-melee-critical-range-in-dungeons-and-dragons-3rd-or</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">14-Mar-18 04:27 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/423577915129856010/image.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/423577915129856010/image.jpg" />
+</a>
+</div>
+<div class="msg-content">
+Figured I would read the original instead of the young adult version</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">14-Mar-18 04:28 PM</span>
+<div class="msg-content">
+Wrong chat, this is d&amp;d general</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">14-Mar-18 04:46 PM</span>
+<div class="msg-content">
+Sorry</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">14-Mar-18 04:46 PM</span>
+<div class="msg-content">
+np</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">17-Mar-18 09:54 AM</span>
+<div class="msg-content">
+I&#39;m under the weather, might not be able to make it to GH today</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">17-Mar-18 02:13 PM</span>
+<div class="msg-content">
+Alright</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">17-Mar-18 11:00 PM</span>
+<div class="msg-content">
+When is the next planned session? The 25th?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">17-Mar-18 11:01 PM</span>
+<div class="msg-content">
+yup</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">17-Mar-18 11:52 PM</span>
+<div class="msg-content">
+Sounds good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">18-Mar-18 11:57 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">20-Mar-18 09:58 AM</span>
+<div class="msg-content">
+Hey tay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">24-Mar-18 09:09 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> this is snack check. What do people want and what are people bringing?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">24-Mar-18 09:09 PM</span>
+<div class="msg-content">
+Crisps</div>
+<div class="msg-content">
+Oh a regular variety</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">24-Mar-18 09:10 PM</span>
+<div class="msg-content">
+I already got dr pepper</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">24-Mar-18 09:10 PM</span>
+<div class="msg-content">
+Crisps are the same thing as chips for you Taylor right?</div>
+<div class="msg-content">
+I legitimately don&#39;t know</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">24-Mar-18 09:10 PM</span>
+<div class="msg-content">
+yeah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">24-Mar-18 09:10 PM</span>
+<div class="msg-content">
+Ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">25-Mar-18 10:33 AM</span>
+<div class="msg-content">
+Cookies</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">25-Mar-18 10:35 AM</span>
+<div class="msg-content">
+Cool</div>
+<div class="msg-content">
+Josh do we need to get more drinks or are we good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">25-Mar-18 10:44 AM</span>
+<div class="msg-content">
+If you want anything other than Dr peeper or water than yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">25-Mar-18 09:28 PM</span>
+<div class="msg-content">
+Hey so I’m trying to figure out the absolute maximum damage I can deal in one turn so If my math dosent check out please let me know...<br />My current strength is 23 with curse of the brute 30 with both whirling frenzy and frenzy 40 and enlarge person 42 this gives me a +16 modifier. So I am level 9 and I power attack 9 which is normally doubled however, if I crit with the Minotaur GH it also does X4 which by how I think D&amp;D works mean it gives me a X5 to my power attack. This would give me 45 damage purely based on the power attack. however this is added to my normal attack bonus which would be 16 for modifier, 9 for BAB and, 1 for MW. Giving an additional 26 damage putting me up to 71 damage so far. Than I take into account when enlarge person is cast it also increases the size category of my weapon having it go from 3d6 to 4d6 meaning at crit I roll 16d6 and if each has a maximum of 6 that adds 96 more damage to the 71 I had giving me a total of 167 on the first attack. Than if this process repeats subsequently for each additional attack my current max being 4 I have a current maximum damage of 668 in one turn if absolutely everything works out perfectly.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">26-Mar-18 11:25 AM</span>
+<div class="msg-content">
+Is that the correct math and correct amount?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">26-Mar-18 11:29 AM</span>
+<div class="msg-content">
+You&#39;re adding attack bonus and damage.  The power attack damage would be 45, add the strength bonus to damage which for a 2 handed weapon is strength mod times 1.5, so 24 more damage.  That gets multiplied by 4 on crit up to 96.  On top of that is the additional 16d6 damage dice also maxxing at 96.  Meaning a single attack can yield 237 damage.</div>
+<div class="msg-content">
+Four attacks per turn gives you 948 damage</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">26-Mar-18 11:31 AM</span>
+<div class="msg-content">
+Thank you and jesus</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">26-Mar-18 11:52 AM</span>
+<div class="msg-content">
+That&#39;s nearly 19x massive damage</div>
+<div class="msg-content">
+Good God</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">02-Apr-18 05:47 PM</span>
+<div class="msg-content">
+so i have been reading about various builds</div>
+<div class="msg-content">
+It turns out you can break the game at level one and become a god</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">02-Apr-18 05:53 PM</span>
+<div class="msg-content">
+Cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">02-Apr-18 05:54 PM</span>
+<div class="msg-content">
+kind of terrifying to be honest</div>
+<div class="msg-content">
+cause I could probably do it with my shair too</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">02-Apr-18 07:52 PM</span>
+<div class="msg-content">
+Ehh but than it wouldn’t be as fun</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">02-Apr-18 07:52 PM</span>
+<div class="msg-content">
+Not doing it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">02-Apr-18 07:52 PM</span>
+<div class="msg-content">
+Part of the enjoyment is creating jank that’s fun</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">02-Apr-18 07:53 PM</span>
+<div class="msg-content">
+I am going to make sure it&#39;s not broken</div>
+<div class="msg-content">
+There&#39;s always broken builds in DND</div>
+<div class="msg-content">
+Some turn you into God&#39;s</div>
+<div class="msg-content">
+Some allow you to incinerate an entire continent in six seconds</div>
+<div class="msg-content">
+And some allow you to send arrows back the way they came</div>
+<div class="msg-content">
+Just depends on what you want to do</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">02-Apr-18 07:58 PM</span>
+<div class="msg-content">
+I know how to get to level 20 at instantly at level 1</div>
+<div class="msg-content">
+get a nat 20 on a diplomacy check with the DM</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">02-Apr-18 07:59 PM</span>
+<div class="msg-content">
+I mean</div>
+<div class="msg-content">
+You might need some charisma modifiers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">02-Apr-18 08:00 PM</span>
+<div class="msg-content">
+Make a dnd character named Nathaniel Twendi</div>
+<div class="msg-content">
+aka Nat Twendi</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">02-Apr-18 08:00 PM</span>
+<div class="msg-content">
+Nice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">02-Apr-18 08:00 PM</span>
+<div class="msg-content">
+make diplomacy chec k</div>
+<div class="msg-content">
+then you win</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">02-Apr-18 08:01 PM</span>
+<div class="msg-content">
+If you want to know what I was thinking look up Pun-Pun</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">03-Apr-18 05:34 AM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> if you send me a picture or file of the map that you gave us for the setting I can try to turn it into a little project to read familiarized with Adobe illustrator. Sort of making it look like a drawn map on parchment or something</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">03-Apr-18 02:42 PM</span>
+<div class="msg-content">
+That was just print mode, the full copy looks like this</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/430799305251618818/nyamene.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/430799305251618818/nyamene.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">04-Apr-18 07:33 PM</span>
+<div class="msg-content">
+<a href="https://www.reddit.com/r/DnD/comments/775caq/my">https://www.reddit.com/r/DnD/comments/775caq/my</a><i>friends</i>and<i>i</i>have<i>something</i>called_knife/</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 10:27 AM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> SNACK CHECK! what do we need/want</div>
+<div class="msg-content">
+I personally want pretzels and chips</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">08-Apr-18 11:36 AM</span>
+<div class="msg-content">
+Those are both good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">08-Apr-18 11:48 AM</span>
+<div class="msg-content">
+I won&#39;t be at the session I&#39;ll explain later</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 11:48 AM</span>
+<div class="msg-content">
+It&#39;s all good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">08-Apr-18 11:52 AM</span>
+<div class="msg-content">
+I got time time now. I literally just killed the shit out of a deer</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/432568607394758667/20180408_113010.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/432568607394758667/20180408_113010.jpg" />
+</a>
+</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/432568607999000586/20180408_112957.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/432568607999000586/20180408_112957.jpg" />
+</a>
+</div>
+<div class="msg-content">
+On township line road nearing bridge street</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 11:53 AM</span>
+<div class="msg-content">
+Fuck man</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">08-Apr-18 11:54 AM</span>
+<div class="msg-content">
+No one was behind or in front of me and I braked when it jumped out at like 20 feet away</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 11:55 AM</span>
+<div class="msg-content">
+Could have been a lot worse. Still sucks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">08-Apr-18 11:56 AM</span>
+<div class="msg-content">
+Yeah I&#39;m glad for that, I wasn&#39;t even speeding either the limit was 45 and I was doing 40</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 12:06 PM</span>
+<div class="msg-content">
+How much experience is a deer worth?</div>
+<div class="msg-content">
+Glad you&#39;re alright man</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">08-Apr-18 12:09 PM</span>
+<div class="msg-content">
+There&#39;s actual shit on my car door though if you can see it lol</div>
+<div class="msg-content">
+Didn&#39;t even drop any loot</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 12:10 PM</span>
+<div class="msg-content">
+You could skin it for hide</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">08-Apr-18 12:10 PM</span>
+<div class="msg-content">
+It ran away surprisingly</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 12:11 PM</span>
+<div class="msg-content">
+Well you didn&#39;t kill it</div>
+<div class="msg-content">
+That&#39;s why you don&#39;t get any loot</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">08-Apr-18 12:12 PM</span>
+<div class="msg-content">
+Itll probably die eventually, any human hit at that speed would not be in one whole piece</div>
+<div class="msg-content">
+It was a hard hit too</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 12:13 PM</span>
+<div class="msg-content">
+Delayed xp</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/204777316621090816/a98b0ffa5f0580c62d795d4f21a08c62.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="RPBot#4161">RPBot</span>
+<span class="msg-date">08-Apr-18 09:00 PM</span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:00 PM</span>
+<div class="msg-content">
+Here we go</div>
+<div class="msg-content">
+!roll 1d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/204777316621090816/a98b0ffa5f0580c62d795d4f21a08c62.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="RPBot#4161">RPBot</span>
+<span class="msg-date">08-Apr-18 09:00 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> rolled <b>6</b>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:01 PM</span>
+<div class="msg-content">
+!roll 420d69</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/204777316621090816/a98b0ffa5f0580c62d795d4f21a08c62.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="RPBot#4161">RPBot</span>
+<span class="msg-date">08-Apr-18 09:01 PM</span>
+<div class="msg-content">
+<span class="mention" title="McHennessey#282">@McHennessey</span> rolled <b>14603</b>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:10 PM</span>
+<div class="msg-content">
+!roll 1d20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/204777316621090816/a98b0ffa5f0580c62d795d4f21a08c62.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="RPBot#4161">RPBot</span>
+<span class="msg-date">08-Apr-18 09:10 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> rolled <b>1</b>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:10 PM</span>
+<div class="msg-content">
+Damn</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:11 PM</span>
+<div class="msg-content">
+!roll 1d20</div>
+<div class="msg-content">
+the bot can only respond in the dice box now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:14 PM</span>
+<div class="msg-content">
+Ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:15 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> anyone want more channels?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:15 PM</span>
+<div class="msg-content">
+An English channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:15 PM</span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:15 PM</span>
+<div class="msg-content">
+Think about it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:15 PM</span>
+<div class="msg-content">
+alright I&#39;ll do it.  what languages does everyone speak?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:16 PM</span>
+<div class="msg-content">
+Common, Sylvan, reddish, elvish, druidic</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:21 PM</span>
+<div class="msg-content">
+alright, there are now language specific chatrooms</div>
+<div class="msg-content">
+only people who speak the language should be able to read it</div>
+<div class="msg-content">
+hey <span class="mention" title="Hades7899#6264">@Hades7899</span> just making sure it works, you can access reddish but not elven right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Apr-18 09:24 PM</span>
+<div class="msg-content">
+I can’t even see elven</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:25 PM</span>
+<div class="msg-content">
+alright, guess it works.  everyone cool with this?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:28 PM</span>
+<div class="msg-content">
+When needed sure</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:29 PM</span>
+<div class="msg-content">
+I&#39;m guessing the common chat will likely be the most popular</div>
+<div class="msg-content">
+also I didn&#39;t bother adding channels that would have a single person</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-Apr-18 09:38 PM</span>
+<div class="msg-content">
+ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:38 PM</span>
+<div class="msg-content">
+any other channel requests?</div>
+<div class="msg-content">
+<span class="mention">@everyone</span> homework<br />Pat: get a few druid spells under your belt<br />Everyone else: tell me about your characters family.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">09-Apr-18 01:20 AM</span>
+<div class="msg-content">
+How you&#39;d you guys feel about me bringing pizza dromedary Costco to the next session?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-Apr-18 01:21 AM</span>
+<div class="msg-content">
+sounds great</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">09-Apr-18 01:21 AM</span>
+<div class="msg-content">
+They&#39;re pretty large and my favorite type of pizza. I&#39;ll pay for them. Two large pizzas is like 18.99</div>
+<div class="msg-content">
+12 slices per pie</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-Apr-18 01:21 AM</span>
+<div class="msg-content">
+wow thats pretty large</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">09-Apr-18 01:21 AM</span>
+<div class="msg-content">
+I could get plain cheese and pepperoni</div>
+<div class="msg-content">
+Yeah, the slices are slightly smaller than what you&#39;d think of a large pizza anywhere else, but two slices put together is like really large and filling</div>
+<div class="msg-content">
+Plus there&#39;s twelve, so each person will get like 3 for 2 pizzas</div>
+<div class="msg-content">
+What I could do is get them before the session and we can just eat it as we go along</div>
+<div class="msg-content">
+Here&#39;s a pic of what it looks like for reference</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/432772822193012757/Best-Costco-Foods-From-Food-Court.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/432772822193012757/Best-Costco-Foods-From-Food-Court.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-Apr-18 01:24 AM</span>
+<div class="msg-content">
+looks pretty good to me</div>
+<div class="msg-content">
+we should also work on your character over the next couple weeks so he&#39;s good to go when we meet up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">09-Apr-18 01:25 AM</span>
+<div class="msg-content">
+Yeah that too. Tuesday might be good for me to flesh it all out</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Apr-18 03:27 PM</span>
+<div class="msg-content">
+Btw Francis how is your car</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Apr-18 07:20 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> I still need to do my dice rolls for height and weight</div>
+<div class="msg-content">
+and  i came up for a reason why my str is so low</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-Apr-18 07:21 PM</span>
+<div class="msg-content">
+U a bih</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-Apr-18 07:21 PM</span>
+<div class="msg-content">
+prove it</div>
+<div class="msg-content">
+fucking orcs</div>
+<div class="msg-content">
+&#128515;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">09-Apr-18 07:23 PM</span>
+<div class="msg-content">
+Don&#39;t know, I&#39;m not using it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">12-Apr-18 11:07 AM</span>
+<div class="msg-content">
+Hey josh I have a friend who has never played D&amp;D before he asked if he could join for a session it dosent have to be the next one but would you be cool with that same for the rest of you guys</div>
+<div class="msg-content">
+Pat knows him his names drew</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">12-Apr-18 04:35 PM</span>
+<div class="msg-content">
+I&#39;ve got no problem with it, just pass it by everyone else. The only problem I could see is that we&#39;re not going want to divert time towards helping with character creation, so you might want to do that off site.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">12-Apr-18 04:58 PM</span>
+<div class="msg-content">
+Drew&#39;s cool. I have no problem</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">13-Apr-18 07:35 AM</span>
+<div class="msg-content">
+Yep I would do that next week most likely as long as Brian Taylor and FRANCIS are cool with it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">13-Apr-18 07:37 AM</span>
+<div class="msg-content">
+Francis may be unable to attend next week due to his vehicle being  temporarily out of function.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">13-Apr-18 10:30 AM</span>
+<div class="msg-content">
+I don&#39;t want him to fall behind xp wise since the he&#39;s missing back to back sessions.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">13-Apr-18 10:31 AM</span>
+<div class="msg-content">
+He&#39;s coming in with a new character anyway, so it shouldn&#39;t be too much of an issue.  I may solo quest him up to a point so he&#39;s not too far behind.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">13-Apr-18 12:05 PM</span>
+<div class="msg-content">
+I could possibly collect Franny if he wished</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">16-Apr-18 08:45 AM</span>
+<div class="msg-content">
+<span class="mention" title="Hades7899#6264">@Hades7899</span> <a href="https://donjon.bin.sh/d20/power/">https://donjon.bin.sh/d20/power/</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">17-Apr-18 09:57 PM</span>
+<div class="msg-content">
+I could possibly have my parents take me home for the weekend if Taylor can pick me up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">19-Apr-18 07:54 AM</span>
+<div class="msg-content">
+Noice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 09:09 AM</span>
+<div class="msg-content">
+&quot;Humanoids breathe, eat, and sleep.&quot;</div>
+<div class="msg-content">
+I like to think this is in order of how often they typically do the thing</div>
+<div class="msg-content">
+&quot;Giants eat, sleep, and breathe.&quot;</div>
+<div class="msg-content">
+I like to think this shares the same order</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 07:55 PM</span>
+<div class="msg-content">
+Crowley will make sure to make that past tense<br /><br />&quot;Giants ate, slept, and breathed, before they were all killed by a weird ghost man.&quot;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:04 PM</span>
+<div class="msg-content">
+The eternal sleep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 08:09 PM</span>
+<div class="msg-content">
+Where&#39;s Crowley&#39;s old timey chat</div>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> On a more serious note though, what kinds of possessions does Roscoe have?</div>
+<div class="msg-content">
+Other than his armor and weapon</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:33 PM</span>
+<div class="msg-content">
+is there anything in particular he needs?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 08:33 PM</span>
+<div class="msg-content">
+Not really, I was wondering if he might have something along the lines of flavor stuff, like maybe an old sigil ring or what have you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:33 PM</span>
+<div class="msg-content">
+Yeah, that&#39;d make sense</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 08:34 PM</span>
+<div class="msg-content">
+Also mow much gold he has, if he can carry any</div>
+<div class="msg-content">
+Taking into account his weapon</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:34 PM</span>
+<div class="msg-content">
+He&#39;s got a bag of 300 gp, but it&#39;s ethereal so no stores will take it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 08:35 PM</span>
+<div class="msg-content">
+It&#39;s like an advanced IOU</div>
+<div class="msg-content">
+Crowley needs to get a ghost touch pouch so he can hold real gold</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:37 PM</span>
+<div class="msg-content">
+true dat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 08:42 PM</span>
+<div class="msg-content">
+Maybe Taylor&#39;s character finds that there&#39;s a ghost there becuase no one else can see him</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:42 PM</span>
+<div class="msg-content">
+Taylor has ghost touch eyes</div>
+<div class="msg-content">
+Can you turn invisible?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 08:46 PM</span>
+<div class="msg-content">
+I can be ethereal</div>
+<div class="msg-content">
+I believe ghosts are also hard to track/find</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:47 PM</span>
+<div class="msg-content">
+can you go full ethereal or just incorpreal?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 09:28 PM</span>
+<div class="msg-content">
+Not sure yet, I&#39;ll look it up in a bit</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 09:13 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> Snack and Drink Check!!! What do we need and what do we want?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">21-Apr-18 09:15 PM</span>
+<div class="msg-content">
+Chips ahoy are my life and joy.  If you get soda for me, make sure it is caffeine free.  Remember to get something flavory, with the focus here on something savory.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 09:16 PM</span>
+<div class="msg-content">
+anything paticular for savory?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">21-Apr-18 09:29 PM</span>
+<div class="msg-content">
+The snack befitting of my lips<br />is none other than crispy chips</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Apr-18 09:33 PM</span>
+<div class="msg-content">
+chispy crisps</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 09:33 PM</span>
+<div class="msg-content">
+Chips, Chips ahoy, caffine free soda, caffinated soda, pretzels, and anything else needed?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">21-Apr-18 09:34 PM</span>
+<div class="msg-content">
+Well, if you could be so inclined<br />it would be better if you rhymed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Apr-18 09:34 PM</span>
+<div class="msg-content">
+phd Peeper</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 09:35 PM</span>
+<div class="msg-content">
+Ok I&#39;ll rhyme this time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">21-Apr-18 10:00 PM</span>
+<div class="msg-content">
+I&#39;ll be buying pizza</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 10:01 PM</span>
+<div class="msg-content">
+cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">21-Apr-18 10:01 PM</span>
+<div class="msg-content">
+Also cheezit grooves are very good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 10:01 PM</span>
+<div class="msg-content">
+ok</div>
+<div class="msg-content">
+btw what are we doing about the chinese from last time? Micky was the only person to throw some cash at my way</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">21-Apr-18 10:03 PM</span>
+<div class="msg-content">
+I&#39;ll cover snacks tommorrow and throw $10 your way</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 10:04 PM</span>
+<div class="msg-content">
+that works</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Apr-18 10:06 PM</span>
+<div class="msg-content">
+I&#39;m remember paying someone something last time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-Apr-18 10:06 PM</span>
+<div class="msg-content">
+ill take your word for it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">22-Apr-18 11:12 AM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> please grab the dew of the mountain</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">22-Apr-18 01:15 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/437662671966568479/W18_a040.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/437662671966568479/W18_a040.jpg" />
+</a>
+</div>
+<div class="msg-content">
+What Roscoe looks like mostly</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">22-Apr-18 10:05 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> Great session today.  If you guys want down time in town before going on your adventure, we can do that between sessions in the discord if you like.  If you want to go straight on to the dungeon, we can just start next session as the following day as you begin your quest.  With down time, you can gather more information to achieve your goals, in private from other players if you prefer.  Shopping, item crafting, and quest seeking are a few of the many possibilities.  If you want the party to have down time but have nothing to do yourself, working a job can rake in a few extra gold pieces.  Tell me what you all want to do.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">22-Apr-18 10:34 PM</span>
+<div class="msg-content">
+I’m okay with having a few days in game for respite and odds and ends work</div>
+<div class="msg-content">
+It can give me time to find out more about the faith of these goants</div>
+<div class="msg-content">
+Giants*</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">22-Apr-18 10:40 PM</span>
+<div class="msg-content">
+Also, who all speaks Giant?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">22-Apr-18 10:54 PM</span>
+<div class="msg-content">
+I know Brian does, that&#39;s the extent of my knowledge of who can speak it.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">22-Apr-18 10:56 PM</span>
+<div class="msg-content">
+I cannot</div>
+<div class="msg-content">
+But my friends might be able to translate for me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">22-Apr-18 10:56 PM</span>
+<div class="msg-content">
+Just Brian I think</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">22-Apr-18 10:56 PM</span>
+<div class="msg-content">
+I can’t but would be willing to learn for the giantess princess<span class="msg-edited" title="22-Apr-18 10:57 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">22-Apr-18 10:57 PM</span>
+<div class="msg-content">
+you even write in character</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">22-Apr-18 10:57 PM</span>
+<div class="msg-content">
+I can put points to become literate</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">22-Apr-18 10:57 PM</span>
+<div class="msg-content">
+Or just learn to speak it, but not to write</div>
+<div class="msg-content">
+What does everyone else think of doing some downtime?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">22-Apr-18 11:02 PM</span>
+<div class="msg-content">
+I would like downtime.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">22-Apr-18 11:03 PM</span>
+<div class="msg-content">
+I agree</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">22-Apr-18 11:24 PM</span>
+<div class="msg-content">
+I don&#39;t have a problem with that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">23-Apr-18 12:04 AM</span>
+<div class="msg-content">
+Alright, <span class="mention">@everyone</span> we will be having downtime in town in the time before next session.  I&#39;ll give a day by day synopsis of what&#39;s going on after I get everyone&#39;s going on for the days.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">24-Apr-18 12:38 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/438378236892676106/jpjisal47ut01.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/438378236892676106/jpjisal47ut01.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">24-Apr-18 03:53 PM</span>
+<div class="msg-content">
+I saw that on reddit too. I like it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">29-Apr-18 09:38 AM</span>
+<div class="msg-content">
+When Bryan Curse of the brutes me</div>
+<div class="msg-content">
+<a href="https://youtu.be/7KBp9bw3iPw">https://youtu.be/7KBp9bw3iPw</a></div>
+<div class="msg-content">
+Just the first minute</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 10:35 AM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/440883978048765972/image.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/440883978048765972/image.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 10:43 AM</span>
+<div class="msg-content">
+Did you print that?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 10:49 AM</span>
+<div class="msg-content">
+Yes</div>
+<div class="msg-content">
+1-170</div>
+<div class="msg-content">
+Any other books <span class="mention" title="SeaHacking#8906">@SeaHacking</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 10:50 AM</span>
+<div class="msg-content">
+Did you use all of your printing yet? I could use a proxy Serra Sanctum</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 10:51 AM</span>
+<div class="msg-content">
+Not sure, I might print a copy of the players handbook</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 10:52 AM</span>
+<div class="msg-content">
+What about races of the forest or whatever it&#39;s called?</div>
+<div class="msg-content">
+Maybe v0.1 of Estacado?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 10:55 AM</span>
+<div class="msg-content">
+Races of the Wild</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 11:16 AM</span>
+<div class="msg-content">
+I have like 5 dollars left I think</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:16 AM</span>
+<div class="msg-content">
+Print memes</div>
+<div class="msg-content">
+Or all black pages</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:17 AM</span>
+<div class="msg-content">
+Thats just rude</div>
+<div class="msg-content">
+I&#39;d print a handful of 3.5, 5e, and pf character sheets</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:17 AM</span>
+<div class="msg-content">
+And we&#39;re paying thousands of dollars to go to school</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 11:17 AM</span>
+<div class="msg-content">
+That’s not a bad idea</div>
+<div class="msg-content">
+Your not pat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:17 AM</span>
+<div class="msg-content">
+I should be able to print what I want</div>
+<div class="msg-content">
+And that includes double sided all black pages</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:18 AM</span>
+<div class="msg-content">
+You can, but that doesn&#39;t mean its not rude</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:18 AM</span>
+<div class="msg-content">
+It&#39;s rude to charge to print</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:18 AM</span>
+<div class="msg-content">
+not really, otherwise we&#39;d abuse it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:19 AM</span>
+<div class="msg-content">
+And printing the players handbook isn&#39;t</div>
+<div class="msg-content">
+Explain to me how that is better than a all black page</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:20 AM</span>
+<div class="msg-content">
+It&#39;s printing something I have actual use for, while black pages is just a big &quot;fuck you&quot; to the school</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:20 AM</span>
+<div class="msg-content">
+They have uses</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:20 AM</span>
+<div class="msg-content">
+Uh huh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:20 AM</span>
+<div class="msg-content">
+Plenty of uses</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:20 AM</span>
+<div class="msg-content">
+Mmmhmmm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:21 AM</span>
+<div class="msg-content">
+Several uses</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:21 AM</span>
+<div class="msg-content">
+Go on</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:22 AM</span>
+<div class="msg-content">
+You can use them as protest tools against the schools printing policy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:22 AM</span>
+<div class="msg-content">
+So my statement still stands</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:22 AM</span>
+<div class="msg-content">
+You have the right to protest</div>
+<div class="msg-content">
+Free Speech</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:23 AM</span>
+<div class="msg-content">
+Free Speech doesn&#39;t protect you from being considered rude</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 11:24 AM</span>
+<div class="msg-content">
+Any books we frequent at DND we don’t have?</div>
+<div class="msg-content">
+I know I use complete warrior alot</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:24 AM</span>
+<div class="msg-content">
+Book of Exalted Deeds is probably good for pat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 11:25 AM</span>
+<div class="msg-content">
+Than pat can print it out</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">01-May-18 11:25 AM</span>
+<div class="msg-content">
+Frostfall</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:25 AM</span>
+<div class="msg-content">
+I got Frostburn somewhere</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 11:25 AM</span>
+<div class="msg-content">
+I’m asking for ones multiple people could use</div>
+<div class="msg-content">
+Like complete warrior</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:25 AM</span>
+<div class="msg-content">
+Or Book of Exalted Deeds</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 11:25 AM</span>
+<div class="msg-content">
+Is there a magic item list we need</div>
+<div class="msg-content">
+Enchantments?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">01-May-18 11:26 AM</span>
+<div class="msg-content">
+Magic Item Compendium wouldn&#39;t be bad</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">01-May-18 11:26 AM</span>
+<div class="msg-content">
+Alright</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">01-May-18 01:25 PM</span>
+<div class="msg-content">
+Complete Arcane&#39;d be p cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">02-May-18 10:55 AM</span>
+<div class="msg-content">
+I might do MIC tomorrow after my final</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">05-May-18 01:41 AM</span>
+<div class="msg-content">
+hey <span class="mention">@everyone</span> when do you want to have the next session</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">05-May-18 01:52 AM</span>
+<div class="msg-content">
+always</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">05-May-18 06:41 AM</span>
+<div class="msg-content">
+I mean Mother’s Day is next Sunday right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">05-May-18 10:20 AM</span>
+<div class="msg-content">
+We are skipping tomorrow still right? Next week is Mother&#39;s Day</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">05-May-18 07:59 PM</span>
+<div class="msg-content">
+I thought we were doing the 13th</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">05-May-18 08:00 PM</span>
+<div class="msg-content">
+That&#39;s mother&#39;s day</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">06-May-18 06:38 AM</span>
+<div class="msg-content">
+So is it the 13th or no?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-May-18 08:41 AM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">06-May-18 02:19 PM</span>
+<div class="msg-content">
+Can&#39;t do mother&#39;s day, but I could do any day this week since schools out.</div>
+<div class="msg-content">
+Can&#39;t do Saturday either</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-May-18 02:21 PM</span>
+<div class="msg-content">
+Thursday?</div>
+<div class="msg-content">
+Friday I have plans</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">06-May-18 02:21 PM</span>
+<div class="msg-content">
+Thursday works for me, how about everyone else?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-May-18 02:21 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">06-May-18 02:34 PM</span>
+<div class="msg-content">
+i am down for thursday</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-May-18 04:30 PM</span>
+<div class="msg-content">
+<span class="mention" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">@&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span></div>
+<div class="msg-content">
+<span class="mention" title="omnicoder32#8232">@omnicoder32</span></div>
+<div class="msg-content">
+<span class="mention" title="MrAverageJoe#9851">@MrAverageJoe</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">06-May-18 04:35 PM</span>
+<div class="msg-content">
+I believe my response was already given</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-May-18 04:35 PM</span>
+<div class="msg-content">
+When?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">06-May-18 04:35 PM</span>
+<div class="msg-content">
+He said already</div>
+<div class="msg-content">
+*always</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-May-18 04:40 PM</span>
+<div class="msg-content">
+Ahh</div>
+<div class="msg-content">
+So <span class="mention" title="MrAverageJoe#9851">@MrAverageJoe</span></div>
+<div class="msg-content">
+<span class="mention" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">@&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span></div>
+<div class="msg-content">
+Brian said he would be down for thursday at his place</div>
+<div class="msg-content">
+Just need to hear from FRANCIS</div>
+<div class="msg-content">
+Also I misunderstood Brian he said he’s talking to his dad to see if we can do it at his place</div>
+<div class="msg-content">
+Anyone have Francis number?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">06-May-18 05:03 PM</span>
+<div class="msg-content">
+Dude calm down I&#39;m good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-May-18 05:09 PM</span>
+<div class="msg-content">
+Sorry</div>
+<div class="msg-content">
+My phone autocorrectes your name to all caps</div>
+<div class="msg-content">
+It’s a Deadpool reference</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">06-May-18 07:25 PM</span>
+<div class="msg-content">
+Im good for my place</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">07-May-18 09:44 AM</span>
+<div class="msg-content">
+Ok so we&#39;re doing it on Thursday</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-May-18 01:27 PM</span>
+<div class="msg-content">
+Hey are you guys cool with Drew joining us</div>
+<div class="msg-content">
+Might be a good time for a one session join if we’re about to go into this dungeon</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-May-18 01:29 PM</span>
+<div class="msg-content">
+I&#39;ve been turning other people down because I like to keep a party at five or less, but I&#39;ll leave it up to you guys.  Would he be ready by Thursday?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-May-18 01:30 PM</span>
+<div class="msg-content">
+I could get him ready and it wouldn’t be a thing for every time I’m saying a one off to see if he likes it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-May-18 01:30 PM</span>
+<div class="msg-content">
+I don&#39;t mind, just make sure you get everyone else&#39;s permission</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-May-18 01:30 PM</span>
+<div class="msg-content">
+I think he will and Francis and you are the only ones who haven’t met him</div>
+<div class="msg-content">
+Alright</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-May-18 02:26 PM</span>
+<div class="msg-content">
+I am down but bring him up to speed on what were doing during the session</div>
+<div class="msg-content">
+Before Thursday</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-May-18 02:26 PM</span>
+<div class="msg-content">
+Yep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-May-18 02:27 PM</span>
+<div class="msg-content">
+Afaik were going into the crypt to fight giant zombies</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-May-18 02:27 PM</span>
+<div class="msg-content">
+If we get everyones permission, we can add him to this server and bring him up to speed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">08-May-18 09:13 PM</span>
+<div class="msg-content">
+On Sunday the 27 I won&#39;t be able to make the session. I have a wedding to go to. Feel free to continue without me so we can keep a schedule</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 03:22 PM</span>
+<div class="msg-content">
+Same time as usual for tomorrow?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-May-18 03:23 PM</span>
+<div class="msg-content">
+I think we&#39;re starting at 1, but if Brian&#39;s cool with it I&#39;d like to show up at noon</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 03:42 PM</span>
+<div class="msg-content">
+ok i just want a confirmation thats all. Micky and I where thinking about showing up at 11 to be there a little early since were bringing Drew for the session</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">09-May-18 04:19 PM</span>
+<div class="msg-content">
+Francis also wanted to start a little later from what I rememberd</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-May-18 04:20 PM</span>
+<div class="msg-content">
+Yeah he wanted to start at 1, but we can do setup with Drew a bit earlier</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 04:20 PM</span>
+<div class="msg-content">
+Alright so starting at 8?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">09-May-18 04:20 PM</span>
+<div class="msg-content">
+...?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 04:20 PM</span>
+<div class="msg-content">
+Yea bright and early</div>
+<div class="msg-content">
+Get a full day in</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 04:31 PM</span>
+<div class="msg-content">
+no micky</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 04:31 PM</span>
+<div class="msg-content">
+Kk</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 04:31 PM</span>
+<div class="msg-content">
+were not doing an 8 to 8 session</div>
+<div class="msg-content">
+i mean, it would be a lot of DnD</div>
+<div class="msg-content">
+and would require like, two breaks for meals</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 07:24 PM</span>
+<div class="msg-content">
+Micky what is your base grapple?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 08:21 PM</span>
+<div class="msg-content">
+Without brute?</div>
+<div class="msg-content">
+Or with brute</div>
+<div class="msg-content">
+Without no idea with I think 22 but I can gain 10 strength as a swift action putting it up to higher 20’s</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 08:57 PM</span>
+<div class="msg-content">
+base</div>
+<div class="msg-content">
+so thats without</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 08:58 PM</span>
+<div class="msg-content">
+Prob a round 16</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 08:59 PM</span>
+<div class="msg-content">
+ok</div>
+<div class="msg-content">
+tomorrow i might have a challenge for you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 09:00 PM</span>
+<div class="msg-content">
+If you mess with my character at all I make a vendetta against every character you play</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 09:01 PM</span>
+<div class="msg-content">
+I am not going to kill you</div>
+<div class="msg-content">
+I mean it literally as a challenge</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 09:01 PM</span>
+<div class="msg-content">
+If you disenchant me I kill you and every character</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 09:01 PM</span>
+<div class="msg-content">
+I will heal you</div>
+<div class="msg-content">
+I won&#39;t disenchant</div>
+<div class="msg-content">
+I won&#39;t even hurt you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">09-May-18 09:02 PM</span>
+<div class="msg-content">
+Arm wrestling you as a dire bear to gain 25 strength</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 09:12 PM</span>
+<div class="msg-content">
+If anything it could be a mock</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">09-May-18 10:21 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> Session starts at 1pm tomorrow. Micky, Drew, Josh, and I are arriving early so we can flesh everything out for Drew</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">10-May-18 05:34 AM</span>
+<div class="msg-content">
+I can start earlier that&#39;s fine with me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">10-May-18 10:43 AM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> SNACK CHECK! What do we need and what do we have?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">10-May-18 10:44 AM</span>
+<div class="msg-content">
+I got potato crunchies</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">10-May-18 10:44 AM</span>
+<div class="msg-content">
+Ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">10-May-18 11:15 AM</span>
+<div class="msg-content">
+Brian&#39;s house right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">10-May-18 11:21 AM</span>
+<div class="msg-content">
+No we&#39;re doing it at your house</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">10-May-18 11:21 AM</span>
+<div class="msg-content">
+yeah brians house</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">10-May-18 11:50 AM</span>
+<div class="msg-content">
+I&#39;m arrived</div>
+<div class="msg-content">
+Do we just go around back like last time?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">10-May-18 12:00 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> what kind of chips do you have?</div>
+<div class="msg-content">
+I am at Giant now grabbing stuff</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">14-May-18 02:32 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> When do you want to next session?  I&#39;m not available tomorrow, but I could do any day the rest of the week</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">14-May-18 02:35 PM</span>
+<div class="msg-content">
+I can&#39;t do anything this week, but feel free to npc Pysha</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">14-May-18 03:26 PM</span>
+<div class="msg-content">
+I don’t work wensday or Sunday but if you wouldn’t mind doing sessions starting at 4 I could do any other day of the week</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">15-May-18 05:48 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/422586179997794320/446066433990983701/image.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/422586179997794320/446066433990983701/image.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 05:49 PM</span>
+<div class="msg-content">
+i told you we where not doing anything tuesday</div>
+<div class="msg-content">
+since everyone else didnt say anything</div>
+<div class="msg-content">
+and to be fair it was up in the air</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">15-May-18 05:50 PM</span>
+<div class="msg-content">
+Not everything is directed towards you<span class="msg-edited" title="15-May-18 05:50 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 05:51 PM</span>
+<div class="msg-content">
+i know</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">15-May-18 05:51 PM</span>
+<div class="msg-content">
+That was to all the people who didn’t respond</div>
+<div class="msg-content">
+Also I wasn’t saying for today but if we were doing it some other time this week</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">16-May-18 08:16 PM</span>
+<div class="msg-content">
+So everyone except Pat when do you want to do the next session</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">18-May-18 01:03 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> what is your schedule like this week?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">18-May-18 01:05 PM</span>
+<div class="msg-content">
+Do you mean next week since it&#39;s Friday?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">18-May-18 01:05 PM</span>
+<div class="msg-content">
+Yes, what is everyone&#39;s schedule like for the next seven days</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/f6398619c5aa27ce6b4a430a5a7c18e5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">18-May-18 01:05 PM</span>
+<div class="msg-content">
+Next Thursday I have orientation</div>
+<div class="msg-content">
+Sunday SOMETHING is gonna keep me busy</div>
+<div class="msg-content">
+And possibly one more day</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">18-May-18 01:12 PM</span>
+<div class="msg-content">
+cant do sunday, I think thats it but id have to check to make sure</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">18-May-18 01:41 PM</span>
+<div class="msg-content">
+I don’t work monday</div>
+<div class="msg-content">
+Other than that work till 3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">18-May-18 03:15 PM</span>
+<div class="msg-content">
+6 to 2 Monday, off Tuesday</div>
+<div class="msg-content">
+Rest of the week not available</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">19-May-18 01:27 AM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> can&#39;t do d&amp;d monday, hows tuesday look?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">19-May-18 06:37 AM</span>
+<div class="msg-content">
+I work until 3</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">19-May-18 02:53 PM</span>
+<div class="msg-content">
+I think I&#39;m free</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">20-May-18 09:05 PM</span>
+<div class="msg-content">
+tuesday works</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">21-May-18 02:51 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span>  available for 1pm tomorrow?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-May-18 02:53 PM</span>
+<div class="msg-content">
+Micky has work till three</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">21-May-18 02:54 PM</span>
+<div class="msg-content">
+I wouldn’t be able to get to bryans till the very earliest 330</div>
+<div class="msg-content">
+Which would mean pat being at wawa at 3 me getting to leave on time and me not going home at all</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">21-May-18 02:57 PM</span>
+<div class="msg-content">
+It would be at my place tomorrow, we couldn&#39;t push it back a to a better date</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-May-18 02:57 PM</span>
+<div class="msg-content">
+The problem is that this weekend I have a wedding</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">21-May-18 02:57 PM</span>
+<div class="msg-content">
+Alright I’m fine going late at night but it wouldn’t be until 4</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">21-May-18 02:58 PM</span>
+<div class="msg-content">
+His parents probably want us out around 8 or so</div>
+<div class="msg-content">
+Plus tomorrow morning I need to be at montco</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">21-May-18 04:48 PM</span>
+<div class="msg-content">
+So what are we doing <span class="mention" title="SeaHacking#8906">@SeaHacking</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">21-May-18 04:50 PM</span>
+<div class="msg-content">
+If we can&#39;t do it early enough tomorrow, we can push it back. Try to find out what day you guys are available</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">22-May-18 11:21 AM</span>
+<div class="msg-content">
+The earliest I can do is 4pm except Sunday where I don’t work</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">22-May-18 11:22 AM</span>
+<div class="msg-content">
+I work 7-3 the rest of this week, and Sunday I have a wedding</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">22-May-18 11:29 AM</span>
+<div class="msg-content">
+Tep</div>
+<div class="msg-content">
+7-3 for me too</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">22-May-18 03:05 PM</span>
+<div class="msg-content">
+I believe I&#39;m busy Saturday, other than that I&#39;m free</div>
+<div class="msg-content">
+Oh and Thursday I&#39;m busy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">24-May-18 11:53 PM</span>
+<div class="msg-content">
+What is everyone doing the weekend of June 2nd and 3rd? That is the last weekend before Josh leaves for Idaho. I will most likely work until 3 that Saturday and have off the Sunday and Monday. We could do a late night session Saturday, sleep over the night and do more DnD Sunday before we put the campaign on hold. What do y&#39;all want to do?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">25-May-18 11:45 AM</span>
+<div class="msg-content">
+I could possibly do Saturday. That&#39;s it though.</div>
+<div class="msg-content">
+Weekdays are much better for me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">25-May-18 03:11 PM</span>
+<div class="msg-content">
+I work literally every weekday</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">27-May-18 08:21 AM</span>
+<div class="msg-content">
+Same</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">28-May-18 11:49 PM</span>
+<div class="msg-content">
+<span class="mention">@everyone</span> I&#39;m not sure if we&#39;ll be able to plan another session before I head off, and I think I&#39;m starting to get a bit exhausted of the Nymene setting, though it has been a blast.  Once I get back, I&#39;ll probably start planning a campaign in the fall for whoever is available and interested.  If everyone is fine with it, I&#39;d like to reformat this discord to be a general d&amp;d discord to host anyone who might be interested in playing, then separate d&amp;d groups  into different channels.  What do you guys think?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">29-May-18 12:05 AM</span>
+<div class="msg-content">
+Im fine with this but Khaless is not done shattering the bodies of his innumerable foes, he still must conclude his quest to become the strongest even if it takes him away from Nymene at some point</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">29-May-18 12:06 AM</span>
+<div class="msg-content">
+If I have a high level barbarian in another campaign, I may give him a quest to get the legendary artifact, the Hammer of Khaless</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">29-May-18 12:07 AM</span>
+<div class="msg-content">
+&#128076;&#127995;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/9d8770637e21e9a764d75282d577cb0a.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">29-May-18 04:10 PM</span>
+<div class="msg-content">
+I feel that its probably for the best</div>
+<div class="msg-content">
+if you are going to open the discord up just for DnD you need to change our names then</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">29-May-18 04:11 PM</span>
+<div class="msg-content">
+True</div>
+</div>
+</div>
+</div>
+</body>
+</html>

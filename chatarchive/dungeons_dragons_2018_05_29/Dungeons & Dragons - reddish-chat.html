@@ -1,0 +1,197 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dungeons & Dragons - reddish-chat</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/422586179997794314/cfbbdb15b8bb285c359a3cd0b6626da2.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Dungeons & Dragons</div>
+<div class="channel-name">reddish-chat</div>
+<div class="misc">4 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">08-Apr-18 09:24 PM</span>
+<div class="msg-content">
+Reddish Chat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">20-Apr-18 08:12 PM</span>
+<div class="msg-content">
+<span class="mention" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">@&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span> you speak ye olde reddish</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">20-Apr-18 08:19 PM</span>
+<div class="msg-content">
+Mmm, yes, quite cromulent.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/561e120bd80a16db240726ff08b5565d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">21-Apr-18 05:56 PM</span>
+<div class="msg-content">
+The granola Wars were grand</div>
+</div>
+</div>
+</div>
+</body>
+</html>

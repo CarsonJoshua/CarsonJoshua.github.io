@@ -1,0 +1,509 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Asteroids & Androids - race-design</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/445979910033637376/f5985d0092d8366243d1874a40bf2eb7.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Asteroids & Androids</div>
+<div class="channel-name">race-design</div>
+<div class="misc">43 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 02:45 PM</span>
+<div class="msg-content">
+<span class="mention" title="Dungeon Lord Jewcifer#2411">@Dungeon Lord Jewcifer</span> insectoid<br /><span class="mention" title="MrAverageJoe#9851">@MrAverageJoe</span> gaseous<br /><span class="mention" title="omnicoder32#8232">@omnicoder32</span> finka bout it<br /><span class="mention" title="McHennessey#282">@McHennessey</span> get back to me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 02:45 PM</span>
+<div class="msg-content">
+<a href="https://i.ytimg.com/vi/DrpLvfGXnFo/maxresdefault.jpg">https://i.ytimg.com/vi/DrpLvfGXnFo/maxresdefault.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:15 PM</span>
+<div class="msg-content">
+<span class="mention" title="SeaHacking#8906">@SeaHacking</span> so is there any specific race you want me to write up?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:17 PM</span>
+<div class="msg-content">
+what would you like to play?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:17 PM</span>
+<div class="msg-content">
+Honestly? I kind of want to be similar to Drax from GotG</div>
+<div class="msg-content">
+So maybe a Klingon like species that values war and honor in battle</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:18 PM</span>
+<div class="msg-content">
+or just a sub-human</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:18 PM</span>
+<div class="msg-content">
+But not be an idiot like Drax or one dimensional like a stereotypical Klingon</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:19 PM</span>
+<div class="msg-content">
+Drax is an idiot because hes a barbarian</div>
+<div class="msg-content">
+he is an ork barbarian in space</div>
+<div class="msg-content">
+orc</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:20 PM</span>
+<div class="msg-content">
+thats what i thought</div>
+<div class="msg-content">
+but I was thinking more figher than barbarian so he can be a little more civilized</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:20 PM</span>
+<div class="msg-content">
+well human fighters are a thing, but this is the race creation area, not class</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:21 PM</span>
+<div class="msg-content">
+So Pat, I was thinking of having two mechanical races (atleast), robots and androids.  robots would be strong and androids would be smart</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:21 PM</span>
+<div class="msg-content">
+were looking for the race that can be applied to any class</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:21 PM</span>
+<div class="msg-content">
+would you be interested in helping me spec out robot?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:26 PM</span>
+<div class="msg-content">
+i like that idea</div>
+<div class="msg-content">
+how are you going to approach androids? What will tell them apart from regular humans?</div>
+<div class="msg-content">
+Can Androids be based off of other humanoid races?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:27 PM</span>
+<div class="msg-content">
+I was thinking of just having them be human androids, and do some lore about how humans were the only ones to develop them</div>
+<div class="msg-content">
+We could do off species androids as well</div>
+<div class="msg-content">
+have them be mechanically the same</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:31 PM</span>
+<div class="msg-content">
+thats clever</div>
+<div class="msg-content">
+and for specking out robots why not use the half orc template?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:32 PM</span>
+<div class="msg-content">
+I was going to use straight orc as the basis</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:32 PM</span>
+<div class="msg-content">
+well in 3.5 do you play as a orc or half orc normally?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:32 PM</span>
+<div class="msg-content">
+big buff to strength, penalties to all mental stats, and some other tasties</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:32 PM</span>
+<div class="msg-content">
+and elves for androids</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:32 PM</span>
+<div class="msg-content">
+I usually pick orc honestly</div>
+<div class="msg-content">
+half orc is half as good as orc</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:33 PM</span>
+<div class="msg-content">
+half orc could be a cyborg</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:33 PM</span>
+<div class="msg-content">
+yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:38 PM</span>
+<div class="msg-content">
+Robot Traits (Ex)<br />Robots possess the following racial traits.<br /><br />+4 Strength, -2 Intelligence, -2 Wisdom, -2 Charisma.<br />A robot’s base land speed is 30 feet.<br />Mechanical traits:  Robots do not need to eat, sleep, or breath.   They are immune to vacuum damage. They are affected by effects that target mechanical targets and not by effects that target organic targets.<br />Automatic Languages: Common, Binary. Bonus Languages: <br />Favored Class: Scrapper.<span class="msg-edited" title="16-May-18 12:34 AM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:39 PM</span>
+<div class="msg-content">
+Robots speak binary</div>
+<div class="msg-content">
+i love it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:40 PM</span>
+<div class="msg-content">
+Pinned a message.</div>
+<div class="msg-content">
+Any suggested edits?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/0e8a2c468101dfec612829107451f8b6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-May-18 03:42 PM</span>
+<div class="msg-content">
+i dont know anything about scrappers or any of the planned classes</div>
+<div class="msg-content">
+i am assuming thats a version of barbarian</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-May-18 03:42 PM</span>
+<div class="msg-content">
+pretty much</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-May-18 03:43 PM</span>
+<div class="msg-content">
+we need to spec them out</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">16-May-18 02:56 AM</span>
+<div class="msg-content">
+Gaseous idea dump:  semi-mechanical, death ability, con penalty, mental stat buff (cha?),</div>
+</div>
+</div>
+</div>
+</body>
+</html>

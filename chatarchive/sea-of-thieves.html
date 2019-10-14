@@ -1,0 +1,912 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sea of Thieves</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/embed/avatars/0.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Direct Messages</div>
+<div class="channel-name">Dungeon Lord Jewcifer</div>
+<div class="misc">87 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:28 PM</span>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Added a recipient.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:28 PM</span>
+<div class="msg-content">
+ok so why do we have two groups</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:28 PM</span>
+<div class="msg-content">
+<a href="https://www.seaofthieves.com/release-notes">https://www.seaofthieves.com/release-notes</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:28 PM</span>
+<div class="msg-content">
+this is good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:28 PM</span>
+<div class="msg-content">
+Sea of thieves group</div>
+<div class="msg-content">
+Changed the channel name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:29 PM</span>
+<div class="msg-content">
+why dont you actually create a channel<span class="msg-edited" title="27-Mar-18 03:29 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:29 PM</span>
+<div class="msg-content">
+too much bother</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:29 PM</span>
+<div class="msg-content">
+alright</div>
+<div class="msg-content">
+back to resume writing</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:29 PM</span>
+<div class="msg-content">
+wanna play some sea of thieves?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:29 PM</span>
+<div class="msg-content">
+after resume</div>
+<div class="msg-content">
+give me 15-20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:29 PM</span>
+<div class="msg-content">
+alright</div>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=Zg4m5iQ3844">https://www.youtube.com/watch?v=Zg4m5iQ3844</a></div>
+<div class="msg-content">
+might be an ebony pistol stream starting soon for those who missed it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:30 PM</span>
+<div class="msg-content">
+did you get the pistol yet?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:30 PM</span>
+<div class="msg-content">
+aye<span class="msg-edited" title="27-Mar-18 03:30 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:30 PM</span>
+<div class="msg-content">
+oooooh what about blacko doggo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:30 PM</span>
+<div class="msg-content">
+nope</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:30 PM</span>
+<div class="msg-content">
+SAD</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:31 PM</span>
+<div class="msg-content">
+I&#39;ll submit a ticket tomorrow</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">27-Mar-18 03:32 PM</span>
+<div class="msg-content">
+<a href="https://v.redd.it/vykhx94507o01">https://v.redd.it/vykhx94507o01</a> I assume you saw this Josh and made the group</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:32 PM</span>
+<div class="msg-content">
+aye</div>
+<div class="msg-content">
+We&#39;ll be the horror</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:32 PM</span>
+<div class="msg-content">
+yeah thats an oh no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">27-Mar-18 03:32 PM</span>
+<div class="msg-content">
+But the sails and hull will be our bop creations</div>
+<div class="msg-content">
+Bpp*</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:33 PM</span>
+<div class="msg-content">
+I found out the rep ship stuff costs like 8000 so I bought the soveriegn figurepiece</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:33 PM</span>
+<div class="msg-content">
+oooooooooh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">27-Mar-18 03:33 PM</span>
+<div class="msg-content">
+Only 8000?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:34 PM</span>
+<div class="msg-content">
+yeah rep stuff is super cheap</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">27-Mar-18 03:34 PM</span>
+<div class="msg-content">
+Wow</div>
+<div class="msg-content">
+I guess you already spent the cost in time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:34 PM</span>
+<div class="msg-content">
+aye</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:45 PM</span>
+<div class="msg-content">
+4.8 gig update for sea of thieves</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 03:45 PM</span>
+<div class="msg-content">
+isnt it 10 gig?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 03:45 PM</span>
+<div class="msg-content">
+Today?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:45 PM</span>
+<div class="msg-content">
+its been background downloading for a bit<span class="msg-edited" title="27-Mar-18 03:45 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 03:45 PM</span>
+<div class="msg-content">
+Also when was I added to this</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:45 PM</span>
+<div class="msg-content">
+now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 03:46 PM</span>
+<div class="msg-content">
+Ah</div>
+<div class="msg-content">
+Gonna rob bitches</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:48 PM</span>
+<div class="msg-content">
+oh xbox goes backward</div>
+<div class="msg-content">
+ive downloaded 4.9 gig</div>
+<div class="msg-content">
+and have roughly 5.1 to go\</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 03:49 PM</span>
+<div class="msg-content">
+Xbox goes backward?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">27-Mar-18 03:49 PM</span>
+<div class="msg-content">
+yeah its counting up as I download</div>
+<div class="msg-content">
+instead of counting whats left to download</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 03:51 PM</span>
+<div class="msg-content">
+The subreddit says it&#39;s nearly 20</div>
+<div class="msg-content">
+So if that&#39;s the case I&#39;ll download it over night</div>
+<div class="msg-content">
+That just takes too long</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/d4d115b7686cefd527408b3fc0d47e4f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Daradish#7693">Daradish</span>
+<span class="msg-date">27-Mar-18 04:11 PM</span>
+<div class="msg-content">
+Changed the channel name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">27-Mar-18 04:12 PM</span>
+<div class="msg-content">
+wot</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 04:17 PM</span>
+<div class="msg-content">
+Huh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 04:18 PM</span>
+<div class="msg-content">
+Removed a recipient.</div>
+<div class="msg-content">
+Changed the channel name.</div>
+<div class="msg-content">
+Added a recipient.</div>
+<div class="msg-content">
+Have you learned your lesson?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 04:19 PM</span>
+<div class="msg-content">
+Who&#39;s that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/403a4344fca8ec541d7d9e5cf139bd82.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">27-Mar-18 04:19 PM</span>
+<div class="msg-content">
+I’m gonna guess not preemptively</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">27-Mar-18 04:20 PM</span>
+<div class="msg-content">
+your dm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 04:20 PM</span>
+<div class="msg-content">
+its ryan</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">27-Mar-18 04:20 PM</span>
+<div class="msg-content">
+Ah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/d4d115b7686cefd527408b3fc0d47e4f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Daradish#7693">Daradish</span>
+<span class="msg-date">27-Mar-18 05:55 PM</span>
+<div class="msg-content">
+Changed the channel name.</div>
+<div class="msg-content">
+Changed the channel name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Mar-18 05:56 PM</span>
+<div class="msg-content">
+Changed the channel name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/403a4344fca8ec541d7d9e5cf139bd82.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">27-Mar-18 08:39 PM</span>
+<div class="msg-content">
+<a href="https://i.imgur.com/eC5ED23.gifv">https://i.imgur.com/eC5ED23.gifv</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/403a4344fca8ec541d7d9e5cf139bd82.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">27-Mar-18 09:00 PM</span>
+<div class="msg-content">
+<a href="https://www.reddit.com/r/Seaofthieves/comments/87dric/1">https://www.reddit.com/r/Seaofthieves/comments/87dric/1</a><i>horror</i>game<i>of</i>the_year/</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">28-Mar-18 12:22 AM</span>
+<div class="msg-content">
+Our internet went out</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">28-Mar-18 11:56 AM</span>
+<div class="msg-content">
+Anyone planning on doing some high seas robbery today</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">28-Mar-18 11:57 AM</span>
+<div class="msg-content">
+yeah, i got a class at 130 but will be home 330-400</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">28-Mar-18 11:57 AM</span>
+<div class="msg-content">
+Cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">29-Mar-18 12:21 AM</span>
+<div class="msg-content">
+R i P</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">29-Mar-18 12:21 AM</span>
+<div class="msg-content">
+This chat lasted just long enough to believe life was good</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/87e289b74465941ef5fc9b831ef8d55e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">29-Mar-18 12:22 AM</span>
+<div class="msg-content">
+Changed the channel name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">29-Mar-18 12:23 AM</span>
+<div class="msg-content">
+i guess</div>
+<div class="msg-content">
+just glad i got the refund. Want to focus this chat on another game to buy?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">29-Mar-18 12:37 AM</span>
+<div class="msg-content">
+possibly</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">29-Mar-18 01:29 AM</span>
+<div class="msg-content">
+Changed the channel name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/d4d115b7686cefd527408b3fc0d47e4f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Daradish#7693">Daradish</span>
+<span class="msg-date">14-Apr-18 02:35 PM</span>
+<div class="msg-content">
+Removed a recipient.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/6a59a44f344364aa93f01b1a5a296ca1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#282">McHennessey</span>
+<span class="msg-date">15-Apr-18 12:01 AM</span>
+<div class="msg-content">
+Removed a recipient.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/c4c2ebd9011b9b531da59b72de843699.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Inquisition#8016">Inquisition</span>
+<span class="msg-date">15-Apr-18 12:02 AM</span>
+<div class="msg-content">
+Removed a recipient.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/f66ca12e11d54fb26997dab9b935a9f6.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;#8207">&#127821;&#120187;&#120206;&#120211;&#120202;&#120198;&#120213;&#120213;&#120209;&#120202;&#127821;</span>
+<span class="msg-date">15-Apr-18 12:03 AM</span>
+<div class="msg-content">
+Removed a recipient.</div>
+</div>
+</div>
+</div>
+</body>
+</html>
