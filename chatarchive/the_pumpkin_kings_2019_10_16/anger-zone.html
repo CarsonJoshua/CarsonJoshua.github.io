@@ -1,0 +1,3413 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Pumpkin King's Spook-tastic Bananza - anger-zone</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/271433909323956225/d9bfe22a2ce9e42371cc4b66fafaa9d8.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">The Pumpkin King's Spook-tastic Bananza</div>
+<div class="channel-name">anger-zone</div>
+<div class="misc">377 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">02-Mar-19 03:05 PM</span>
+<div class="msg-content">
+<span class="mention" title="Hades7899#6264">@Hades7899</span> it is <span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">02-Mar-19 03:07 PM</span>
+<div class="msg-content">
+Thanks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">02-Mar-19 06:41 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  anyone want to join</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">03-Mar-19 10:09 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> wee woo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">03-Mar-19 10:09 PM</span>
+<div class="msg-content">
+in</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">03-Mar-19 10:11 PM</span>
+<div class="msg-content">
+I am in</div>
+<div class="msg-content">
+the channel</div>
+<div class="msg-content">
+AND NO ONE ELSE IS</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">04-Mar-19 11:53 AM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">06-Mar-19 08:40 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> get in here boys</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">06-Mar-19 08:40 PM</span>
+<div class="msg-content">
+wish I could. Let me know how yall like the new operators</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">06-Mar-19 08:42 PM</span>
+<div class="msg-content">
+Give me an hour and a half than I will br</div>
+<div class="msg-content">
+Still before pat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">06-Mar-19 08:42 PM</span>
+<div class="msg-content">
+its literally going to take over 12 hours for me to download. I&#39;m going to download it while I sleep tonight</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">06-Mar-19 08:48 PM</span>
+<div class="msg-content">
+Im going to bed cuz work</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">06-Mar-19 08:48 PM</span>
+<div class="msg-content">
+uawhg</div>
+<div class="msg-content">
+WEFG</div>
+<div class="msg-content">
+dg</div>
+<div class="msg-content">
+dSG</div>
+<div class="msg-content">
+AFDHGA</div>
+<div class="msg-content">
+DFH</div>
+<div class="msg-content">
+SDJH</div>
+<div class="msg-content">
+SGJ</div>
+<div class="msg-content">
+RST</div>
+<div class="msg-content">
+JSR</div>
+<div class="msg-content">
+TJ</div>
+<div class="msg-content">
+SRTJ</div>
+<div class="msg-content">
+RSWTJ</div>
+<div class="msg-content">
+RTSW</div>
+<div class="msg-content">
+JRT</div>
+<div class="msg-content">
+wrong chat sorry</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">06-Mar-19 08:48 PM</span>
+<div class="msg-content">
+damn you cory</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">07-Mar-19 09:43 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">07-Mar-19 09:48 PM</span>
+<div class="msg-content">
+Be on in 30</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">07-Mar-19 10:04 PM</span>
+<div class="msg-content">
+Gibbe a minute</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">07-Mar-19 10:12 PM</span>
+<div class="msg-content">
+Going bed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">08-Mar-19 06:01 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  its time for time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">08-Mar-19 11:17 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">08-Mar-19 11:19 PM</span>
+<div class="msg-content">
+ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">09-Mar-19 11:14 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">09-Mar-19 11:14 PM</span>
+<div class="msg-content">
+Give me like 15 minutes and I will get on</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">11-Mar-19 08:37 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">12-Mar-19 04:30 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> they just dropped the ability to get 10 days worth of renown boosters</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">12-Mar-19 09:20 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> boutta role out</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">14-Mar-19 12:03 AM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">14-Mar-19 08:15 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  anyone down?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">14-Mar-19 09:06 PM</span>
+<div class="msg-content">
+Home in 30</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">14-Mar-19 10:55 PM</span>
+<div class="msg-content">
+I got 5 hammer kills tonight</div>
+<div class="msg-content">
+feelz gud</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">14-Mar-19 11:27 PM</span>
+<div class="msg-content">
+Cory’s well on his way to becoming the mad Scottsman with all the sledge hammer kills he’s getting, was smacking people left and right</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">15-Mar-19 12:31 AM</span>
+<div class="msg-content">
+Does that interrogate ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">15-Mar-19 06:46 AM</span>
+<div class="msg-content">
+according to our research it makes them leave the game</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">15-Mar-19 11:31 AM</span>
+<div class="msg-content">
+Much like interrogation</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">15-Mar-19 12:49 PM</span>
+<div class="msg-content">
+Lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">15-Mar-19 04:17 PM</span>
+<div class="msg-content">
+Fair enough</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">15-Mar-19 07:31 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">15-Mar-19 08:44 PM</span>
+<div class="msg-content">
+<a href="https://www.reddit.com/r/funny/comments/b1f1c6/i">https://www.reddit.com/r/funny/comments/b1f1c6/i</a><i>want</i>to<i>know</i>more<i>about</i>this/</div>
+<div class="msg-content">
+cafe or themepark?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">15-Mar-19 09:52 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">17-Mar-19 01:11 AM</span>
+<div class="msg-content">
+anyone still up?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">17-Mar-19 08:11 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  anyone interested in a few rounds?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">20-Mar-19 04:44 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">20-Mar-19 08:15 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">20-Mar-19 08:56 PM</span>
+<div class="msg-content">
+Sorry had class</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">21-Mar-19 05:22 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">22-Mar-19 08:02 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">25-Mar-19 08:08 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  I still need the 5 stack challenge</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/559898556685615116/image0.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/559898556685615116/image0.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">28-Mar-19 08:42 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">31-Mar-19 10:43 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> uwu</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">31-Mar-19 11:33 PM</span>
+<div class="msg-content">
+ill be on just after midnight i think</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">01-Apr-19 12:22 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> there’s a new event going on for April fools</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">01-Apr-19 12:26 PM</span>
+<div class="msg-content">
+What&#39;s the event</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">01-Apr-19 12:27 PM</span>
+<div class="msg-content">
+April fools event</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">01-Apr-19 12:27 PM</span>
+<div class="msg-content">
+I understand that but what is special about the event</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">01-Apr-19 12:27 PM</span>
+<div class="msg-content">
+New Packs</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/562312185917997071/20190401122712_1.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/562312185917997071/20190401122712_1.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">01-Apr-19 12:28 PM</span>
+<div class="msg-content">
+What kind of abomination is that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">01-Apr-19 12:28 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/562312399978233866/20190401122833_1.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/562312399978233866/20190401122833_1.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">01-Apr-19 12:29 PM</span>
+<div class="msg-content">
+Oh no</div>
+<div class="msg-content">
+LOOK WHAT THEY&#39;VE DONE TO MY BOY</div>
+<div class="msg-content">
+I&#39;m gonna eat a sandwich, afterwards anyone wanna jump in</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">01-Apr-19 02:02 PM</span>
+<div class="msg-content">
+I love it</div>
+<div class="msg-content">
+I need lord tachankas unicorn helmet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">01-Apr-19 02:03 PM</span>
+<div class="msg-content">
+yo same</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">02-Apr-19 03:58 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> hephep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">08-Apr-19 09:30 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> just dew it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/993df909eb6f94dbdb746f28274e7d1b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Renegade#8207">Renegade</span>
+<span class="msg-date">08-Apr-19 09:42 PM</span>
+<div class="msg-content">
+just drew it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">09-Apr-19 09:57 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> hep hep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">09-Apr-19 10:01 PM</span>
+<div class="msg-content">
+Work</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">11-Apr-19 12:06 AM</span>
+<div class="msg-content">
+@Ror2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">14-Apr-19 09:48 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">15-Apr-19 05:47 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">15-Apr-19 06:08 PM</span>
+<div class="msg-content">
+Class</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">15-Apr-19 09:26 PM</span>
+<div class="msg-content">
+<span class="mention">@here</span> anyone for Borderlands 2?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">09-May-19 09:46 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">11-May-19 10:36 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  Siege?</div>
+<div class="msg-content">
+Also <a href="https://www.youtube.com/watch?v=swRalAAqUFY&amp;t=0s">https://www.youtube.com/watch?v=swRalAAqUFY&amp;t=0s</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">13-May-19 11:13 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">13-May-19 11:15 PM</span>
+<div class="msg-content">
+Sure</div>
+<div class="msg-content">
+&#127345;️Ebon</div>
+<div class="msg-content">
+&#127345;️evin</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">15-May-19 05:36 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+<div class="msg-content">
+<span class="mention">@R6</span>  ehhh ehhhh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">19-May-19 03:23 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">22-May-19 08:22 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/bUQF5YEwjLE">https://youtu.be/bUQF5YEwjLE</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">24-May-19 09:09 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ye ye</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">26-May-19 11:29 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">26-May-19 11:33 PM</span>
+<div class="msg-content">
+yipper</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">27-May-19 09:40 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  spicy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">29-May-19 10:00 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> me again</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">01-Jun-19 07:05 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  tis time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87247443506233344/6b23e60aacf743a8814d2dc01475764f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ttaM#6782">ttaM</span>
+<span class="msg-date">01-Jun-19 08:13 PM</span>
+<div class="msg-content">
+I&#39;ve made Siege Voice only viewable for those with the R6 role</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/edac2f5294e99a7ab006eff18a06026e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nitsuj08#6835">Nitsuj08</span>
+<span class="msg-date">02-Jun-19 03:49 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">02-Jun-19 03:53 PM</span>
+<div class="msg-content">
+Thanks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">02-Jun-19 08:10 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">04-Jun-19 02:18 AM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/585351561820110878/20190604_021557.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/585351561820110878/20190604_021557.jpg" />
+</a>
+</div>
+<div class="msg-content">
+<span class="mention">@R6</span> The man did an Echo pacafist playthrough and got MVP</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">04-Jun-19 08:00 AM</span>
+<div class="msg-content">
+You gonna have to explain how a pacifist got 3 kills and enough team damage for it to be reflected</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">04-Jun-19 08:04 AM</span>
+<div class="msg-content">
+Does that one man have 16 kills</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">04-Jun-19 08:37 AM</span>
+<div class="msg-content">
+Where all the kills on offense?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">04-Jun-19 11:26 AM</span>
+<div class="msg-content">
+Self defense</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">04-Jun-19 01:16 PM</span>
+<div class="msg-content">
+That one man was not happy about hostage</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">04-Jun-19 05:24 PM</span>
+<div class="msg-content">
+So whens that new season</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">04-Jun-19 05:39 PM</span>
+<div class="msg-content">
+Is the new operation out</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">04-Jun-19 05:58 PM</span>
+<div class="msg-content">
+No</div>
+<div class="msg-content">
+<span class="mention">@R6</span> play?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">04-Jun-19 06:01 PM</span>
+<div class="msg-content">
+I&#39;m in KU. I&#39;ll be on in maybe 1-2 hours</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">05-Jun-19 05:41 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/585946335962857485/Tom_Clancys_Rainbow_Six_Siege2019-6-5-17-38-46.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/585946335962857485/Tom_Clancys_Rainbow_Six_Siege2019-6-5-17-38-46.jpg" />
+</a>
+</div>
+<div class="msg-content">
+This is an outrage</div>
+<div class="msg-content">
+And I demand to speak to the manager</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">05-Jun-19 05:53 PM</span>
+<div class="msg-content">
+Oof</div>
+<div class="msg-content">
+Big Oof</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">05-Jun-19 07:01 PM</span>
+<div class="msg-content">
+so the 9887th spawn of the slann is a skink named Karen?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">05-Jun-19 09:36 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> meesa back</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">05-Jun-19 09:37 PM</span>
+<div class="msg-content">
+One moment</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">06-Jun-19 12:12 AM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/586044667980939272/Tom_Clancys_Rainbow_Six_Siege2019-6-5-21-42-51.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/586044667980939272/Tom_Clancys_Rainbow_Six_Siege2019-6-5-21-42-51.jpg" />
+</a>
+</div>
+<div class="msg-content">
+It&#39;s kinda hard to see</div>
+<div class="msg-content">
+But under the text you can see the mute circle they had</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">06-Jun-19 12:12 AM</span>
+<div class="msg-content">
+what the jammers?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">06-Jun-19 12:12 AM</span>
+<div class="msg-content">
+Yeah</div>
+<div class="msg-content">
+The ancient ritual</div>
+<div class="msg-content">
+I think they were trying to sacrifice the hostage to the jammin&#39; gods</div>
+<div class="msg-content">
+Luckily we stopped the ritual in time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">06-Jun-19 12:14 AM</span>
+<div class="msg-content">
+wait</div>
+<div class="msg-content">
+I thought you had to go to bed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">06-Jun-19 12:14 AM</span>
+<div class="msg-content">
+I do</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">06-Jun-19 12:14 AM</span>
+<div class="msg-content">
+<i>LIAR</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">06-Jun-19 11:05 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> henlo</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">06-Jun-19 11:07 PM</span>
+<div class="msg-content">
+hi</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">06-Jun-19 11:07 PM</span>
+<div class="msg-content">
+siege brother</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">06-Jun-19 11:08 PM</span>
+<div class="msg-content">
+Recruit rush in ranked for me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Jun-19 12:16 AM</span>
+<div class="msg-content">
+<span class="mention" title="Skipper#5600">@Skipper</span> I&#39;m a bit late but I&#39;m here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">07-Jun-19 01:18 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> game time?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">07-Jun-19 01:48 PM</span>
+<div class="msg-content">
+I have the work</div>
+<div class="msg-content">
+I do the work</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">07-Jun-19 01:55 PM</span>
+<div class="msg-content">
+Me as well</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">07-Jun-19 04:16 PM</span>
+<div class="msg-content">
+You is not well my friend</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">07-Jun-19 05:06 PM</span>
+<div class="msg-content">
+Frist of all</div>
+<div class="msg-content">
+How dare you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">07-Jun-19 06:43 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> I&#39;m done work now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/edac2f5294e99a7ab006eff18a06026e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nitsuj08#6835">Nitsuj08</span>
+<span class="msg-date">08-Jun-19 05:19 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">08-Jun-19 07:14 PM</span>
+<div class="msg-content">
+I&#39;m not mad</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">08-Jun-19 08:50 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> hoes mad</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">08-Jun-19 08:52 PM</span>
+<div class="msg-content">
+I prefer crazy bitches myself</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">09-Jun-19 08:29 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">09-Jun-19 10:33 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/587469324336234516/Next_operator.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/587469324336234516/Next_operator.png" />
+</a>
+</div>
+<div class="msg-content">
+<span class="mention" title="Skipper#5600">@Skipper</span> <span class="mention" title="Dungeon Lord Jewcifer#2411">@Dungeon Lord Jewcifer</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/edac2f5294e99a7ab006eff18a06026e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nitsuj08#6835">Nitsuj08</span>
+<span class="msg-date">10-Jun-19 02:13 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/39be6dc7de816a1a099ad510d37fd4cf.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">10-Jun-19 02:13 PM</span>
+<div class="msg-content">
+No u</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/edac2f5294e99a7ab006eff18a06026e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nitsuj08#6835">Nitsuj08</span>
+<span class="msg-date">10-Jun-19 02:14 PM</span>
+<div class="msg-content">
+oof</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">10-Jun-19 09:27 PM</span>
+<div class="msg-content">
+“Hardware” 4 armor 0 speed, special ability Taunt, aggro idiot defenders</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">10-Jun-19 09:36 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  rah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">10-Jun-19 09:37 PM</span>
+<div class="msg-content">
+Ree</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">10-Jun-19 10:18 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=qh6-UB7SAtM">https://www.youtube.com/watch?v=qh6-UB7SAtM</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">11-Jun-19 10:04 AM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> The update is 8.2 GB and is available now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">11-Jun-19 06:07 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> it didnt launch the first 5 times but hey its time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">11-Jun-19 06:08 PM</span>
+<div class="msg-content">
+I gotta update it, I&#39;m effectively banned until it&#39;s done</div>
+<div class="msg-content">
+Takes too long to wait with my shit internet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">11-Jun-19 08:00 PM</span>
+<div class="msg-content">
+I wish I didn&#39;t get extra hours</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">12-Jun-19 05:14 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> online</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">12-Jun-19 09:51 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> online</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">12-Jun-19 09:51 PM</span>
+<div class="msg-content">
+we all just got off</div>
+<div class="msg-content">
+Except cory</div>
+<div class="msg-content">
+Cory is still around</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">12-Jun-19 09:52 PM</span>
+<div class="msg-content">
+Just got home, bout to hop in shower</div>
+<div class="msg-content">
+Be on in 20</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">12-Jun-19 09:52 PM</span>
+<div class="msg-content">
+kewl</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/edac2f5294e99a7ab006eff18a06026e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nitsuj08#6835">Nitsuj08</span>
+<span class="msg-date">15-Jun-19 07:14 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">15-Jun-19 09:12 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> anyone still up for siege?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">18-Jun-19 10:22 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">18-Jun-19 11:02 PM</span>
+<div class="msg-content">
+Internet shit self</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">19-Jun-19 06:49 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> anyone on?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">19-Jun-19 09:40 PM</span>
+<div class="msg-content">
+Will be home in 30</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Jun-19 09:15 PM</span>
+<div class="msg-content">
+<a href="https://cdn.discordapp.com/attachments/358828014009712661/591426022206078976/93z4s29b6j531.png">https://cdn.discordapp.com/attachments/358828014009712661/591426022206078976/93z4s29b6j531.png</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">20-Jun-19 09:15 PM</span>
+<div class="msg-content">
+This isn&#39;t shitposting</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">20-Jun-19 09:19 PM</span>
+<div class="msg-content">
+<a href="https://cdn.discordapp.com/attachments/358828014009712661/591426022206078976/93z4s29b6j531.png">https://cdn.discordapp.com/attachments/358828014009712661/591426022206078976/93z4s29b6j531.png</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/183958625725710337/3eaa49a68a9708f8c0da4863a9ed7975.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Deelion#4855">Deelion</span>
+<span class="msg-date">20-Jun-19 09:19 PM</span>
+<div class="msg-content">
+<a href="https://cdn.discordapp.com/attachments/358828014009712661/591426022206078976/93z4s29b6j531.png">https://cdn.discordapp.com/attachments/358828014009712661/591426022206078976/93z4s29b6j531.png</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Jun-19 01:06 PM</span>
+<div class="msg-content">
+Little bit less than a gig update</div>
+<div class="msg-content">
+ARE WE GETTING BACK THE SHIELDS</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">21-Jun-19 07:07 PM</span>
+<div class="msg-content">
+did we</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Jun-19 07:13 PM</span>
+<div class="msg-content">
+No</div>
+<div class="msg-content">
+I&#39;ve no idea what they actually did</div>
+<div class="msg-content">
+Alright, so the update was entirely bug fixes</div>
+<div class="msg-content">
+And it allegedly fixed the IQ exploit</div>
+<div class="msg-content">
+However, if people are still able to reproduce the exploit she will also be removed from the game till they can fix it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">21-Jun-19 07:38 PM</span>
+<div class="msg-content">
+how bad is this exploit?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Jun-19 07:41 PM</span>
+<div class="msg-content">
+IQ could disconnect herself from her body and become and invincible death ghost</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">21-Jun-19 07:41 PM</span>
+<div class="msg-content">
+Spooky</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">21-Jun-19 07:41 PM</span>
+<div class="msg-content">
+While her body, without a hitbox, wondered around spawn</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">21-Jun-19 08:27 PM</span>
+<div class="msg-content">
+dude, that&#39;s intentional. She&#39;s reached such a high IQ that she transcended from her physical form into a higher being only comprehensible by people over 3000 IQ<span class="msg-edited" title="21-Jun-19 08:27 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">23-Jun-19 02:34 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> assemble</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">23-Jun-19 02:59 PM</span>
+<div class="msg-content">
+@dnd</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">23-Jun-19 03:44 PM</span>
+<div class="msg-content">
+sadness</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">23-Jun-19 04:23 PM</span>
+<div class="msg-content">
+Give me 30</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/39be6dc7de816a1a099ad510d37fd4cf.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">24-Jun-19 05:33 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> <br /><a href="https://www.youtube.com/watch?v=4h7QsjaFskk">https://www.youtube.com/watch?v=4h7QsjaFskk</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">24-Jun-19 05:49 PM</span>
+<div class="msg-content">
+I feel assaulted watching that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">24-Jun-19 08:27 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/edac2f5294e99a7ab006eff18a06026e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nitsuj08#6835">Nitsuj08</span>
+<span class="msg-date">24-Jun-19 09:17 PM</span>
+<div class="msg-content">
+I will join in maybe 30 minutes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">24-Jun-19 09:25 PM</span>
+<div class="msg-content">
+Topiary</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">25-Jun-19 05:46 PM</span>
+<div class="msg-content">
+I have an extra two hours of work so I&#39;ll be back round 9</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">25-Jun-19 05:47 PM</span>
+<div class="msg-content">
+ill be on at 9</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">25-Jun-19 09:34 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> doing customs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">25-Jun-19 09:50 PM</span>
+<div class="msg-content">
+Fucking power flickered</div>
+<div class="msg-content">
+I&#39;ll be back in a couple minutes.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">25-Jun-19 10:12 PM</span>
+<div class="msg-content">
+quick everyone, make fun of patrick while he&#39;s gone!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">25-Jun-19 10:18 PM</span>
+<div class="msg-content">
+Already back dickhead</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">25-Jun-19 10:18 PM</span>
+<div class="msg-content">
+quick everyone, make fun of patrick while he&#39;s here!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">25-Jun-19 10:18 PM</span>
+<div class="msg-content">
+fuck you dickhead</div>
+<div class="msg-content">
+&#175;\<i>(ツ)</i>/&#175;</div>
+<div class="msg-content">
+/s</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">25-Jun-19 10:19 PM</span>
+<div class="msg-content">
+dick you fuckhead</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">25-Jun-19 10:19 PM</span>
+<div class="msg-content">
+i mean it is pride month</div>
+<div class="msg-content">
+no homo, have socks on at all times</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">25-Jun-19 10:19 PM</span>
+<div class="msg-content">
+<img class="emoji" title=":2127_perv:" src="https://cdn.discordapp.com/emojis/563843732718485504.png" /></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/183958625725710337/3eaa49a68a9708f8c0da4863a9ed7975.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Deelion#4855">Deelion</span>
+<span class="msg-date">27-Jun-19 10:45 PM</span>
+<div class="msg-content">
+quick everyone, make fun of ryan while he&#39;s gone!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">27-Jun-19 10:45 PM</span>
+<div class="msg-content">
+quick everyone, make fun of ryan while he&#39;s gone!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">27-Jun-19 10:46 PM</span>
+<div class="msg-content">
+Ryan has at one point been discribed as fradulent and homosexual</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">27-Jun-19 10:46 PM</span>
+<div class="msg-content">
+Both accurate</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">27-Jun-19 10:46 PM</span>
+<div class="msg-content">
+this closet is shut tightly</div>
+<div class="msg-content">
+and im not coming out</div>
+<div class="msg-content">
+you can&#39;t <i>make</i> me</div>
+<div class="msg-content">
+1 sec guys have to go feed my pet cucumber</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">27-Jun-19 11:27 PM</span>
+<div class="msg-content">
+I’m gonna be honest, if we remove Ryan’s name I’m pretty sure we could make that claim of like 60% of the server</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">28-Jun-19 06:46 AM</span>
+<div class="msg-content">
+wait you mean I’m not the only one with a pet cucumber?</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/594116619257643038/image0.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/594116619257643038/image0.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">28-Jun-19 06:47 AM</span>
+<div class="msg-content">
+<a href="https://v.redd.it/xvkzn7xcb1731">https://v.redd.it/xvkzn7xcb1731</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">29-Jun-19 04:35 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> anyone awake?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">02-Jul-19 12:06 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/JuvhoniB8l4">https://youtu.be/JuvhoniB8l4</a></div>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">02-Jul-19 12:10 PM</span>
+<div class="msg-content">
+You in now or is this for tonight?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">02-Jul-19 12:55 PM</span>
+<div class="msg-content">
+Are we able to do a custom of that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">02-Jul-19 01:23 PM</span>
+<div class="msg-content">
+i hope</div>
+<div class="msg-content">
+it is fast as hell</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">02-Jul-19 01:23 PM</span>
+<div class="msg-content">
+I&#39;m down for a custom later tonight</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">02-Jul-19 01:24 PM</span>
+<div class="msg-content">
+theres no prep phase</div>
+<div class="msg-content">
+and 1:30 timer</div>
+<div class="msg-content">
+no, no custom option for it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">02-Jul-19 01:27 PM</span>
+<div class="msg-content">
+Lame</div>
+<div class="msg-content">
+It&#39;d be perfect for us</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">02-Jul-19 01:40 PM</span>
+<div class="msg-content">
+yep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">02-Jul-19 02:03 PM</span>
+<div class="msg-content">
+Damn I wish I didn’t work until 6</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">02-Jul-19 10:22 PM</span>
+<div class="msg-content">
+<a href="https://youtu.be/HdQMwzCW84Q">https://youtu.be/HdQMwzCW84Q</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">06-Jul-19 06:46 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> bah</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">06-Jul-19 06:51 PM</span>
+<div class="msg-content">
+Nah</div>
+<div class="msg-content">
+GH</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">06-Jul-19 07:06 PM</span>
+<div class="msg-content">
+Sorry. Thought I had left</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Jul-19 04:43 PM</span>
+<div class="msg-content">
+Fixed – Players are kicked after putting the hostage in DBNO during prep phase. <br />Do not kneecap the hostage</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">11-Jul-19 04:43 PM</span>
+<div class="msg-content">
+Gay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Jul-19 04:47 PM</span>
+<div class="msg-content">
+also no mention of losing all set-ups on operators, or warden freeze mode activating</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">11-Jul-19 04:47 PM</span>
+<div class="msg-content">
+Sick</div>
+<div class="msg-content">
+GOOD THING THEY FIXED THE KNEE CAP THING THO</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">11-Jul-19 04:48 PM</span>
+<div class="msg-content">
+they fixed otherthings too, appearently you could see lesion mines and echo drones through shields if they had a crack in them, so blackbeard could see them</div>
+<div class="msg-content">
+also on top of banning for the spam chat thing, they also found out why it was freezing the game and fixed that supposedly</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">13-Jul-19 12:38 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/254760091310489600/fdd128b5ff6be5a901a561d71a1681c0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="daradish#7693">daradish</span>
+<span class="msg-date">13-Jul-19 12:38 PM</span>
+<div class="msg-content">
+<span class="mention">@deleted-role</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">14-Jul-19 10:22 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">15-Jul-19 11:32 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span>  Anyone still up?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">28-Jul-19 05:41 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> anyone home?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">28-Jul-19 06:02 PM</span>
+<div class="msg-content">
+Tomarrow</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">05-Aug-19 08:03 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">05-Aug-19 09:23 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/608107917002145803/image0.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/608107917002145803/image0.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">06-Aug-19 09:53 PM</span>
+<div class="msg-content">
+GODDAMNIT IF I HAD KNOWN HOW TO SAVE I COULDVE GOTTEN THE ACE ON FILM</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">06-Aug-19 09:53 PM</span>
+<div class="msg-content">
+I believe you</div>
+<div class="msg-content">
+Good job</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">06-Aug-19 09:53 PM</span>
+<div class="msg-content">
+big thankees</div>
+<div class="msg-content">
+but still fuck a 5 health ace</div>
+<div class="msg-content">
+with fuze</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/39be6dc7de816a1a099ad510d37fd4cf.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">09-Aug-19 11:35 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=GFhmYAq6pZo">https://www.youtube.com/watch?v=GFhmYAq6pZo</a></div>
+<div class="msg-content">
+<a href="https://sync-video.com/r/rjwLUNHU">https://sync-video.com/r/rjwLUNHU</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">10-Aug-19 12:26 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">11-Aug-19 05:20 PM</span>
+<div class="msg-content">
+<a href="https://itsyourbirthday.today/#taylor">https://itsyourbirthday.today/#taylor</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/993df909eb6f94dbdb746f28274e7d1b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Renegade#8207">Renegade</span>
+<span class="msg-date">11-Aug-19 08:52 PM</span>
+<div class="msg-content">
+m i c h a e l</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">12-Aug-19 04:02 PM</span>
+<div class="msg-content">
+<a href="https://cdn.vox-cdn.com/thumbor/N6xOfcf1B">https://cdn.vox-cdn.com/thumbor/N6xOfcf1B</a><i>p4oOiI68zgMvkV1SQ=/0x0:441x237/920x0/filters:focal(0x0:441x237):format(webp):no</i>upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/18840086/1ohk5bf1hvd31.png</div>
+<div class="msg-content">
+<a href="https://cdn.vox-cdn.com/thumbor/FWTR6">https://cdn.vox-cdn.com/thumbor/FWTR6</a><i>Q-L9S1IoMtur6HIOiMdHY=/0x0:620x337/920x0/filters:focal(0x0:620x337):format(webp):no</i>upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/18840082/rintyhpygvd31.png</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">15-Aug-19 01:43 AM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=4UhbBRklPBQ&amp;feature=share">https://www.youtube.com/watch?v=4UhbBRklPBQ&amp;feature=share</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">15-Aug-19 07:06 AM</span>
+<div class="msg-content">
+So human catapult and useless operator since deplorable shields are only occasionally in the game</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">15-Aug-19 07:02 PM</span>
+<div class="msg-content">
+<a href="https://www.youtube.com/watch?v=aO7LRVLC72M">https://www.youtube.com/watch?v=aO7LRVLC72M</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">16-Aug-19 01:14 PM</span>
+<div class="msg-content">
+Mira elite leak</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/611971068231680009/image0.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/611971068231680009/image0.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">16-Aug-19 02:25 PM</span>
+<div class="msg-content">
+WHERE</div>
+<div class="msg-content">
+IS</div>
+<div class="msg-content">
+JACKAL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">16-Aug-19 05:07 PM</span>
+<div class="msg-content">
+He’s probably coming up soon<span class="msg-edited" title="16-Aug-19 05:07 PM">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">16-Aug-19 05:07 PM</span>
+<div class="msg-content">
+GIBBE</div>
+<div class="msg-content">
+GIBBE</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">16-Aug-19 05:07 PM</span>
+<div class="msg-content">
+We get two elites an operation</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">16-Aug-19 05:08 PM</span>
+<div class="msg-content">
+I doubt jackal&#39;s will be with mira&#39;s</div>
+<div class="msg-content">
+It&#39;ll prolly be like Buck</div>
+<div class="msg-content">
+Or one of the koreans</div>
+<div class="msg-content">
+Maybe even Ela</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">18-Aug-19 02:35 PM</span>
+<div class="msg-content">
+Kanal rework next</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">18-Aug-19 03:08 PM</span>
+<div class="msg-content">
+New ranked lite, ranked rules with no actual rank</div>
+<div class="msg-content">
+Reverse friendly fire will now apply against a squad when they kill a friendly</div>
+<div class="msg-content">
+They are also adding a battle pass</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">18-Aug-19 03:10 PM</span>
+<div class="msg-content">
+please explain reverse a bit more, do you mean if you go in to a match as a group and one of you kills a guy you all get reverse fire?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">18-Aug-19 03:10 PM</span>
+<div class="msg-content">
+Yes</div>
+<div class="msg-content">
+To protect solo queue players</div>
+<div class="msg-content">
+Also bigger penalties for constantly leaving</div>
+<div class="msg-content">
+May be an issue for you and your connection Phil</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">18-Aug-19 03:26 PM</span>
+<div class="msg-content">
+A battle pass, really</div>
+<div class="msg-content">
+That&#39;s gay</div>
+<div class="msg-content">
+Also we already knew it was a kanal rework</div>
+<div class="msg-content">
+Theme park is next</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87175139023687680/edac2f5294e99a7ab006eff18a06026e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Nitsuj08#6835">Nitsuj08</span>
+<span class="msg-date">18-Aug-19 04:08 PM</span>
+<div class="msg-content">
+Wow the battle pass is super stupid</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">18-Aug-19 04:08 PM</span>
+<div class="msg-content">
+Eh Id give it a chance simply because its better than gambling for skins in the packs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">18-Aug-19 04:17 PM</span>
+<div class="msg-content">
+First one is 7 days and it’s free</div>
+<div class="msg-content">
+Second one is the operation after and it has a “free” track as well</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">19-Aug-19 08:01 PM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/613160706879127558/image0.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/613160706879127558/image0.png" />
+</a>
+</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/613160708351197256/image1.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/613160708351197256/image1.png" />
+</a>
+</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/613160709035130880/image2.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/613160709035130880/image2.png" />
+</a>
+</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/613160709735448580/image3.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/613160709735448580/image3.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">20-Aug-19 01:03 AM</span>
+<div class="msg-content">
+The fuck is this shit</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/613236636628680705/image.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/613236636628680705/image.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">20-Aug-19 01:04 AM</span>
+<div class="msg-content">
+Why</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Aug-19 01:06 AM</span>
+<div class="msg-content">
+They&#39;re replacing maestro&#39;s only means of hiding</div>
+<div class="msg-content">
+With entirely useless things</div>
+<div class="msg-content">
+WHY DOES GLAZ GET FRAGS</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">20-Aug-19 01:08 AM</span>
+<div class="msg-content">
+Cause now you can have an entire team with frag grenades</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Aug-19 01:08 AM</span>
+<div class="msg-content">
+WHY DOES N&#216;KK GET A CLAYNORE</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">20-Aug-19 01:08 AM</span>
+<div class="msg-content">
+You can start worrying about grenades now</div>
+<div class="msg-content">
+“To cover her back”</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Aug-19 01:09 AM</span>
+<div class="msg-content">
+They have to just use a dart board</div>
+<div class="msg-content">
+That&#39;s so stupid, she actually becomes too strong with that</div>
+<div class="msg-content">
+You can have a team of either 10 frags or 8 and Thatcher and then the game just doesn&#39;t happen</div>
+<div class="msg-content">
+I really hope they realise how stupid this is in ptr</div>
+<div class="msg-content">
+I didn&#39;t even know jaeger got a deployable though</div>
+<div class="msg-content">
+So that&#39;s actually fine</div>
+<div class="msg-content">
+It might even be better for ambushes</div>
+<div class="msg-content">
+BUT GOOD THING THEY GAVE WARDEN A DEPLOYABLE SO HE CAN BE USELESS BEHIND A SHIELD</div>
+<div class="msg-content">
+At least frost gets hers back I guess</div>
+<div class="msg-content">
+But honestly just get rid of the camera for her</div>
+<div class="msg-content">
+So people get options of what they want instead of only picking shield</div>
+<div class="msg-content">
+WHICH IS WHY THEY TOOK IT FROM HER IN THE FIRST PLACE</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">20-Aug-19 01:15 AM</span>
+<div class="msg-content">
+Also they buffed fuze by reducing the time it takes to place a cluster charge</div>
+<div class="msg-content">
+It’s now 25% faster</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Aug-19 01:16 AM</span>
+<div class="msg-content">
+But they also further nerfed shields by increasing ads time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">20-Aug-19 10:26 AM</span>
+<div class="msg-content">
+<a href="https://www.reddit.com/r/Rainbow6/comments/cst1ev/halloween">https://www.reddit.com/r/Rainbow6/comments/cst1ev/halloween</a><i>event</i>leaks/?utm<i>source=share&amp;utm</i>medium=ios_app</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">20-Aug-19 10:33 AM</span>
+<div class="msg-content">
+I&#39;m glad they&#39;re buffing WARDEN</div>
+<div class="msg-content">
+Still not in the way they should but it&#39;s a start</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/199913903508029440/7d32870ea061f1f68468ad4942133ae4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dxzain#8016">Dxzain</span>
+<span class="msg-date">20-Aug-19 06:18 PM</span>
+<div class="msg-content">
+The lesion and smoke are top tier</div>
+<div class="msg-content">
+but like why would vigil get a second one</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">20-Aug-19 07:07 PM</span>
+<div class="msg-content">
+Not all of them are Halloween but most are</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/227268500761083914/7bf3c67ed4bcd7f0302f1437bc7f76df.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="omnicoder32#8232">omnicoder32</span>
+<span class="msg-date">22-Aug-19 06:16 PM</span>
+<div class="msg-content">
+<a href="https://i.pinimg.com/474x/08/d3/75/08d375bcd68add96daa77ed47779f082.jpg">https://i.pinimg.com/474x/08/d3/75/08d375bcd68add96daa77ed47779f082.jpg</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87172317838319616/39be6dc7de816a1a099ad510d37fd4cf.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Techdude154#1209">Techdude154</span>
+<span class="msg-date">22-Aug-19 08:23 PM</span>
+<div class="msg-content">
+<span class="mention" title="Hades7899#6264">@Hades7899</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">25-Aug-19 05:00 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/114514390979444740/993df909eb6f94dbdb746f28274e7d1b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Renegade#8207">Renegade</span>
+<span class="msg-date">25-Aug-19 07:37 PM</span>
+<div class="msg-content">
+What about em</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">27-Aug-19 09:05 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">28-Aug-19 06:53 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">02-Sep-19 03:30 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">10-Sep-19 07:29 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">11-Sep-19 04:26 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">12-Sep-19 05:18 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">12-Sep-19 05:26 PM</span>
+<div class="msg-content">
+Give me a few min and I&#39;ll be on</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87254648645259264/4aba08e1d9235f67d88b85f49a048f67.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="MrAverageJoe#9851">MrAverageJoe</span>
+<span class="msg-date">12-Sep-19 05:31 PM</span>
+<div class="msg-content">
+I&#39;ll be 30-40 min</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">15-Sep-19 08:03 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141639152436379648/7abdb11478e29f5a8c3108ee0e2439ad.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Dungeon Lord Jewcifer#2411">Dungeon Lord Jewcifer</span>
+<span class="msg-date">19-Sep-19 07:33 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/87232831536766976/1dbb477cf10fad2911e170a14546006c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="SeaHacking#8906">SeaHacking</span>
+<span class="msg-date">02-Oct-19 06:43 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/187730235712733184/4ce71a2162fa485a3378733ca69a001d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Skipper#5600">Skipper</span>
+<span class="msg-date">04-Oct-19 03:22 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span> cawcaw</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">12-Oct-19 02:02 PM</span>
+<div class="msg-content">
+<span class="mention">@R6</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/273831691976441856/a03490f4da32ee71a7e700e41f338149.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Hades7899#6264">Hades7899</span>
+<span class="msg-date">13-Oct-19 01:22 AM</span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/551237086594727959/632810272398245899/b814e7f00defe32fa57615b46396a6c589a10110v2_hq.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/551237086594727959/632810272398245899/b814e7f00defe32fa57615b46396a6c589a10110v2_hq.jpg" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/136682217169616898/466815812d26e26ad6602f628ed51153.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McHennessey#1977">McHennessey</span>
+<span class="msg-date">13-Oct-19 12:11 PM</span>
+<div class="msg-content">
+lol</div>
+</div>
+</div>
+</div>
+</body>
+</html>
